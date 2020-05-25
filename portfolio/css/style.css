@@ -17,7 +17,6 @@ a{
 
 .header__top{
 	background-color: #202022;
-
 }
 
 .container{
@@ -30,7 +29,7 @@ a{
 
 .header__top-inner,
 .footer__top-inner{
-	height: 70px;
+	height: 60px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -68,8 +67,53 @@ a{
 	transition: all 0.5s;
 }
 
+.header__social{
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	width: 250px;
+}
+
+.facebook:hover{
+	color: #1E90FF;
+	border-color: #1E90FF;
+	box-shadow: 0px 0px 15px #1E90FF;
+}
+
+.skype:hover{
+	color: #00BFFF;
+	border-color: #00BFFF;
+	box-shadow: 0px 0px 15px #00BFFF;
+}
+
+.phone:hover{
+	color: #00FF00;
+	border-color: #00FF00;
+	box-shadow: 0px 0px 15px #00FF00;
+}
+	
+.envelope:hover{
+	color: #FF0000;
+	border-color: #FF0000;
+	box-shadow: 0px 0px 15px #FF0000;
+}
+
+.social__item{
+	width: 40px;
+	height: 40px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+
 .header__top-mail a,
-.footer__top-mail a{
+ .footer__top-mail a{
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 600;
@@ -106,12 +150,12 @@ h1 {
 
 
 .about{
-	background-color: #c6ccd8;
+	background-color: #e8e8e8;
 }
 
 .section__about{
-	padding-top: 50px; 
-	padding-bottom: 50px;
+	padding-top: 30px; 
+	padding-bottom: 30px;
 	color: #202022;
 	font-size: 18px;
 	line-height: 32px;
@@ -121,7 +165,7 @@ h1 {
 h2{
 	font-size: 42px;
 	line-height: 70px;
-	margin-bottom: 50px
+	margin-bottom: 30px
 }
 
 .section__about-p{
@@ -135,8 +179,8 @@ h2{
 }
 
 .section__works{
-	padding-top: 50px; 
-	padding-bottom: 50px;
+	padding-top: 30px; 
+	padding-bottom: 30px;
 	color: #274b69;
 	font-size: 18px;
 	line-height: 32px;
