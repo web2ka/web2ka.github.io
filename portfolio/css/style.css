@@ -1,0 +1,160 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.header__top{
+	background-color: #202022;
+
+}
+
+.container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header__top-inner,
+.footer__top-inner{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__top-logo,
+.footer__top-logo{
+	font-size: 42px;
+}
+
+.header__top-logo span,
+.footer__top-logo span{
+	color: red;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.menu__list{
+	display: flex;
+}
+
+.menu__list li+li{
+	padding-left: 25px;
+}
+
+.menu__list a{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	transition: all .5s;
+}
+
+.menu__list a:hover{
+	border-bottom: 3px solid red;
+	transition: all 0.5s;
+}
+
+.header__top-mail a,
+.footer__top-mail a{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+}
+
+.header__bottom{
+	background-color: #3f4d63;
+}
+
+.header__bottom-inner{
+	height: 670px;
+	padding-top: 100px;
+	text-align: center;
+	background-image: url(../img/fon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center; 
+}
+
+h1 {
+	background-color: #3f4d63;
+	font-size: 56px;
+	line-height: 70px;
+	margin-bottom: 50px
+}
+
+.send__button{
+	font-size: 32px;
+	background-color: #A60000;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 8px 43px;
+}
+
+
+.about{
+	background-color: #c6ccd8;
+}
+
+.section__about{
+	padding-top: 50px; 
+	padding-bottom: 50px;
+	color: #202022;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+}
+
+h2{
+	font-size: 42px;
+	line-height: 70px;
+	margin-bottom: 50px
+}
+
+.section__about-p{
+
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.works{
+	background-color: #b0ccd8;
+}
+
+.section__works{
+	padding-top: 50px; 
+	padding-bottom: 50px;
+	color: #274b69;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.section__works-inner{
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.section__works-item{
+	max-width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.footer{
+	background: #3f4d63;
+
+}
