@@ -103,6 +103,10 @@ header{
 	justify-content: space-between;
 }
 
+.header__btn-menu{
+	display: none;
+	font-size: 28px;
+}
 
 .menu li{
 	display: inline-block;
@@ -442,7 +446,7 @@ header{
 .form__box-inner .jq-selectbox__select{
 	height: 40px;
 	border: 1px solid #e6e6e6;
-padding-left: 17px;
+	padding-left: 17px;
 }
 
 .form__box-inner .jq-selectbox__trigger-arrow:before{
