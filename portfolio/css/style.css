@@ -35,15 +35,23 @@ a{
 	align-items: center;
 }
 
-.header__top-logo,
-.footer__top-logo{
+.header__top-logo{
 	font-size: 42px;
 }
 
-.header__top-logo span,
-.footer__top-logo span{
+.footer__top-logo{
+	font-size: 36px;
+}
+
+.header__top-logo span{
 	color: red;
 	font-size: 50px;
+	font-weight: 700;
+}
+
+.footer__top-logo span{
+	color: red;
+	font-size: 42px;
 	font-weight: 700;
 }
 
@@ -67,7 +75,8 @@ a{
 	transition: all 0.5s;
 }
 
-.header__social{
+.header__social,
+.footer__social{
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -100,7 +109,8 @@ a{
 	box-shadow: 0px 0px 15px #FF0000;
 }
 
-.social__item{
+.social__item,
+.footer__item{
 	width: 40px;
 	height: 40px;
 	border: 3px solid #fff;
@@ -112,8 +122,19 @@ a{
 	transition: all 0.3s;
 }
 
-.header__top-mail a,
- .footer__top-mail a{
+.footer__item{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+.header__top-mail a,{
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 600;
@@ -193,10 +214,67 @@ h2{
 }
 
 .section__works-item{
-	max-width: 200px;
-	padding-left: 10px;
-	padding-right: 10px;
+	max-width: 230px;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 0 0 10px #3f4d63;
+
+
 }
+
+.wraper_p1{
+	height: 100%;
+	width: 100%;
+	background: url(../img/p1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.wraper_p2{
+	height: 100%;
+	width: 100%;
+	background: url(../img/p2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.wraper_p3{
+	height: 100%;
+	width: 100%;
+	background: url(../img/p3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.wraper_p4{
+	height: 100%;
+	width: 100%;
+	background: url(../img/p4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.wrapper__link{
+	padding-right: 5px;
+	padding-left: 5px;
+	display: inline-block;
+	height: 100%;
+	color: transparent;
+	background: transparent;
+}
+
+.wrapper__link:hover{
+	color: #fff;
+	font-weight: 700;
+	background: #3f4d63;
+	background: rgba(63, 77, 99, 0.6);
+	transition: all 0.8s;
+}
+
 
 .footer{
 	background: #3f4d63;
