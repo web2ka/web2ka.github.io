@@ -134,12 +134,6 @@ a{
 	transition: all 0.3s;
 }
 
-.header__top-mail a,{
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: 600;
-}
-
 .header__bottom{
 	background-color: #3f4d63;
 }
