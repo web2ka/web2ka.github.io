@@ -6,119 +6,506 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Portfolio</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
-	
-	<header>		
-		<div class="header__top">
-			<div class="container">
-				<div class="header__top-inner">
-					<div class="header__top-logo">
-						<a href="#">web<span>2</span>ka</a>
+<body >
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="user">
+					<div class="user__avatar">
+					<!--	<img src="https://placehold.it/57/333" alt=""> -->
 					</div>
-					<nav class="header__top-menu">
-						<ul class="menu__list">
-							<li><a href="#">Про  мене</a></li>
-							<li><a href="#">навики</a></li>
-							<li><a href="#">мої  роботи</a></li>
-						</ul>
-					</nav>
-					<div class="header__contact">
-						<ul class="header__social">
-							<li class="social__item facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li class="social__item skype"><a href="#"><i class="fab fa-skype"></i></a></li>
-							<li class="social__item phone"><a href="tel:+380933623424"><i class="fas fa-phone"></i></a></li>
-							<li class="social__item envelope"><a href="mailto:web2ka@gmail.com"><i class="far fa-envelope"></i></a></li>
-						</ul>
+					<div class="user__content">
+						<div class="user__name">Web<span>2</span>ka</div>
+						<div class="user__prof">HTML верстка</div>
 					</div>
-					</div>
-			</div><!--class="container"-->
-		</div>
-		<div class="header__bottom">
-			<div class="container">
-				<div class="header__bottom-inner">
-					<h1>Якісна HTML верстка вже сьогодні</h1>
-					<a class="send__button" href="#">Замовити верстку</a>
 				</div>
+				<nav class="nav">
+					<a class="nav__link" href="#about_mi">Про мене</a>
+					<a class="nav__link" href="#services">Послуги</a>
+					<a class="nav__link" href="#work">Роботи</a>
+				<!--	<a class="nav__link">Прайс</a> -->
+					<a class="nav__link nav__link--btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
+				</nav>
 			</div>
 		</div>
 	</header>
 
-			<section class="about">
-				<div class="container">
-					<div class="section__about">
-						<h2>Про мене</h2>
-						<p class="section__about-p">Привіт ! Мене звати Роман Камінський, я одружений та виховую двох чудових дітей. Займаюсь програмуванням більше року, а тепер вирішив спробувати свої сили в верстці сайтів. Володію всіма необхідними знаннями для профісійної верстки сайту</p>
-						<br>
-						<p>Якісна верстка сайту вже сьогодні. Тільки передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect. </p>
-						<br>
-						<p>Готовий почати роботу над вашим проектом одразу. 100% завершення проекту. Завжди вчасна здача проекту. Працюю без передплати.</p>
-						<br>
-						<p>Співпрацюючи зі мною ви завжди на крок по переду конкурентів</p>
+	<section class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<div class="intro__content">
+					<h2 class="intro__subtitle">Привіт ! Я</h2>
+					<h1 class="intro__title">Роман Камінський</h1>
+					<div class="intro__text">HTML верстальщик</div>
+
+					<div class="social">
+						<a class="social__link" href="#">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+
+						<a class="social__link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+							<a class="social__link" href="#">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</a>
+
+						<a class="social__link" href="#">
+							<i class="fa fa-telegram" aria-hidden="true"></i>
+						</a>
 					</div>
-				</div><!--class="container"-->
-			</section>
-			<section class="works">
-				<div class="container">
-					<div class="section__works">
-						<h2>Мої роботи</h2>
-						<div class="section__works-inner">
-							<div class="section__works-item">
-								<div class="wraper_p1">
-									<a class="wrapper__link" href="https://web2ka.github.io/progect1/" target="blank">Верстка односторіночного сайту</a>
-								</div>
-							</div>
-							<div class="section__works-item">
-								<div class="wraper_p2">
-									<a class="wrapper__link" href="https://web2ka.github.io/progect2/" target="blank">Простий landingPage для фірми</a>
-								</div>
-							</div>
-							<div class="section__works-item">
-								<div class="wraper_p3">
-									<a class="wrapper__link" href="https://web2ka.github.io/progect3/" target="blank">LandingPage зі слайдером</a>
-								</div>
-							</div>
-							<div class="section__works-item">
-								<div class="wraper_p4">
-									<a class="wrapper__link" href="https://web2ka.github.io/progect4/" target="blank">Адаптивна верстка landingPage зі слайдером та формами</a>
-								</div>
+
+					<a class="btn" href="#" data-modal="#modal_hire_me">Знайти мене</a>
+					<!--<button class="btn" type="button" href="#">Переглянути резюме</button> -->
+
+				</div>	
+			<!--	<img class="intro__photo" src="img/keys.jpg"> -->	
+			</div>
+		</div>
+	</section>
+	<!-- works -->
+	<div class="works">
+		<div class="container">
+			<div class="works__nav" id="work">
+				<a class="works__nav-link" href="#" data-filter="all">Всі роботи</a>
+				<a class="works__nav-link" href="#" data-filter="landing">Лендінги</a>
+				<a class="works__nav-link" href="#" data-filter="portal">Багатосторіночні сайти</a>
+			<!--	<a class="works__nav-link" href="#" data-filter="megasin">Інтернет магазини</a> -->
+			</div>
+
+			<div class="portfolio" >
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_1">
+						<img class="work__image" src="img/l1.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: landing</div>
+							<div class="work__title">
+								Лендінг візитка
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__top-inner">
-						<div class="footer__top-logo">
-							<a href="#">web<span>2</span>ka</a>
-						</div>
-						<nav class="footer__top-menu">
-							<ul class="menu__list">
-								<li><a href="#">Про  мене</a></li>
-								<li><a href="#">навики</a></li>
-								<li><a href="#">мої  роботи</a></li>
-							</ul>
-						</nav>
-						<div class="footer__contact">
-							<ul class="footer__social">
-								<li class="footer__item facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li class="footer__item skype"><a href="#"><i class="fab fa-skype"></i></a></li>
-								<li class="footer__item phone"><a href="tel:+380933623424"><i class="fas fa-phone"></i></a></li>
-								<li class="footer__item envelope"><a href="mailto:web2ka@gmail.com"><i class="far fa-envelope"></i></a></li>
-							</ul>
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_2">
+						<img class="work__image" src="img/l2.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: portal</div>
+							<div class="work__title">
+								Лендінг для фірми
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
 						</div>
 					</div>
-				</div><!--class="container"-->
-			</footer>
+				</div>
+			
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_3">
+						<img class="work__image" src="img/l3.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: landing</div>
+							<div class="work__title">
+								Лендінг зі слайдером
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__col" data-cat="portal">
+					<div class="work" data-modal="#modal_project_4">
+						<img class="work__image" src="img/l4.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: portal</div>
+							<div class="work__title">
+								Адаптивний сайт
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+	<!--   <div class="text-center">
+				<a class="btn btn--sm" href="#">Завантажити більше робіт</a>
+			</div> -->
+		</div>
+	</div>
+
+	<section class="about">
+		<div class="container">
+			<div class="about__inner" id="about_mi">
+			<!--	<div class="about__photo">
+					<img class="img" src="img/designer_photo.png">
+				</div> -->
+				<div class="about__content">
+					<div class="about__title" >Про мене</div>
+					<div class="about__bigtitle">Чому варто обрати мене</div>
+					<div class="about__text">
+						<p>Привіт ! Мене звати Роман Камінський, я одружений та виховую двох чудових дітей. Займаюсь програмуванням більше року, а тепер вирішив спробувати свої сили в верстці сайтів. Володію всіма необхідними знаннями для профісійної верстки сайту</p>
+						<p>Якісна верстка сайту вже сьогодні. Тільки передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+						<p>Готовий почати роботу над вашим проектом одразу. 100% завершення проекту. Завжди вчасна здача проекту. Працюю без передплати.</p>
+						<p>Співпрацюючи зі мною ви завжди на крок по переду конкурентів</p>
+					</div>
+					<a class="btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
+				<!--	<button class="btn" type="button" href="#">Переглянути резюме</button>
+				</div> -->
+
+			</div>
+		</div>
+	</section>
+<!-- відгуки
+	<div class="reviews">
+		<div class="container">
+			
+			<div class="reviews__item">
+				<div class="reviews__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum minus consequuntur consequatur totam optio fugiat placeat, adipisci alias dignissimos assumenda perspiciatis molestias, eveniet minima ad eaque error reiciendis sunt!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum minus consequuntur consequatur totam optio fugiat placeat, adipisci alias dignissimos assumenda perspiciatis molestias, eveniet minima ad eaque error reiciendis sunt!</p>
+				</div>
+				<div class="reviews__autor">
+					<img class="reviews__photo" src="https://placehold.it/103/333">
+					<div class="reviews__name">Edward M. Brooks</div>
+					<div class="reviews__compani">IBM</div>
+					<div class="reviews__rating">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star reviews__star--unactive" src="img/star.svg" width="13" height="13">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+
+	<section class="news">
+		<div class="container">
+			<div class="news__header" id="services">
+				<h3 class="news__title">Послуги</h3>
+				<div class="news__text">Що я вмію робити, та скільки це коштує</div>
+			</div>
+
+			<div class="articles">
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Верстка лендінгу</h4></a>
+							<div class="articles__cat">Лендінги</div>
+							<div class="articles__text">
+								<p>Кросбраузерна верстка лендінгу за вашим дизайном. Адаптивна верстка під мобільні пристрої. Повністю валідний, тестований код. Верстка pixel-perfect. </p>
+							</div>
+						</div>
+					<!--	<a class="btn btn--sm" href="#">Дізнатись ціну</a> -->
+					</div>
+				</div>
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Сайти під ключ</h4></a>
+							<div class="articles__cat">Портали</div>
+							<div class="articles__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla impedit deleniti quae recusandae aliquid inventore alias, voluptatibus non enim? Tempora itaque ad, quos perspiciatis nihil distinctio in, quibusdam voluptatibus ducimus!</p>
+							</div>
+						</div>
+						<a class="btn btn--sm" href="#" data-modal="#modal_hire_me" >Дізнатись ціну</a>
+					</div>
+				</div>
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Сайт під ключ</h4></a>
+							<div class="articles__cat">Портали</div>
+							<div class="articles__text">
+								<p>Розробка дизайну, верстка шаблону, натягування шаблону на CMS Wordpres. Подальша підтримка проекту по контракту.</p>
+							</div>
+						</div>
+					<!--	<a class="btn btn--sm" href="#">Дізнатись ціну</a> -->
+					</div>
+				</div>
+			</div>
+
+		<!--<div class="news__footer">
+				<a class="news__link" href="#">Подивитись всі послуги</a>
+			</div> -->
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__credits">
+					<div class="footer__copyright">
+						&copy; 2020 web2ka
+					</div>
+					<div class="footer__social">
+						<a class="footer__link" href="#">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+
+						<a class="footer__link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+							<a class="footer__link" href="#">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</a>
+
+						<a class="footer__link" href="#">
+							<i class="fa fa-telegram" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__nav">
+						<a class="footer__nav-link" href="#">Про мене</a>
+						<a class="footer__nav-link" href="#">Послуги</a>
+						<a class="footer__nav-link" href="#">Роботи</a>
+					<!--	<a class="footer__nav-link" href="#">Прайс</a> -->
+						<a class="footer__nav-link footer__nav-link--btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!--  modals -->
+<div class="modal" id="modal_project_1">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l1.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг візитка</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт візитку створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect1/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_2">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l2.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг для фірми</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт для фірми створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect2/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_3">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l3.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг зі слайдером</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт для фірми створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect3/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_4">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l4.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг зі слайдером</h3>
+					<div class="modal-work__info">
+						portal<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect4/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_hire_me">
+	<div class="modal__dialog modal__dialog--sm">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+			<div class="contact">
+				<div class="contact__left">
+					<h3 class="modal__title mb-0">Знайти мене</h3>
+					<div class="modal__subtitle">Зателефонуйте мені або напишіть повідомлення</div>
+					<ul class="contact__info">
+						<li class="contact__info-item">
+							<img class="contact__info-icon" src="img/phone.svg" height="12">
+							(093) 36 23 424
+						</li>
+						<li class="contact__info-item">
+							<img class="contact__info-icon" src="img/mail.svg" height="12">
+							web2ka@gmail.com
+						</li>
+					</ul>
+
+					<form class="form" action="/" method="post">
+						<div class="form__group">
+							<label class="form__label" for="input-email">Adress e-mail</label>
+							<input class="form__input" type="text" id="input-email" name="" placeholder="Adress e-mail">
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="input-text">Request</label>
+							<textarea class="form__textarea" type="text" id="input-text" name="input-text" placeholder="Text"></textarea> 
+						</div>
+
+						<div class="text-right">
+
+							<botton class="btn" type="submit">SEND</botton>
+
+						</div>
+
+					</form>
+				</div>
+			</div>		
+	</div>
+</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/all.js"></script>
-	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
