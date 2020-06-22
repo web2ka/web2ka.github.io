@@ -7,6 +7,7 @@ body{
 	font-size: 15px;
 	line-height: 24px;
 	background: #1B4E70;
+	min-width: 1230;
 
 }
 
@@ -195,6 +196,7 @@ body{
 .slider__inner {
 	text-align: center;
 	background: #93CBF0;
+	border-top: 3px solid #FF7800;
 }
 
 .slider{
