@@ -376,7 +376,7 @@ body{
 .three-block {
 	border-top: 4px solid #FF7800;
 	margin: 0px 0px 0px 0px;
-	background-color: #59A5D8;
+	background-color: #01AFCD;
 }
 
 .block__title {
@@ -424,7 +424,7 @@ body{
 }
 
 .three-block__item {
-	background-color: #59A5D8;
+	background-color: #01AFCD;
 	padding: 15px 15px 15px 15px;
 }
 .three-block__image {
@@ -497,7 +497,7 @@ body{
 
 .slider__inner {
 	text-align: center;
-	background: #4B96B3;
+	background: #01AFCD;
 	border-top: 3px solid #FF7800;
 }
 
@@ -538,7 +538,7 @@ body{
 	object-fit: contain;
 }
 .two-block {
-	background-color: #54B4F3;
+	background-color: #01AFCD;
 }
 
 
@@ -554,7 +554,7 @@ body{
 }
 
 .two-block__item {
-	background-color: #54B4F3;
+	background-color: #01AFCD;
 	padding: 15px;
 }
 .two-block__image {
@@ -573,7 +573,7 @@ body{
 
 .offer__inner {
 	text-align: center;
-	background: #59A5D8;
+	background: #01AFCD;
 	height: 100%;
 	padding-bottom: 50px;
 	border-top: 3px solid #FF7800;
