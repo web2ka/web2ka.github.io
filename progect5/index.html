@@ -5,7 +5,7 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>Адаптивная верстка</title>
+		<title>UVair</title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" media="screen and (color)" href="example.css">
@@ -35,11 +35,11 @@
 							</div>
 							<nav class="menu__body">
 								<ul class="menu__list">
-									<li><a href="" class="menu__link">про товар</a></li>
-									<li><a href="" class="menu__link">використання</a></li>
-									<li><a href="" class="menu__link">переваги</a></li>
-									<li><a href="" class="menu__link">характеристики</a></li>
-									<li><a href="" class="menu__link">придбати</a></li>
+									<li><a href="#about" class="menu__link">про товар</a></li>
+									<li><a href="#use" class="menu__link">використання</a></li>
+									<li><a href="#slider" class="menu__link">переваги</a></li>
+									<li><a href="#propertis" class="menu__link">характеристики</a></li>
+									<li><a href="#offer" class="menu__link">придбати</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -69,8 +69,18 @@
 			</header>
 			<main class="page">
 				<div class="container">
-					<div class="three-block">
-						<h1 class="block__title">Використання</h1>
+
+					<div class="video">
+						<div class="slider__inner">
+							<h2 class="block__title" id="about">про товар</h2>
+							<div class="video__plaer">
+								<video width="100%" max-height="600px" controls="controls" src="" poster="img/images_8.jpg"></video>
+							</div>
+						</div>
+					</div>
+
+				<div class="three-block">
+						<h1 class="block__title" id="use">Використання</h1>
 						<div class="three-block__row">
 							<div class="three-block__column">
 								<div class="three-block__item">
@@ -127,7 +137,7 @@
 					</div>
 
 					<div class="two-block">
-						<h1 class="block__title">Характеристики</h1>
+						<h1 class="block__title" id="propertis">Характеристики</h1>
 						<div class="two-block__row">
 							<div class="two-block__column">
 								<div class="two-block__item">
