@@ -467,6 +467,7 @@ body{
 @media (max-width:767px){
 	.three-block__row{
 		flex-wrap: wrap;
+		text-align: center;
 	}
 }
 
@@ -478,6 +479,7 @@ body{
 @media (min-width:767px){
 	.three-block__column {
 		flex: 0 1 33.333%;
+		align-items: center;
 	}
 }
 
