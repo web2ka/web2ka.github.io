@@ -1,70 +1,70 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>UVair</title>
-		<!-- Подключаем CSS -->
+
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" media="screen and (color)" href="example.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
 
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
-
-		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
-		<!-- Оболочка для демонстрации -->
+		<!-- Оболонка сайту -->
 		<div class="wrapper">
 			<!-- Контент -->
 			<header class="header">
 				<div class="container">
 					<div class="header__row">
 						<a href="" class="header__logo">
-							<span class="logo__icon">UV</span> air</a>
-						<div class="header__menu menu">
-							<div class="menu__icon icon-menu">
-								<span></span>
-							</div>
-							<nav class="menu__body">
-								<ul class="menu__list">
-									<li><a href="#about" class="menu__link">про товар</a></li>
-									<li><a href="#use" class="menu__link">використання</a></li>
-									<li><a href="#slider" class="menu__link">переваги</a></li>
-									<li><a href="#propertis" class="menu__link">характеристики</a></li>
-									<li><a href="#offer" class="menu__link">придбати</a></li>
-								</ul>
-							</nav>
+							<span class="logo__icon">UV</span> air
+						</a>
+
+						<div class="header__burger">
+							<span></span>
 						</div>
-					</div>
-
-					<!--  ----------------------------- -->
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="#about" class="header__link">про товар</a>
+								</li>
+								<li>
+									<a href="#use" class="header__link">використання</a>
+								</li>
+								<li>
+									<a href="#slider" class="header__link">переваги</a>
+								</li>
+								<li>
+									<a href="#propertis" class="header__link">характеристики</a>
+								</li>
+								<li>
+									<a href="#offer" class="header__link">придбати</a>
+								</li>
+							</ul>
+						</nav>
+					</div> <!-- header__row -->
 					<div class="header__inner">
-							<div class="inner__content">
-								<div class="inner__content-left">
-									<div class="header__ofer">
-										<h1 class="offer__title">Візими чисте повітря з собою</h1>
-										<h2 class="offer__deskription">портативний очищувач повітря для тих хто цінує якість в усьому</h2>
-										<a href="#" class="offer__button">Придбати свіжість</a>
-									</div><!-- header__offer -->
-								</div>								
-								<div class="inner__content-right">
-									<picture>
-										<source srcset="img/header-fon2.jpg" type="image/jpg" media="(max-width:767px)">
-										<img class="img__divice" src="img/header-fon3.png">
-									</picture>
-								</div><!-- class="inner__content-left"" -->
-							</div><!-- class="inner__content" -->
-						</div><!-- class="header__inner" -->
-					<!-- -------------------------------------------------------------------- -->
-
-				</div>
+						<div class="inner__content">
+							<div class="inner__content-left">
+								<div class="header__ofer">
+									<h1 class="offer__title">Візими чисте повітря з собою</h1>
+									<h2 class="offer__deskription">портативний очищувач повітря для тих хто цінує якість в усьому</h2>
+									<a href="#" class="offer__button">Придбати свіжість</a>
+								</div><!-- header__offer -->
+							</div><!-- class="inner__content-left"" -->								
+							<div class="inner__content-right">
+								<picture>
+									<source srcset="img/header-fon2.jpg" type="image/jpg" media="(max-width:767px)">
+									<img class="img__divice" src="img/header-fon3.png">
+								</picture>
+							</div>
+						</div><!-- class="inner__right" -->
+					</div><!-- class="header__inner" -->
+				</div><!-- class="container" -->
 			</header>
 			<main class="page">
 				<div class="container">
@@ -77,7 +77,6 @@
 							</div>
 						</div>
 					</div>
-
 				<div class="three-block">
 						<h1 class="block__title" id="use">Використання</h1>
 						<div class="three-block__row">
@@ -117,9 +116,7 @@
 						<div class="slider__inner">
 							<h2 class="block__title" id="slider">переваги</h2>
 							<div class="slider">
-
 								<div class="slider__item">
-
 									<img class="img" src="img/home.jpg">
 									<h3 class="slider__description">для роботи</h3>
 								</div>
@@ -134,7 +131,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="two-block">
 						<h1 class="block__title" id="propertis">Характеристики</h1>
 						<div class="two-block__row">
@@ -182,12 +178,10 @@
 							</div>
 						</div>
 					</div>
-
 					<section class="offer">
 						<div class="offer__inner">
 							<div class="inner__title" id="offer">
-								<h2 class="block__title">Не втрачайте можливість 
-			придбати першим</h2>
+								<h2 class="block__title">Не втрачайте можливість придбати першим</h2>
 							</div>
 							<div class="inner__text">
 								<p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima magni facilis, alias? Accusantium, aliquam eos aut iste, obcaecati nobis assumenda debitis sapiente quisquam harum, ipsum maiores error, similique adipisci recusandae?</p>
@@ -196,12 +190,10 @@
 								<a href="#" class="offer__button-bottom">Придбати товар</a>
 							</div>
 						</div>
-				</section>
-				</div>
-
+					</section>
 				</div>
 			</main>
-
+		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>		
