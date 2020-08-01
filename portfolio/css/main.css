@@ -748,14 +748,13 @@ p {
 }
 .contact {
   display: flex;
-  background: url(https://placehold.it/480x700) right center no-repeat;
 }
 .contact__left {
-  width: 47%;
+  width: 95%;
   padding: 2rem;
 }
 .contact__right {
-  width: 53%;
+  width: 5%;
 }
 .mb-0 {
   margin-bottom: 0;
@@ -776,6 +775,60 @@ p {
   font-size: 1.06rem;
   color: #2b2a2c;
   font-weight: 400;
+}
+.contact__link {
+  text-decoration: none;
+  font-size: 24px;
+  padding-right: 5px;
+}
+.contact__link .fa-linkedin {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: #06799F;
+  margin: 0 auto;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.contact__link .fa-linkedin:hover {
+  background-color: #06799F;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.contact__link .fa-facebook {
+  width: 40px;
+  height: 40px;
+  color: #06266F;
+  padding: 10px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.contact__link .fa-facebook:hover {
+  background-color: #06266F;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.contact__link .fa-skype {
+  width: 40px;
+  height: 40px;
+  color: #3BA3D0;
+  padding: 8px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.contact__link .fa-skype:hover {
+  background-color: #3BA3D0;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.contact__link .fa-telegram {
+  width: 40px;
+  height: 40px;
+  color: #0772A1;
+  padding: 8px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.contact__link .fa-telegram:hover {
+  background-color: #0772A1;
+  border-radius: 5px;
+  color: #ffffff;
 }
 .form__group {
   margin-bottom: 1.8rem;
