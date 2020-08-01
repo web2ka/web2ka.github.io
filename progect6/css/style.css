@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1030px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-top: 110px;
+}
+
+.header__inner {
+	text-align: center;
+	background-color: #fff;
+	width: 530px;
+	height: 530px;
+	border: 10px solid #f4d4a5;
+	border-radius: 50%;
+	padding-top: 13px;
+	padding-bottom: 160px;
+	margin-left: 155px;
+}
+
+.header__name{
+	padding-top: 12px;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 15px;
+	color: #bf4200;
+}
+
+.phone{
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 35px;
+	margin-bottom: 40px;
+	display: inline-block;
+	color: #000;
+}
+
+.header__title {
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color: #1fad26;
+}
+
+.header__sale {
+	margin-top: 40px;
+}
+
+.main {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.main__title {
+	margin-bottom: 60px;
+	font-size: 41px;
+	color: #d07a2d;
+}
+
+.main__text {
+	font-size: 30px;
+}
+
+.main__img {
+	padding: 90px 0;
+
+}
+
+.progect__title {
+	margin-bottom: 110px;
+	font-size: 41px;
+	color: #d0662d;
+	font-weight: 700;
+}
+
+.project__item {
+	margin-bottom: 190px;
+}
+
+.project__price {
+	padding-bottom: 30px;
+	color: #17753b;
+}
+
+.download {
+
+align-items: center;
+	height: 305px;
+	width: 100%;
+	background-color: #f1dfbc; 
+}
+
+.download__img {
+	padding-top: 30px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.download__link{
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		font-size: 32px;
+		background-color: #17753b;
+		border: 5px solid #effd15;
+		padding: 23px 67px;
+}
+
+.gallery__title {
+	text-transform: uppercase;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	font-weight: 700;
+	color: #d07a2d;
+	font-size: 41px;
+}
+
+.gallery__text {
+	padding-bottom: 50px;
+	font-size: 25px;
+}
+
+.gallery__inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery__inner img{
+	display: block;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer .phone{
+	font-weight: 700;
+}
+
+.footer__email {
+	padding-top: 40px;
+	padding-bottom: 150px;
+	color: #2f8bc5;
+	text-decoration: underline;
+	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+}
