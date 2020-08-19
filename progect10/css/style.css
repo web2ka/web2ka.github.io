@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;
+
+400;500;700;900&display=swap&subset=cyrillic-ext");
+body {
+  color: #000;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+header {
+  background: #282323;
+}
+
+.top-header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 45px;
+}
+
+.top-header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-header__adress {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+  color: #fff;
+  background: url("../img/contacts/map_marker.svg") left no-repeat;
+  padding: 3px 0px 0px 27px;
+}
+
+.contacts-header__phone {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+  color: #fff;
+  background: url("../img/contacts/phone.svg") left no-repeat;
+  padding: 3px 0px 0px 27px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.contacts-header__phone:hover {
+  color: red;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__home {
+  border-bottom: 1px solid #fff;
+}
+
+.menu__link {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-left: 30px;
+  padding-bottom: 3px;
+}
+
+.menu__link:hover {
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.bottom-header__column {
+  padding: 80px 0px 0px 0px;
+}
+
+.bottom-header__column:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.bottom-header__title {
+  padding: 35px 0px 50px 0px;
+  color: #fff;
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
+.bottom-header__subtitle {
+  color: #ffffff;
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bottom-header__subtitle span {
+  font-weight: 700;
+}
+
+.bottom-header__button {
+  display: inline-block;
+  margin: 35px 0px 80px 0px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 16px;
+  background-color: #fff;
+  padding: 12px 20px 12px 20px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.bottom-header__button:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
