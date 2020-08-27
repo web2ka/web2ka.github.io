@@ -36,7 +36,12 @@ body._lock {
 }
 
 header {
-  background: #282323;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 .top-header:before {
@@ -148,6 +153,10 @@ header {
 
 .social-header__youtube img {
   width: 15px;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .bottom-header__column {
@@ -912,4 +921,91 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+  .top-header__row.row-top {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .contacts-header__adress {
+    display: none;
+  }
+
+  .contacts-header__phone {
+    display: none;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .icon-menu span {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .icon-menu span:first-child {
+    top: 0px;
+  }
+
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+
+  .icon-menu._active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .icon-menu._active span:first-child {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+
+  .icon-menu._active span:last-child {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+
+  .bottom-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .bottom-header__column {
+    text-align: center;
+  }
+
+  .bottom-header__title {
+    font-size: 49px;
+  }
 }
