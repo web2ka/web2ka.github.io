@@ -132,6 +132,24 @@ header {
   transition: all 0.5s;
 }
 
+.social-header {
+  padding: 15px 0px 15px 0px;
+}
+
+.social-header__facebook img {
+  width: 15px;
+  padding-right: 10px;
+}
+
+.social-header__telegram img {
+  width: 15px;
+  padding-right: 10px;
+}
+
+.social-header__youtube img {
+  width: 15px;
+}
+
 .bottom-header__column {
   -webkit-transform: translate(-120%, 0px);
       -ms-transform: translate(-120%, 0px);
