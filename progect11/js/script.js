@@ -3,7 +3,6 @@ const animItems = document.querySelectorAll("._anim-items");
 let rowTop 			= document.querySelector(".row-top");
 let rowTopHight 	= rowTop.offsetHeight;
 
-
 if (document.documentElement.clientWidth > 750){
 	if(animItems.length > 0) {
 		window.addEventListener('scroll', animOnScroll)
@@ -53,19 +52,35 @@ if (document.documentElement.clientWidth > 750){
 		animOnScroll();
 	}
 }
-//let rowTop 			= document.querySelector(".row-top");
-//let rowTopHight 	= rowTop.offsetHeight;
 
-//let rowBottom 		= document.querySelector(".row-bottom");
-//let rowBottomHeight = rowBottom.offsetHeight;
 
-//let scroll = rowBottom.scrollTop;
-//window.addEventListener('scroll', update); 
-//	function update() {
-//  console.log(window.pageYOffset);
-//	if (window.pageYOffset >= rowTopHight){
-//		rowBottom.classList.toggle("_fixed");
-//	} else {
-//		rowBottom.classList.remove("_fixed");
-//	}
-//};
+function filter() {
+
+	/*filter */
+	let filter = document.querySelector("[data-filter]");
+
+	filter.on("click", function(event){
+		event.preventDefault();
+
+		let cat = $(this).data('filter');
+
+		if(cat == 'all') {
+			$("[data-cat]").removeClass("hide");
+		} else {
+			$("[data-cat]").each(function() {
+				let workCat = $(this).data('cat');
+				if(workCat != cat) {
+					$(this).addClass('hide');
+				} else {
+					$(this).removeClass('hide');
+				}
+			})
+		}
+
+	});
+};
+
+
+$(document).ready(function(){
+	$('.column-reviews__slider').slick();
+});
