@@ -1,3 +1,32 @@
+
+const slider = document.querySelector('.swiper-container');
+
+let mySwiper = new Swiper(slider, {
+
+	slidesPerView: 1,
+	loop: true,
+
+
+  	navigation: {
+    	nextEl: '.swiper-button-next',
+    	prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+  	delay: 2500,
+  	disableOnInteraction: false,
+  },
+
+
+  breakpoints: {
+        769: {
+            slidesPerView: 2,
+        }
+    }
+})
+
+
+
 const animItems = document.querySelectorAll("._anim-items");
 
 let rowTop 			= document.querySelector(".row-top");
@@ -79,8 +108,3 @@ function filter() {
 
 	});
 };
-
-
-$(document).ready(function(){
-	$('.column-reviews__slider').slick();
-});

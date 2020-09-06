@@ -4,12 +4,12 @@
 		<title>ArtStone</title>
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no">
-		<link rel="stylesheet" href="css/style.min.css">
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
 		<!-- <meta name="robots" content="noindex, nofollow"> -->
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+	</head>	 	
 	<body>
 		<header class="header"	style="background-image: url(img/bg.jpg)">
 	<div class="header__top top-header">
@@ -167,12 +167,13 @@
 	</div><!--class="advantage__content _container"-->
 </section>
 
+<!-- Блок про компанію -->
 <section class="about">
 	<div class="about__content _container">
 		<div class="about__wrapper wrapper-about">
 			<div class="wrapper-about__column">
 				<div class="wrapper-about__item">
-					<img class="wrapper-about__image" src="../img/about/ntw-img.jpg" alt="" >
+					<img class="wrapper-about__image" src="img/about/ntw-img.jpg" alt="" >
 				</div>
 			</div>
 			<div class="wrapper-about__column">
@@ -229,63 +230,95 @@
 	</div><!--class="about__content _container"-->
 </section>
 
-<section class="reviews">
-	<div class="reviews__content _container">
-		<div class="reviews__row column-reviews">
-			<div class="column-reviews__left">
-				<div class="column-reviews__column">
-					<div class="column-reviews__title">отзыви</div>
-				</div>
+<!-- Блок з відгуками -->
+
+<section class="reviews"> 
+	<div class="reviews__content _container"> 
+		<div class="reviews__wrapper">
+ 
+			<div class="reviews__column">
+				<div class="reviews__title title">отзыви</div>
+
+				<div class="swiper-button-prev"></div>
+		   		<div class="swiper-button-next"></div>
+
 			</div>
-			<div class="column-reviews__reight">
-				<div class="column-reviews__slider">
-					<div class="column-reviews__item">
-						<div class="column-reviews__column">
-							<p class="column-reviews__text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
+
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="reviews__item">
+							<p class="reviews__text">
+								1 Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi!
 							</p>
-							<div class="column-reviews__user">
-								<img class="column-reviews__photo" src="../img/photo_1.png">
-								<div class="column-reviews__description">
-									<p class="column-reviews__name">Сергей Сомов</p>
-									<p class="column-reviews__position">Руководитель</p>
+							<div class="reviews__user">
+								<img class="reviews__photo" src="img/photo1.png">
+								<div class="reviews__description">
+									<p class="reviews__name">Сергей Сомов</p>
+									<p class="reviews__position">Руководитель</p>
 								</div>
 							</div>
 						</div>
-					</div> 
-					<div class="column-reviews__item">
-						<div class="column-reviews__column">
-							<p class="column-reviews__text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews__item">
+							<p class="reviews__text">
+								2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt inventore non ratione laboriosam temporibus blanditiis officia dolorem alias vel culpa. Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt inventore non ratione laboriosam temporibus blanditiis officia dolorem alias vel culpa. Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi!
 							</p>
-							<div class="column-reviews__user">
-								<img class="column-reviews__photo" src="../img/photo_2.png">
-								<div class="column-reviews__description">
-									<p class="column-reviews__name">Ольга Конько</p>
-									<p class="column-reviews__position">Менеджер</p>
+							<div class="reviews__user">
+								<img class="reviews__photo" src="img/photo2.png">
+								<div class="reviews__description">
+									<p class="reviews__name">Ольга Конько</p>
+									<p class="reviews__position">Менеджер</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews__item">
+							<p class="reviews__text">
+								3 Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi! Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi!
+								optio incidunt quasi! Facilis velit vitae nemo ab numquam molestiae est, optio incidunt quasi!
+							</p>
+							<div class="reviews__user">
+								<img class="reviews__photo" src="img/photo1.png">
+								<div class="reviews__description">
+									<p class="reviews__name">Сергей Сомов</p>
+									<p class="reviews__position">Руководитель</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews__item">
+							<p class="reviews__text">
+								4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt inventore non ratione laboriosam temporibus blanditiis officia dolorem alias vel culpa.
+							</p>
+							<div class="reviews__user">
+								<img class="reviews__photo" src="img/photo2.png">
+								<div class="reviews__description">
+									<p class="reviews__name">Ольга Конько</p>
+									<p class="reviews__position">Менеджер</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div><!--class="reviews__column column-reviews"-->	
-	</div><!--class="offer__content _container"-->	
+		   	</div>
+		</div>
+	</div>
 </section>
 
 <section class="contacts">
 	<div class="contacts__content _container">
 		<div class="contacts__content-columns">
 			<div class="contacts__content-row">
-
+ 
 				<div class="contacts__content-column">
-					<div class="contacts__content-item">
+					<div class="contacts__content-item"> 
 						<div class="contacts__content-image">
 							<iframe class="contacts__content-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1308.3306592858255!2d38.388426!3d49.017028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDAxJzAxLjIiTiAzOMKwMjMnMTYuOCJF!5e0!3m2!1suk!2sus!4v1598205851333!5m2!1suk!2sus" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 						</div>
@@ -313,32 +346,6 @@
 						</div>						
 					</div>
 				</div>
-
-
-				
-			<!-- <div class="contacts__column">
-				<div class="contacts__column-left">
-					<div class="contacts__column-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1308.3306592858255!2d38.388426!3d49.017028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDAxJzAxLjIiTiAzOMKwMjMnMTYuOCJF!5e0!3m2!1suk!2sus!4v1598205851333!5m2!1suk!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-					</div>
-				</div>
-				<div class="contacts__column-reight">
-					<h3 class="contacts__column-title">
-						Связатся с нами!
-					</h3>
-					<p class="contacts__column-description">
-						Заполните форму обратной связи и мы перезвоним Вам в близжайшее время.
-					</p>
-					<form class="contacts__column-form">
-						<input class="contacts__column-input" type="text" name="username" placeholder="Ваше имя">
-						<input class="contacts__column-input" type="number" name="phone" placeholder="Номер телефона">
-						<input class="contacts__column-input" type="text" name="email" placeholder="E-mail">
-						<input class="contacts__column-submit" type="submit" name="submit" value="отправить">
-					</form>
-					<p class="contacts__column-subdescription">
-						Ваши данные не будут переданы третьим лицам.
-					</p>
-				</div>	-->
 			</div>
 		</div>	
 	</div>
@@ -398,8 +405,7 @@
 		</div>
 	</div>	
 </footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/script.min.js"></script>
+		<script src="js/swiper.min.js"></script>	
+<script src="js/script.js"></script>	
 	</body>
 </html>
