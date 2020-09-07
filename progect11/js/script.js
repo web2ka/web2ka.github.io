@@ -1,5 +1,5 @@
 
- const slider = document.querySelector('.swiper1');
+ const slider = document.querySelector('.swiper-container');
 
 let mySwiper = new Swiper(slider, {
 
@@ -8,7 +8,7 @@ let mySwiper = new Swiper(slider, {
 
 })
 
- var galleryThumbs = new Swiper('.gallery-thumbs', {
+ /* var galleryThumbs = new Swiper('.gallery-thumbs', {
       slidesPerView: 3,
       freeMode: true,
       watchSlidesVisibility: true,
@@ -37,6 +37,7 @@ let mySwiper = new Swiper(slider, {
         swiper: galleryThumbs
       }
  });
+ */
 
 
 
