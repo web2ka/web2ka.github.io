@@ -122,7 +122,7 @@ const animItems = document.querySelectorAll("._anim-items");
 let rowTop 			= document.querySelector(".row-top");
 let rowTopHight 	= rowTop.offsetHeight;
 
-if (document.documentElement.clientWidth > 750){
+
 	if(animItems.length > 0) {
 		window.addEventListener('scroll', animOnScroll)
 		function animOnScroll (){
@@ -170,7 +170,7 @@ if (document.documentElement.clientWidth > 750){
 		}
 		animOnScroll();
 	}
-}
+
 
 
 function filter() {
