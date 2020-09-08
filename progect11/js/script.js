@@ -3,13 +3,19 @@
 
 let mySwiper = new Swiper(slider, {
 
-	slidesPerView: 2,
+	slidesPerView: 1,
 	spaceBetween: 10,
 
 	navigation: {
     	nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+        769: {
+            slidesPerView: 2,
+        }
+    }
 })
 
   /* var galleryThumbs = new Swiper('.gallery-thumbs', {
