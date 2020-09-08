@@ -2047,6 +2047,7 @@ a {
 
   .wrapper-discount {
     margin: 0 auto;
+    text-align: center;
   }
 
   .wrapper-discount__item {
