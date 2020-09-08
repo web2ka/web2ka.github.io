@@ -1,5 +1,5 @@
-
- const slider = document.querySelector('.swiper-container');
+	
+ const slider = document.querySelector('.swiper-container'); 
 
 let mySwiper = new Swiper(slider, {
 
@@ -18,36 +18,22 @@ let mySwiper = new Swiper(slider, {
     }
 })
 
-  /* var galleryThumbs = new Swiper('.gallery-thumbs', {
-      slidesPerView: 3,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
+  var galleryThumbs = new Swiper('.gallery-swip', {
+      slidesPerView: 1,
+      loop: true,
 
-    });
-
-
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+	  autoplay: {
+    	delay: 2500,
+   	 disableOnInteraction: false,
   },
 
+   pagination: {
+        el: '.swiper-pagination',
+   },
 
-      thumbs: {
-        swiper: galleryThumbs
-      }
+
  });
- */
+
 
 
 
