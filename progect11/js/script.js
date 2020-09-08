@@ -3,12 +3,16 @@
 
 let mySwiper = new Swiper(slider, {
 
-	slidesPerView: 3,
+	slidesPerView: 2,
 	spaceBetween: 10,
 
+	navigation: {
+    	nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
 
- /* var galleryThumbs = new Swiper('.gallery-thumbs', {
+  /* var galleryThumbs = new Swiper('.gallery-thumbs', {
       slidesPerView: 3,
       freeMode: true,
       watchSlidesVisibility: true,
@@ -112,11 +116,6 @@ function body_lock_add(delay) {
 }
 //=================
 
-
-
-
-
-
 const animItems = document.querySelectorAll("._anim-items");
 
 let rowTop 			= document.querySelector(".row-top");
@@ -131,7 +130,7 @@ let rowTopHight 	= rowTop.offsetHeight;
 				const animItemHeight = animItem.offsetHeight;
 				const animItemOffset = offset(animItem).top;
 
-				const animStart = 4;
+				const animStart = 7;
 
 				let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
