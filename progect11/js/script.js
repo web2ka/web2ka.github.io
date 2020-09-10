@@ -1,5 +1,5 @@
 	
- const slider = document.querySelector('.swiper-container'); 
+const slider = document.querySelector('.swiper-container'); 
 
 let mySwiper = new Swiper(slider, {
 
@@ -11,7 +11,7 @@ let mySwiper = new Swiper(slider, {
         prevEl: '.swiper-button-prev',
     },
 
-    breakpoints: {
+    breakpoints: {	
         769: {
             slidesPerView: 2,
         }
@@ -31,11 +31,7 @@ let mySwiper = new Swiper(slider, {
         el: '.swiper-pagination',
    },
 
-
  });
-
-
-
 
 //menu
 
