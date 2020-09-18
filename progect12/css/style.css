@@ -22,10 +22,7 @@ body {
 @font-face {
   font-family: 'AGGloria';
   src: url("../fonts/agglor.eot");
-  src: local("☺");
-  src: url("../fonts/agglor.woff") format("woff");
-  src: url("../fonts/agglor.ttf") format("truetype");
-  src: url("../fonts/agglor.svg") format("svg");
+  src: local("☺"), url("../fonts/agglor.woff") format("woff"), url("../fonts/agglor.ttf") format("truetype"), url("../fonts/agglor.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,10 +30,7 @@ body {
 @font-face {
   font-family: 'AGGloria';
   src: url("../fonts/agglob.eot");
-  src: local("☺");
-  src: url("../fonts/agglob.woff") format("woff");
-  src: url("../fonts/agglob.ttf") format("truetype");
-  src: url("../fonts/agglob.svg") format("svg");
+  src: local("☺"), url("../fonts/agglob.woff") format("woff"), url("../fonts/agglob.ttf") format("truetype"), url("../fonts/agglob.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -44,10 +38,7 @@ body {
 @font-face {
   font-family: 'Aggloriac';
   src: url("../fonts/aggloriac.eot");
-  src: local("☺");
-  src: url("../fonts/aggloriac.woff") format("woff");
-  src: url("../fonts/aggloriac.ttf") format("truetype");
-  src: url("../fonts/aggloriac.svg") format("svg");
+  src: local("☺"), url("../fonts/aggloriac.woff") format("woff"), url("../fonts/aggloriac.ttf") format("truetype"), url("../fonts/aggloriac.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -55,12 +46,57 @@ body {
 @font-face {
   font-family: 'Aggloriac';
   src: url("../fonts/aggloriac-bold.eot");
-  src: local("☺");
-  src: url("fonts/aggloriac-bold.woff") format("woff");
-  src: url("../fonts/aggloriac-bold.ttf") format("truetype");
-  src: url("../fonts/aggloriac-bold.svg") format("svg");
+  src: local("☺"), url("../fonts/aggloriac-bold.woff") format("woff"), url("../fonts/aggloriac-bold.ttf") format("truetype"), url("../fonts/aggloriac-bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue.eot");
+  src: local("☺"), url("../fonts/Baron Neue.woff") format("woff"), url("../fonts/Baron Neue.ttf") format("truetype"), url("../fonts/Baron Neue.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue Italic.eot");
+  src: local("☺"), url("../fonts/Baron Neue Italic.woff") format("woff"), url("../fonts/Baron Neue Italic.ttf") format("truetype"), url("../fonts/Baron Neue Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: Italic;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue Black.eot");
+  src: local("☺"), url("../fonts/Baron Neue Black.woff") format("woff"), url("../fonts/Baron Neue Black.ttf") format("truetype"), url("../fonts/Baron Neue Black.svg") format("svg");
+  font-weight: normal;
+  font-style: 900;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue Bold.eot");
+  src: local("☺"), url("../fonts/Baron Neue Bold.woff") format("woff"), url("../fonts/Baron Neue Bold.ttf") format("truetype"), url("../fonts/Baron Neue Bold.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue Black Italic.eot");
+  src: local("☺"), url("../fonts/Baron Neue Black Italic.woff") format("woff"), url("../fonts/Baron Neue Black Italic.ttf") format("truetype"), url("../fonts/Baron Neue Black Italic.svg") format("svg");
+  font-weight: 900;
+  font-style: Italic;
+}
+
+@font-face {
+  font-family: 'BaronNeue';
+  src: url("../fonts/Baron Neue Bold Italic.eot");
+  src: local("☺"), url("../fonts/Baron Neue Bold Italic.woff") format("woff"), url("../fonts/Baron Neue Bold Italic.ttf") format("truetype"), url("../fonts/Baron Neue Bold Italic.svg") format("svg");
+  font-weight: 700;
+  font-style: Italic;
 }
 
 .header {
@@ -89,7 +125,7 @@ body {
 }
 
 .header__languages-menu {
-  padding: 0px 28px;
+  padding: 0px 7px;
   list-style: none;
 }
 
@@ -99,7 +135,7 @@ body {
 }
 
 .header__languages-menu li :before {
-  padding: 0px 7px;
+  padding: 0px;
   color: #A5A5A5;
   content: "[\00a0";
 }
@@ -111,6 +147,7 @@ body {
 }
 
 .header__languages-menu li a {
+  font-family: "AGGloria", Sans-serif;
   color: #A5A5A5;
   text-decoration: none;
   /*	
@@ -134,6 +171,17 @@ body {
   padding: 71px 0px 0px 74px;
 }
 
+.index__img {
+  opacity: 0;
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.index__img._fixed {
+  opacity: 1;
+}
+
 .index__rabbit {
   padding: 121px 120px 0px 0px;
 }
@@ -141,12 +189,12 @@ body {
 .index__title {
   display: inline-block;
   width: 643px;
-  height: 160px;
+  height: 159px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 643px 160px;
+  background-size: 643px 159px;
   background-image: url("../img/index/fon.png");
-  padding: 22px 0px 0px 35px;
+  padding: 10px 0px 0px 35px;
 }
 
 .index__nav {
@@ -166,7 +214,7 @@ body {
 }
 
 .index-menu li :before {
-  padding: 0px 7px;
+  padding: 0px;
   color: #A5A5A5;
   content: "[\00a0";
 }
@@ -189,8 +237,9 @@ body {
 }
 
 .title {
-  font-family: "Aggloriac", Sans-serif;
-  font-size: 62px;
+  font-family: "BaronNeue", Sans-serif;
+  font-weight: 300;
+  font-size: 65px;
 }
 
 .contacts__title-content {
