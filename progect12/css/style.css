@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *,
 *:before,
 *:after {
@@ -15,24 +17,50 @@ body {
   font-size: 20px;
 }
 
+/* $font-family: "AGGloria", "Aggloriac"; */
+
+@font-face {
+  font-family: 'AGGloria';
+  src: url("../fonts/agglor.eot");
+  src: local("☺");
+  src: url("../fonts/agglor.woff") format("woff");
+  src: url("../fonts/agglor.ttf") format("truetype");
+  src: url("../fonts/agglor.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGGloria';
+  src: url("../fonts/agglob.eot");
+  src: local("☺");
+  src: url("../fonts/agglob.woff") format("woff");
+  src: url("../fonts/agglob.ttf") format("truetype");
+  src: url("../fonts/agglob.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Aggloriac';
   src: url("../fonts/aggloriac.eot");
-  src: url("../fonts/aggloriac.eot?#iefix") format("embedded-opentype"), url("../fonts/aggloriac.woff2") format("woff2"), url("../fonts/aggloriac.woff") format("woff"), url("../fonts/aggloriac.ttf") format("truetype"), url("../fonts/aggloriac.svg#Anton") format("svg");
-  font-weight: 400;
+  src: local("☺");
+  src: url("../fonts/aggloriac.woff") format("woff");
+  src: url("../fonts/aggloriac.ttf") format("truetype");
+  src: url("../fonts/aggloriac.svg") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-02DC;
 }
 
 @font-face {
   font-family: 'Aggloriac';
   src: url("../fonts/aggloriac-bold.eot");
-  src: url("../fonts/aggloriac-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/aggloriac-bold.woff2") format("woff2"), url("../fonts/aggloriac-bold.woff") format("woff"), url("../fonts/aggloriac-bold.ttf") format("truetype"), url("../fonts/aggloriac-bold.svg#Anton") format("svg");
+  src: local("☺");
+  src: url("fonts/aggloriac-bold.woff") format("woff");
+  src: url("../fonts/aggloriac-bold.ttf") format("truetype");
+  src: url("../fonts/aggloriac-bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-02DC;
 }
 
 .header {
@@ -150,6 +178,7 @@ body {
 }
 
 .index-menu li a {
+  font-family: "AGGloria", Sans-serif;
   color: #A5A5A5;
   text-decoration: none;
 }
@@ -160,7 +189,7 @@ body {
 }
 
 .title {
-  font-family: "Aggloriac";
+  font-family: "Aggloriac", Sans-serif;
   font-size: 62px;
 }
 
@@ -805,6 +834,30 @@ body {
 
 .about__img-four {
   padding-top: 590px;
+}
+
+.about__item-fife {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1920px 1596px;
+  background-image: url("../img/about/big__fon_two.png");
+}
+
+.about__item-fife-description {
+  font-size: 80px;
+  text-align: right;
+  line-height: 106px;
+}
+
+.about__item-content-fife {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 280px;
+  padding-top: 200px;
 }
 
 .white {
