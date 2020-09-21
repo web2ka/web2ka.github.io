@@ -108,8 +108,6 @@ const animItems = document.querySelectorAll("._anim-items");
 
 //let rowTop 			= document.querySelector(".row-top");
 //let rowTopHight 	= rowTop.offsetHeight;
-console.log(animItems);
-
 
 	if(animItems.length > 0) {
 		window.addEventListener('scroll', animOnScroll)
@@ -119,7 +117,7 @@ console.log(animItems);
 				const animItemHeight = animItem.offsetHeight;
 				const animItemOffset = offset(animItem).top;
 
-				const animStart = 7;
+				const animStart = 4;
 
 				let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
