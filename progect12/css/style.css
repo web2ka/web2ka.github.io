@@ -290,9 +290,6 @@ body._lock {
 }
 
 .menu__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 150px 20px 30px 20px;
   display: none;
   position: fixed;
