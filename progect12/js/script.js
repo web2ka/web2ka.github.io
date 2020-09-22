@@ -32,7 +32,7 @@ let mySwiper = new Swiper(slider, {
    },
 
  }); */
-
+ 
 //menu
 
 let unlock = true;
