@@ -501,6 +501,23 @@ body._lock {
   background: url("../img/contacts/fon.png") bottom/100% auto no-repeat;
 }
 
+.contact-page__img-footer {
+  opacity: 0;
+  -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.contact-page__img-footer._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .contact-page__img-footer img {
   max-width: 100%;
   display: block;
@@ -807,6 +824,7 @@ body._lock {
 }
 
 .teem {
+  background-color: #000;
   overflow: hidden;
 }
 
@@ -828,32 +846,19 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #c11115;
+  background-color: #ca4115;
 }
 
-/*	background-color: #000;
-
-	&__body {
-		display: flex;
-		justify-content: space-between;
-		padding: 50px 0px 0px 0px;	
-		position: relative;	
-
-		@media (max-width: $md3 + px) {
-			flex-direction: column-reverse;
-			padding: 30px 0px 180px 0px;	
-		}
-	}
-
-	&__column {
+/*&__column {
 		text-align: right;
 
 		@media (max-width: $md3 + px) {
 			text-align: left;
 		}
 	}
+}
 
-	&__img {
+/*	&__img {
 		padding: 0px 170px 0px 0px;
 		opacity: 0;
 		transform: translate(120%, 0px);
@@ -880,7 +885,8 @@ body._lock {
 			max-width: 100%;
 			}
 		}
-
+	}
+/*
 	&__title {
 		padding: 350px 0px 20px 0px;
 
@@ -908,7 +914,7 @@ body._lock {
 			padding: 0px 70px 0px 0px;
 		}
 	}
-
+} /*
 	&__slogan {
 		position:absolute;
 		bottom: 20px;
@@ -934,7 +940,8 @@ body._lock {
 			color: #707070;
 		}
 	}
-
+}
+/*
 	&__avalar {
 		max-width: 1070px;
 		position:absolute;
@@ -1957,6 +1964,20 @@ body._lock {
 
 .contacts__img {
   margin: 270px 0px 120px 0px;
+  opacity: 0;
+  -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.contacts__img._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .contacts__img img {
