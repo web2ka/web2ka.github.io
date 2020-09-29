@@ -476,8 +476,9 @@ body._lock {
 }
 
 .contact-page__header {
+  position: relative;
   background-color: #000;
-  min-height: 100vh;
+  min-height: 82vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +514,7 @@ body._lock {
 
 .contact-page__title {
   text-align: center;
-  padding: 500px 0px 20px 200px;
+  padding: 400px 0px 20px 200px;
 }
 
 .contact-page__geometry {
@@ -521,6 +522,26 @@ body._lock {
 }
 
 .contact-page__geometry img {
+  max-width: 100%;
+}
+
+.contact-page__slogan {
+  position: absolute;
+  bottom: 50px;
+  right: 250px;
+}
+
+.contact-page__slogan h2 {
+  color: #707070;
+}
+
+.contact-page__avalar {
+  position: absolute;
+  top: 75%;
+  right: 0;
+}
+
+.contact-page__avalar img {
   max-width: 100%;
 }
 
@@ -582,267 +603,6 @@ body._lock {
 .contact__statue img {
   max-width: 100%;
 }
-
-/*
-	&__body {
-		display: flex;
-		justify-content: space-between;
-		padding: 70px 0px 0px 0px;	
-		position: relative;
-
-		@media (max-width: $md3 + px) {
-			flex-direction: column-reverse;
-			padding: 30px 0px 100px 0px;	
-		}
-	}
-
-	&__column {
-		text-align: right;
-
-		@media (max-width: $md3 + px) {
-			text-align: center;
-		}
-	}
-
-	&__img {
-		padding: 0px 170px 0px 0px;
-		opacity: 0;
-		transform: translate(120%, 0px);
-		transition: all 2.9s ease 0s;
-
-		@media (max-width: 1440px) {
-			padding: 0px 0px 0px 0px;
-		}
-
-		@media (max-width: $md3 + px) {
-			padding: 0px 50px 0px 50px;
-		}
-
-		@media (max-width: $md4 + px) {
-			padding: 0px 30px 0px 30px;
-		}
-
-		&._fixed {
-			transform: translate(0px, 0px);
-			opacity: 1;
-		}
-
-		& img {	
-			max-width: 100%;
-			}
-		}
-
-	&__title {
-		padding: 350px 0px 20px 0px;
-
-		&  h2 {
-			@include adaptiv-font(65, 40);
-		}
-
-		@media (max-width: $md3 + px) {
-			padding: 30px 0px 15px 0px;
-		}
-
-		@media (max-width: $md4 + px) {
-			padding: 20px 0px 10px 0px;
-		}
-	}
-
-	&__geometry img{
-		max-width: 100%;
-
-		@media (max-width: $md3 + px) {
-			padding: 0px 0px 0px 70px;
-		}
-	}
-
-	&__slogan {
-		position:absolute;
-		bottom: 420px;
-		right: 120px;
-
-		@media (max-width: 1440px) {
-			bottom: 370px;
-			right: 50px;
-		}
-
-		@media (max-width: $md2 + px) {
-			bottom: 150px;
-			right: 50px;
-		}
-
-		@media (max-width: $md3 + px) {
-			bottom: 20px;
-		}
-
-		& h2 {
-			@include adaptiv-font(117, 29);
-			color: #707070;
-		}
-	}
-
-	&__avalar {
-		position:absolute;
-		bottom: 200px;
-		right: 0px;
-
-		@media (max-width: 1440px) {
-			bottom: 300px;
-		}
-
-		@media (max-width: $md2 + px) {
-			bottom: 100px;
-		}
-
-		@media (max-width: $md3 + px) {
-			bottom: 10px;
-		}
-
-		@media (max-width: $md4 + px) {
-		
-		}
-
-		@media (max-width: $minWidth + px) {
-			
-		}
-
-		& img{
-			max-width: 100%;
-			padding: 0px 0px 0px 200px;
-
-			@media (max-width: $md3 + px) {
-				padding: 0px 0px 0px 0px;
-			}
-		}
-	}
-}
-
-
-.content-contacts {
-	padding: 200px;
-}
-
-
-	&__title-content {
-		display: flex;
-		justify-content: space-between;
-		position:relative;
-		margin-top: 240px;
-	}
-
-	&__avalar {
-		position:absolute;
-		right: 0;
-		bottom: 150px;
-	}
-
-	&__agency {
-		position:absolute;
-		font-size: 117px;
-		color:#707070;
-		right:120px;
-		bottom: 180px;
-	}
-
-	&__title {
-		margin-top: 350px;
-		font-size: 65px;
-		text-align: right;
-		color:#fff;
-		display: inline-block;
-		width: 710px; 	
-		height: 268px;
-		background-position: bottom;
-		background-repeat: no-repeat;
-		background-size: 710px 198px;
-		background-image: url("../img/contacts/fon_top.png");
-		padding: 0px 0px 0px 35px;
-	}
-
-	&__img {
-		padding-right: 160px;
-	}
-
-
-	&__slogan {
-		color: #fff;
-		font-size: 26px;
-		padding:0px 0px 40px 284px;
-	}
-
-	&__contacts {
-		font-size: 81px;
-		padding:140px 0px 0px 284px;
-	}
-
-	&__phone a{
-		display: inline-block;
-		color: #fff;
-  		text-decoration: none;
-  		font-size: 81px;
-		padding:0px 0px 215px 284px;
-	}
-
-	&__mail a{
-			
-		font-weight: 300;
-		display: inline-block;
-		color: #fff;
-  		text-decoration: none;
-  		font-size: 81px;
-		padding:0px 0px 215px 284px;
-	}
-
-	&__sicial-menu{
-		margin-left: 70px;
-		text-align: left;
-		padding: 100px 0px;
-  		list-style: none;
-		
-		& li {	
-			display: inline;
-  			font-size: 40px;
-  			padding-bottom: 21px;
-  			padding-left: 270px;
-
-  			& :before {
-	 			padding: 0px 7px;
-	  			color: #A5A5A5;
-	  			content: "[\00a0";
-			}
-
-  			& :after {
- 				padding: 7px;
-  				color: #A5A5A5;
-  				content: "]\00a0";
-			}
-
-			& a {
-				color: #A5A5A5;
-  				text-decoration: none;
-
-			}
-		}
-	}
-
-	&__image {
-		max-width: 100%;
-		position: relative;
-		display: inline-block;
-		background-position: bottom;	
-		background-repeat: no-repeat;
-		background-size: 1920px 774px;
-		background-image: url("../img/contacts/fon.png");
-	}
-
-	&__avalar {
-		max-width: 100%;
-		position: absolute;
-		bottom:0;
-		right: 0;
-	}
-}
-*/
 
 .footer {
   background-color: #000;
@@ -2390,6 +2150,14 @@ body._lock {
         flex-wrap: nowrap;
   }
 
+  .contact-page__title {
+    font-size: calc(40px + 25 * (100vw / 1920));
+  }
+
+  .contact-page__slogan h2 {
+    font-size: calc(29px + 88 * (100vw / 1920));
+  }
+
   .teem__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2531,6 +2299,15 @@ body._lock {
 
   .title {
     font-size: 45px;
+  }
+
+  .contact-page__title {
+    padding: 300px 0px 20px 150px;
+  }
+
+  .contact-page__slogan {
+    bottom: 50px;
+    right: 50px;
   }
 
   .footer__body {
@@ -2703,8 +2480,42 @@ body._lock {
             align-items: center;
   }
 
+  .contact-page__row-header-column_one {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .contact-page__row-header-column_two {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .contact-page__title {
+    font-size: calc(40px + 42.5 * ((100vw - 375px) / 1920));
+  }
+
+  .contact-page__title {
+    padding: 30px 0px 30px 0px;
+  }
+
   .contact-page__geometry {
-    padding: 0px 90px 100px 0px;
+    padding: 0px 0px 70px 90px;
+  }
+
+  .contact-page__slogan h2 {
+    font-size: calc(29px + 149.6 * ((100vw - 375px) / 1920));
+  }
+
+  .contact-page__slogan {
+    bottom: -200px;
+    right: 10px;
+  }
+
+  .contact-page__avalar {
+    top: 100%;
+    right: 0;
   }
 
   .footer__body {
@@ -3005,6 +2816,20 @@ body._lock {
     content: "]";
   }
 
+  .contact-page__title {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .contact-page__slogan {
+    bottom: -60px;
+    right: 10px;
+  }
+
+  .contact-page__avalar {
+    top: 100%;
+    right: 0;
+  }
+
   .footer__body {
     padding: 20px 20px;
   }
@@ -3032,7 +2857,7 @@ body._lock {
   }
 
   .portfolio__title {
-    padding: 0px 30px 70px 0px;
+    padding: 0px 30px 50px 0px;
     line-height: 60px;
   }
 
