@@ -21,7 +21,12 @@
 		<div class="index__wrapper">
 			
 			<div class="index__img _anim-items _anim-no-hide">
-				<img src="img/index/rabbit.png" alt="rabbit">
+				
+				<picture>
+					<source srcset="img/index/rabbit.png" type="image/png" media="(min-width:1440px)">
+					<source srcset="img/index/rabbit_min.png" type="image/png" media="(max-width:1440px)">	
+					<img src="img/index/rabbit.png" alt="rabbit">
+				</picture>
 			</div>
 
 			<diw class="index__title title">
@@ -42,7 +47,6 @@
 				<li><a href="team.html">команда</a></li>
 				<li><a href="contacts.html">контакти</a></li>
 			</ul>
-
 		</div>	
 	</div>
 </section>

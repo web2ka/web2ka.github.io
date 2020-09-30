@@ -347,6 +347,7 @@ body._lock {
 }
 
 .index {
+  background-color: #000;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,6 +414,7 @@ body._lock {
 }
 
 .index__title {
+  color: #000;
   display: inline-block;
   position: relative;
   z-index: 5;
@@ -1487,6 +1489,7 @@ body._lock {
 }
 
 .about__header {
+  position: relative;
   background-color: #000;
   min-height: 100vh;
   display: -webkit-box;
@@ -1496,7 +1499,6 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 .about__header-fullscreen {
@@ -1505,6 +1507,107 @@ body._lock {
   display: -ms-flexbox;
   display: flex;
   background-color: #ca4115;
+}
+
+.about__row-header {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.about__row-header-column-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.about__row-header-column-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.about__title {
+  padding: 0px 0px 30px 0px;
+  display: inline-block;
+  text-align: left;
+}
+
+.about__geometry {
+  padding: 0px 0px 100px 0px;
+  margin: -40px 0px 0px 0px;
+}
+
+.about__geometry img {
+  max-width: 100%;
+}
+
+.about__subtitle {
+  color: #000;
+  position: relative;
+  z-index: 3;
+  font-family: "AGGloria", Sans-serif;
+}
+
+.about__img-header {
+  opacity: 0;
+  -webkit-transform: translate(-120%, 0px);
+      -ms-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+  margin: 0px 0px 0px 50px;
+}
+
+.about__img-header._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.about__img-header img {
+  max-width: 100%;
+}
+
+.about__slogan {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.about__slogan h2 {
+  color: #707070;
+}
+
+.about__avalar {
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
+}
+
+.about__avalar img {
+  max-width: 100%;
 }
 
 .contacts {
@@ -2214,6 +2317,22 @@ body._lock {
     font-size: calc(14px + 12 * (100vw / 1920));
   }
 
+  .about__row-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .about__subtitle {
+    font-size: calc(19px + 13 * (100vw / 1920));
+  }
+
+  .about__slogan h2 {
+    font-size: calc(29px + 38 * (100vw / 1920));
+  }
+
   .contacts__slogan {
     font-size: calc(14px + 16 * (100vw / 1920));
   }
@@ -2366,6 +2485,11 @@ body._lock {
 
   .portfolio__item-img {
     padding: 0px 0px 300px 0px;
+  }
+
+  .about__avalar {
+    bottom: -100px;
+    right: 0px;
   }
 
   .contacts {
@@ -2698,6 +2822,38 @@ body._lock {
     padding: 0px 0px 100px 0px;
   }
 
+  .about__row-header-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about__subtitle {
+    font-size: calc(19px + 22.1 * ((100vw - 375px) / 1920));
+  }
+
+  .about__img-header {
+    margin: 0px -50px 0px -50px;
+    padding: 90px 0px 30px 0px;
+  }
+
+  .about__slogan h2 {
+    font-size: calc(29px + 64.6 * ((100vw - 375px) / 1920));
+  }
+
+  .about__slogan {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+
+  .about__avalar {
+    bottom: -70px;
+    right: 0px;
+  }
+
   .contacts {
     padding: 40px 40px 0px 40px;
   }
@@ -2902,6 +3058,11 @@ body._lock {
 
   .portfolio__avalar-content img {
     padding: 0px 0px 100px 0px;
+  }
+
+  .about__avalar {
+    bottom: -20px;
+    right: 0px;
   }
 
   .contacts {
