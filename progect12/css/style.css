@@ -1725,7 +1725,7 @@ body._lock {
 }
 
 .about-item-two {
-  padding: 200px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 .about-item-two__row {
@@ -1848,6 +1848,131 @@ body._lock {
 .about-item-two__logo {
   text-align: left;
   line-height: 50px;
+}
+
+.about-item-three {
+  position: relative;
+  background: url("../img/about/big__fon_two.png") top/100% 100% no-repeat;
+  padding: 170px 0px 0px 0px;
+}
+
+.about-item-three__avalar {
+  padding: 0px 100px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.about-item-three__avalar img {
+  max-width: 100%;
+}
+
+.about-item-three__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.about-item-three__column_one {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.about-item-three__column_two {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.about-item-three__img {
+  opacity: 0;
+  -webkit-transform: translate(-120%, 0px);
+      -ms-transform: translate(-120%, 0px);
+          transform: translate(-120%, 0px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+  margin: 0px 0px -300px 0px;
+}
+
+.about-item-three__img._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.about-item-three__img img {
+  max-width: 100%;
+}
+
+.about-item-three__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 100%;
+  opacity: 0;
+  -webkit-transform: translate(0%, 120px);
+      -ms-transform: translate(0%, 120px);
+          transform: translate(0%, 120px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.about-item-three__wrapper._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.about-item-three__title {
+  color: #000;
+  padding: 0px 0px 70px 0px;
+  text-align: right;
+}
+
+.about-item-three__description {
+  color: #000;
+  text-align: right;
+  line-height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.about-item-three__logo {
+  color: #000;
+  text-align: right;
+  padding: 30px 0px 0px 0px;
+}
+
+.about-item-three__logo-send {
+  font-family: "AGGloria", Sans-serif;
+}
+
+.about-item-three__logo-arrow {
+  text-align: right;
+  margin: 0px -40px 0px 0px;
+}
+
+.about-item-three__logo-arrow img {
+  max-width: 100%;
 }
 
 .contacts {
@@ -2626,6 +2751,33 @@ body._lock {
     font-size: calc(14px + 12 * (100vw / 1920));
   }
 
+  .about-item-three__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .about-item-three__title {
+    font-size: calc(40px + 40 * (100vw / 1920));
+  }
+
+  .about-item-three__description {
+    font-size: calc(14px + 12 * (100vw / 1920));
+  }
+
+  .about-item-three__logo-avalar {
+    font-size: calc(30px + 27 * (100vw / 1920));
+  }
+
+  .about-item-three__logo-send {
+    font-size: calc(12px + 9 * (100vw / 1920));
+  }
+
   .contacts__slogan {
     font-size: calc(14px + 16 * (100vw / 1920));
   }
@@ -2693,6 +2845,14 @@ body._lock {
 
   .portfolio__avalar-content img {
     padding: 0px 0px 0px 250px;
+  }
+
+  .about-item-three {
+    margin: 150px 0px 0px 0px;
+  }
+
+  .about-item-three__img {
+    margin: 0px 0px -200px 0px;
   }
 }
 
@@ -2798,7 +2958,7 @@ body._lock {
   }
 
   .about-item-two {
-    padding: 150px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
   .about-item-two__title {
@@ -2810,6 +2970,22 @@ body._lock {
   }
 
   .about-item-two__logo {
+    line-height: 40px;
+  }
+
+  .about-item-three {
+    padding: 100px 0px 0px 0px;
+  }
+
+  .about-item-three__img {
+    margin: 0px 0px -150px 0px;
+  }
+
+  .about-item-three__title {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .about-item-three__description {
     line-height: 40px;
   }
 
@@ -3292,6 +3468,59 @@ body._lock {
     line-height: 30px;
   }
 
+  .about-item-three {
+    padding: 90px 40px 0px 0px;
+  }
+
+  .about-item-three__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about-item-three__column_one {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .about-item-three__column_two {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .about-item-three__img {
+    margin: 0px 0px -170px 0px;
+  }
+
+  .about-item-three__title {
+    font-size: calc(40px + 68 * ((100vw - 375px) / 1920));
+  }
+
+  .about-item-three__title {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .about-item-three__description {
+    font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .about-item-three__description {
+    line-height: 30px;
+  }
+
+  .about-item-three__logo-avalar {
+    font-size: calc(30px + 45.9 * ((100vw - 375px) / 1920));
+  }
+
+  .about-item-three__logo-send {
+    font-size: calc(12px + 15.3 * ((100vw - 375px) / 1920));
+  }
+
   .contacts {
     padding: 40px 40px 0px 40px;
   }
@@ -3528,6 +3757,26 @@ body._lock {
   }
 
   .about-item-two__logo {
+    line-height: 25px;
+  }
+
+  .about-item-three__avalar {
+    left: -20px;
+  }
+
+  .about-item-three {
+    padding: 70px 40px 0px 0px;
+  }
+
+  .about-item-three__img {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .about-item-three__title {
+    padding: 0px 0px 30px 0px;
+  }
+
+  .about-item-three__description {
     line-height: 25px;
   }
 
