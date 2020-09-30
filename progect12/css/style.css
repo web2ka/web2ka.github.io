@@ -1491,7 +1491,7 @@ body._lock {
 .about__header {
   position: relative;
   background-color: #000;
-  min-height: 100vh;
+  min-height: 82vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2822,6 +2822,15 @@ body._lock {
     padding: 0px 0px 100px 0px;
   }
 
+  .about__row-header-column-one {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .about__row-header-column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -2829,6 +2838,11 @@ body._lock {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0px 0px 0px 50px;
+  }
+
+  .about__geometry {
+    margin: 0px 0px 0px 0px;
   }
 
   .about__subtitle {
@@ -2836,21 +2850,15 @@ body._lock {
   }
 
   .about__img-header {
-    margin: 0px -50px 0px -50px;
-    padding: 90px 0px 30px 0px;
+    padding: 30px 30px 30px 0px;
   }
 
   .about__slogan h2 {
     font-size: calc(29px + 64.6 * ((100vw - 375px) / 1920));
   }
 
-  .about__slogan {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-
   .about__avalar {
-    bottom: -70px;
+    bottom: 30px;
     right: 0px;
   }
 
@@ -3061,7 +3069,7 @@ body._lock {
   }
 
   .about__avalar {
-    bottom: -20px;
+    bottom: 20px;
     right: 0px;
   }
 
