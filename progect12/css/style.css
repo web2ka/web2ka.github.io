@@ -1776,6 +1776,29 @@ body._lock {
   max-width: 100%;
 }
 
+.about-item-two__img-mobile {
+  padding: 50px 0px;
+  background: url("../img/about/arrows.png") 100% 100%/auto 100% no-repeat;
+}
+
+.about-item-two__img-mobile img {
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transform: translate(120%, 0px);
+      -ms-transform: translate(120%, 0px);
+          transform: translate(120%, 0px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.about-item-two__img-mobile img._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .about-item-two__img-fon {
   margin: 100px 0px 0px 0px;
 }
@@ -1793,6 +1816,20 @@ body._lock {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  opacity: 0;
+  -webkit-transform: translate(0%, 120px);
+      -ms-transform: translate(0%, 120px);
+          transform: translate(0%, 120px);
+  -webkit-transition: all 2.9s ease 0s;
+  -o-transition: all 2.9s ease 0s;
+  transition: all 2.9s ease 0s;
+}
+
+.about-item-two__wrapper._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .about-item-two__title {
@@ -2573,6 +2610,10 @@ body._lock {
             justify-content: flex-end;
   }
 
+  .about-item-two__img-mobile {
+    display: none;
+  }
+
   .about-item-two__title {
     font-size: calc(40px + 40 * (100vw / 1920));
   }
@@ -2765,6 +2806,10 @@ body._lock {
   }
 
   .about-item-two__description {
+    line-height: 40px;
+  }
+
+  .about-item-two__logo {
     line-height: 40px;
   }
 
@@ -3197,7 +3242,12 @@ body._lock {
   }
 
   .about-item-two {
-    padding: 90px 40px 0px 0px;
+    padding: 90px 0px 0px 40px;
+  }
+
+  .about-item-two__column_two {
+    margin: 0px 0px 0px 0px;
+    display: none;
   }
 
   .about-item-two__column {
@@ -3210,7 +3260,8 @@ body._lock {
   }
 
   .about-item-two__img {
-    margin: 0px 0px 0px -100px;
+    margin: 0px 0px 0px 0px;
+    display: none;
   }
 
   .about-item-two__img-fon {
@@ -3235,6 +3286,10 @@ body._lock {
 
   .about-item-two__logo {
     font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .about-item-two__logo {
+    line-height: 30px;
   }
 
   .contacts {
@@ -3461,7 +3516,7 @@ body._lock {
   }
 
   .about-item-two {
-    padding: 70px 40px 0px 0px;
+    padding: 70px 0px 0px 40px;
   }
 
   .about-item-two__title {
@@ -3469,6 +3524,10 @@ body._lock {
   }
 
   .about-item-two__description {
+    line-height: 25px;
+  }
+
+  .about-item-two__logo {
     line-height: 25px;
   }
 
