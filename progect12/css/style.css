@@ -606,6 +606,23 @@ body._lock {
   max-width: 100%;
 }
 
+.contacts__column__item-text_transform {
+  opacity: 0;
+  -webkit-transform: translate(0%, 70%);
+      -ms-transform: translate(0%, 70%);
+          transform: translate(0%, 70%);
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
+}
+
+.contacts__column__item-text_transform._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .footer {
   background-color: #000;
   overflow: hidden;
@@ -756,6 +773,23 @@ body._lock {
 
 .teem-content {
   background-color: #fff;
+}
+
+.teem-content__item-text_transform {
+  opacity: 0;
+  -webkit-transform: translate(0%, 60%);
+      -ms-transform: translate(0%, 60%);
+          transform: translate(0%, 60%);
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
+}
+
+.teem-content__item-text_transform._fixed {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .teem-content__top {
@@ -1316,9 +1350,9 @@ body._lock {
   -webkit-transform: translate(120%, 0px);
       -ms-transform: translate(120%, 0px);
           transform: translate(120%, 0px);
-  -webkit-transition: all 2.9s ease 0s;
-  -o-transition: all 2.9s ease 0s;
-  transition: all 2.9s ease 0s;
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
 }
 
 .cooperation__header_img._fixed {
@@ -1529,20 +1563,27 @@ body._lock {
           justify-content: center;
 }
 
-.cooperation__column-item_six {
+.cooperation__column {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cooperation__item-text_transform {
   opacity: 0;
-  -webkit-transform: translate(0%, 120%);
-      -ms-transform: translate(0%, 120%);
-          transform: translate(0%, 120%);
-  -webkit-transition: all 2.9s ease 0s;
-  -o-transition: all 2.9s ease 0s;
-  transition: all 2.9s ease 0s;
+  -webkit-transform: translate(0%, 60%);
+      -ms-transform: translate(0%, 60%);
+          transform: translate(0%, 60%);
+  -webkit-transition: all 1.9s ease 0s;
+  -o-transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0s;
 }
 
 .cooperation__item-text_transform._fixed {
@@ -1571,9 +1612,12 @@ body._lock {
   color: #000;
 }
 
+.cooperation__item-text_two {
+  margin: 0px 0px 50px 300px;
+}
+
 .cooperation__item-text_six {
-  -ms-flex-item-align: center;
-      align-self: center;
+  text-align: center;
   max-width: 1000px;
 }
 
@@ -1596,6 +1640,11 @@ body._lock {
   font-size: 30px;
 }
 
+.cooperation__checkbox_two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .text {
   font-family: "AGGloria", Sans-serif;
   line-height: 50px;
@@ -1609,6 +1658,50 @@ body._lock {
 
 .placeholder h2 {
   text-align: right;
+}
+
+.placeholder_white {
+  color: #fff;
+  padding: 0px 0px 50px 300px;
+}
+
+.placeholder_white h2 {
+  text-align: left;
+}
+
+.form-checkbox {
+  position: relative;
+  z-index: 2;
+  padding: 0px 0px 10px 300px;
+}
+
+.form-checkbox p {
+  font-family: "AGGloria", Sans-serif;
+  color: #000;
+}
+
+.form-fon_one {
+  margin: -140px 0px 0px 0px;
+}
+
+.form-fon_one img {
+  max-width: 100%;
+}
+
+.form-fon_two {
+  margin: -170px 0px 0px 0px;
+}
+
+.form-fon_two img {
+  max-width: 100%;
+}
+
+.form-fon_three {
+  margin: -200px 0px 0px 0px;
+}
+
+.form-fon_three img {
+  max-width: 100%;
 }
 
 .about {
@@ -2697,6 +2790,10 @@ body._lock {
     font-size: calc(14px + 12 * (100vw / 1920));
   }
 
+  .form-checkbox p {
+    font-size: calc(14px + 12 * (100vw / 1920));
+  }
+
   .about__row-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3594,6 +3691,10 @@ body._lock {
   }
 
   .placeholder {
+    font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .form-checkbox p {
     font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
   }
 
