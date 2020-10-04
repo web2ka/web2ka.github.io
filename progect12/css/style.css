@@ -1450,7 +1450,7 @@ body._lock {
 .cooperation__item-four {
   height: 100%;
   width: 100%;
-  background: url("../img/cooperation/fon_four_bl.png") bottom/100% auto no-repeat, url("../img/cooperation/fon_four.png") top/100% 100% no-repeat;
+  background: url("../img/cooperation/fon_four_bl.png") bottom/100% auto no-repeat, url("../img/cooperation/fon_four.png") top/100% auto no-repeat;
   position: relative;
   z-index: 2;
   margin: -300px 0px 0px 0px;
@@ -3882,6 +3882,10 @@ body._lock {
     padding: 0px 0px 0px 0px;
   }
 
+  .cooperation__item-text_two {
+    margin: 0px 0px 50px 60px;
+  }
+
   .cooperation__input {
     padding: 0px 0px 0px 100px;
   }
@@ -3892,6 +3896,11 @@ body._lock {
     margin: 5px 0px 0px 0px;
     border-bottom: 1px solid #000;
     font-size: 20px;
+  }
+
+  .cooperation__checkbox_two {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 
   .text {
@@ -3907,8 +3916,31 @@ body._lock {
     font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
   }
 
+  .placeholder_white {
+    padding: 0px 0px 10px 60px;
+  }
+
   .form-checkbox p {
     font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .form-checkbox {
+    padding: 0px 0px 10px 60px;
+  }
+
+  .form-fon_one {
+    margin: -100px 0px 0px 0px;
+    padding: 0px 200px 0px 0px;
+  }
+
+  .form-fon_two {
+    margin: -120px 0px 0px 0px;
+    padding: 0px 200px 0px 0px;
+  }
+
+  .form-fon_three {
+    margin: -140px 0px 0px 0px;
+    padding: 0px 200px 0px 0px;
   }
 
   .about__row-header-column-one {
@@ -4548,6 +4580,10 @@ body._lock {
     padding: 0px 0px 0px 20px;
   }
 
+  .cooperation__item-text_two {
+    margin: 0px 0px 50px 30px;
+  }
+
   .cooperation__input {
     padding: 0px 20px 0px 150px;
   }
@@ -4565,8 +4601,43 @@ body._lock {
     padding: 10px 20px 0px 20px;
   }
 
+  .placeholder_white {
+    padding: 0px 0px 10px 30px;
+  }
+
   .placeholder {
     line-height: 18px;
+  }
+
+  .form-checkbox {
+    padding: 0px 0px 10px 30px;
+  }
+
+  .form-fon_one {
+    margin: -80px 0px 0px 0px;
+    padding: 0px 100px 0px 0px;
+  }
+
+  .form-fon_one img {
+    height: 110px;
+  }
+
+  .form-fon_two {
+    margin: -105px 0px 0px 0px;
+    padding: 0px 100px 0px 0px;
+  }
+
+  .form-fon_two img {
+    height: 130px;
+  }
+
+  .form-fon_three {
+    margin: -130px 0px 0px 0px;
+    padding: 0px 100px 0px 0px;
+  }
+
+  .form-fon_three img {
+    height: 150px;
   }
 
   .about__avalar {
