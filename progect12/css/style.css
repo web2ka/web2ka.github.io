@@ -1450,7 +1450,7 @@ body._lock {
 .cooperation__item-four {
   height: 100%;
   width: 100%;
-  background: url("../img/cooperation/fon_four_bl.png") bottom/100% auto no-repeat, url("../img/cooperation/fon_four.png") top/100% auto no-repeat;
+  background: url("../img/cooperation/fon_four_bl.png") bottom/100% auto no-repeat, url("../img/cooperation/fon_four.png") top/100% 100% no-repeat;
   position: relative;
   z-index: 2;
   margin: -300px 0px 0px 0px;
@@ -3824,6 +3824,14 @@ body._lock {
     margin: 0px 0px 0px 0px;
   }
 
+  .cooperation__item-six {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .cooperation__item-seven_img {
+    padding: 0px 0px 0px 0px;
+  }
+
   .cooperation__item-nine_img {
     padding: 150px 0px 0px 0px;
   }
@@ -3867,6 +3875,10 @@ body._lock {
         -ms-flex-order: 1;
             order: 1;
     background-color: #fff;
+  }
+
+  .cooperation__column-item_eight {
+    display: none;
   }
 
   .cooperation__item-title {
@@ -4546,12 +4558,12 @@ body._lock {
   }
 
   .cooperation__item-ten {
-    padding: 220px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
     background: url("../img/cooperation/arrows_little.png") 95% 100%/114px 108px no-repeat, url("../img/cooperation/fon_ten_bl.png") top/100% auto no-repeat, url("../img/cooperation/fon_ten.png") bottom/100% auto no-repeat;
   }
 
   .cooperation__item-ten_img {
-    padding: 30px 0px 0px 30px;
+    padding: 0px 0px 0px 30px;
     margin: 0px 0px 0px 0px;
   }
 
@@ -4615,7 +4627,7 @@ body._lock {
 
   .form-fon_one {
     margin: -80px 0px 0px 0px;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 80px 0px 0px;
   }
 
   .form-fon_one img {
@@ -4624,7 +4636,7 @@ body._lock {
 
   .form-fon_two {
     margin: -105px 0px 0px 0px;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 80px 0px 0px;
   }
 
   .form-fon_two img {
@@ -4633,7 +4645,7 @@ body._lock {
 
   .form-fon_three {
     margin: -130px 0px 0px 0px;
-    padding: 0px 100px 0px 0px;
+    padding: 0px 80px 0px 0px;
   }
 
   .form-fon_three img {
