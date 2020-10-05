@@ -340,6 +340,12 @@ body._lock {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.menu__body li a {
+  font-family: "AGGloria", Sans-serif;
+  color: #A5A5A5;
+  text-decoration: none;
+}
+
 .menu__body._active {
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
@@ -349,18 +355,23 @@ body._lock {
 
 .menu__page {
   margin: 100px 0px 0px 0px;
+  line-height: 40px;
   text-align: center;
   list-style: none;
 }
 
 .menu__page li {
-  line-height: 50px;
-  padding-bottom: 20px;
+  height: 50px;
+  padding: 0px 0px 150px 0px;
+  line-height: 35px;
+  padding-bottom: 50px;
 }
 
 .menu__page li a:hover {
-  line-height: 50px;
   color: #000;
+  padding: 0px 40px 15px 0px;
+  margin: 0px -40px 0px 0px;
+  background: url("../img/header/left.png") 100% 25% no-repeat;
 }
 
 .index {
@@ -1544,7 +1555,7 @@ body._lock {
 
 .cooperation__item-nine {
   width: 100%;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 150px 0px;
 }
 
 .cooperation__item-nine_img {
@@ -2793,7 +2804,7 @@ body._lock {
   }
 
   .menu__page li {
-    font-size: calc(15px + 7 * (100vw / 1920));
+    font-size: calc(15px + 5 * (100vw / 1920));
   }
 
   .menu__page li a:hover {
@@ -3540,7 +3551,7 @@ body._lock {
   }
 
   .menu__page li {
-    font-size: calc(15px + 11.9 * ((100vw - 375px) / 1920));
+    font-size: calc(15px + 8.5 * ((100vw - 375px) / 1920));
   }
 
   .menu__page li a:hover {
@@ -3902,7 +3913,7 @@ body._lock {
   }
 
   .cooperation__body_eight {
-    padding: 30px 0px 0px 20px;
+    padding: 100px 0px 0px 80px;
   }
 
   .cooperation__item-nine {
@@ -4631,7 +4642,7 @@ body._lock {
   }
 
   .cooperation__body_eight {
-    padding: 30px 0px 0px 20px;
+    padding: 100px 0px 0px 80px;
     margin: 0px 0px 0px 0px;
   }
 
