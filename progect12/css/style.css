@@ -448,23 +448,28 @@ body._lock {
 }
 
 .index__nav {
-  width: 300px;
+  width: 400px;
   padding: 0px 57px 70px 50px;
 }
 
 .index__menu-main {
-  text-align: left;
+  text-align: right;
   list-style: none;
 }
 
 .index__menu-main li {
   font-size: 18px;
-  padding-bottom: 21px;
+  padding: 0px 20px 15px 0px;
+  line-height: 35px;
+  height: 50px;
 }
 
 .index__menu-main li a:hover {
+  margin: 0px -30px 0px 0px;
+  padding: 0px 40px 15px 0px;
   font-size: 30px;
   color: #fff;
+  background: url("../img/index/arrows.png") 100% 25% no-repeat;
 }
 
 .title {
@@ -1358,6 +1363,16 @@ body._lock {
   max-width: 100%;
 }
 
+.cooperation__avalar-ten {
+  position: absolute;
+  top: -100px;
+  left: -50px;
+}
+
+.cooperation__avalar-ten img {
+  max-width: 100%;
+}
+
 .cooperation__column_wrapper {
   position: relative;
 }
@@ -1515,12 +1530,21 @@ body._lock {
   position: relative;
   z-index: 2;
   margin: -100px 0px 0px 0px;
+}
+
+.cooperation__item-eight_img {
+  padding: 0px 30px 200px 0px;
+  margin: -100px 0px 0px 0px;
+}
+
+.cooperation__body_eight {
+  background: url("../img/cooperation/fon_nine.png") bottom/100% auto no-repeat;
   padding: 100px 0px 0px 0px;
 }
 
 .cooperation__item-nine {
-  height: 100%;
   width: 100%;
+  margin: 0px 0px 50px 0px;
 }
 
 .cooperation__item-nine_img {
@@ -1535,8 +1559,8 @@ body._lock {
 }
 
 .cooperation__item-ten {
-  height: 100%;
   width: 100%;
+  position: relative;
   padding: 150px 0px 0px 0px;
   background: url("../img/cooperation/arrows_little.png") 95% 100%/608px 577px no-repeat, url("../img/cooperation/fon_ten_bl.png") top/100% auto no-repeat, url("../img/cooperation/fon_ten.png") bottom/100% auto no-repeat;
 }
@@ -1589,6 +1613,10 @@ body._lock {
       flex-wrap: wrap;
 }
 
+.cooperation__row_ten {
+  position: relative;
+}
+
 .cooperation__column-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -1599,6 +1627,15 @@ body._lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.cooperation__column-item_eight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .cooperation__column {
@@ -1612,6 +1649,21 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.cooperation__column_six {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cooperation__item-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cooperation__item-text_transform {
@@ -1640,14 +1692,24 @@ body._lock {
   color: #000;
 }
 
+.cooperation__item-title_six {
+  max-width: 1000px;
+}
+
+.cooperation__item-title_six h2 {
+  text-align: center;
+}
+
+.cooperation__item-title_ten {
+  padding: 50px 0px 0px 0px;
+}
+
 .cooperation__item-title_one {
   padding: 0px 100px 0px 0px;
   margin: 0px 0px 0px -100px;
 }
 
 .cooperation__item-text {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   max-width: 650px;
 }
 
@@ -1665,8 +1727,11 @@ body._lock {
 }
 
 .cooperation__item-text_six {
+  max-width: 100%;
+}
+
+.cooperation__item-text_six p {
   text-align: center;
-  max-width: 1000px;
 }
 
 .cooperation__item-img img {
@@ -3514,6 +3579,10 @@ body._lock {
     text-align: right;
   }
 
+  .index__menu-main li a:hover {
+    text-align: right;
+  }
+
   .title {
     font-size: 56px;
   }
@@ -3832,8 +3901,16 @@ body._lock {
     padding: 0px 0px 0px 0px;
   }
 
+  .cooperation__body_eight {
+    padding: 30px 0px 0px 20px;
+  }
+
+  .cooperation__item-nine {
+    padding: 30px 0px 0px 20px;
+  }
+
   .cooperation__item-nine_img {
-    padding: 150px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   .cooperation__item-ten {
@@ -4553,12 +4630,22 @@ body._lock {
     margin: 0px 0px 0px -30px;
   }
 
+  .cooperation__body_eight {
+    padding: 30px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .cooperation__item-nine {
+    padding: 30px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+  }
+
   .cooperation__item-nine_img {
-    padding: 100px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   .cooperation__item-ten {
-    padding: 0px 0px 0px 20px;
+    padding: 30px 0px 0px 20px;
     background: url("../img/cooperation/arrows_little.png") 95% 100%/114px 108px no-repeat, url("../img/cooperation/fon_ten_bl.png") top/100% auto no-repeat, url("../img/cooperation/fon_ten.png") bottom/100% auto no-repeat;
   }
 
