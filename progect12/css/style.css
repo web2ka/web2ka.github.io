@@ -245,9 +245,16 @@ body._lock {
 }
 
 @font-face {
+  font-family: 'ConstanceBaronNeue';
+  src: local("☺"), url("../fonts/Constance Baron Nue.woff") format("woff"), url("../fonts/Constance Baron Nue.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "CenturyGothic";
   src: url("../fonts/GOTHIC.eot");
-  src: url("/./fonts/GOTHIC.eot?#iefix") format("embedded-opentype"), url("./fonts/GOTHIC.otf") format("opentype"), url("./fonts/GOTHIC.svg") format("svg"), url("./fonts/GOTHIC.ttf") format("truetype"), url("./fonts/GOTHIC.woff") format("woff"), url("./fonts/GOTHIC.woff2") format("woff2");
+  src: url("../fonts/GOTHIC.eot?#iefix") format("embedded-opentype"), url("../fonts/GOTHIC.otf") format("opentype"), url("../fonts/GOTHIC.svg") format("svg"), url("../fonts/GOTHIC.ttf") format("truetype"), url("../fonts/GOTHIC.woff") format("woff"), url("../fonts/GOTHIC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -261,17 +268,12 @@ body._lock {
 }
 
 .title {
-  font-family: "BaronNeue", Sans-serif;
+  font-family: "ConstanceBaronNeue", Sans-serif;
   font-weight: 300;
 }
 
 .description {
   font-family: "Century Gothic", Sans-serif;
-}
-
-.specialization {
-  font-family: "AGGloria", Sans-serif;
-  color: #707070;
 }
 
 .header {
@@ -342,7 +344,7 @@ body._lock {
 }
 
 .menu__body li a {
-  font-family: "AGGloria", Sans-serif;
+  font-family: "AGGloria", serif;
   font-weight: 700;
   color: #A5A5A5;
   text-decoration: none;
@@ -486,9 +488,8 @@ body._lock {
 }
 
 .title {
-  font-family: "BaronNeue", Sans-serif;
+  font-family: "ConstanceBaronNeue", Sans-serif;
   font-weight: 300;
-  font-size: 65px;
 }
 
 .menu li :before {
@@ -502,7 +503,7 @@ body._lock {
 }
 
 .menu li a {
-  font-family: "AGGloria", Sans-serif;
+  font-family: "AGGloria", serif;
   font-weight: 700;
   color: #A5A5A5;
   text-decoration: none;
@@ -570,7 +571,8 @@ body._lock {
 }
 
 .contact-page__slogan h2 {
-  color: #707070;
+  font-family: "AGGloriac", Sans-serif;
+  color: #1D1D1D;
 }
 
 .contact-page__avalar {
@@ -783,7 +785,8 @@ body._lock {
 }
 
 .teem__slogan h2 {
-  color: #707070;
+  font-family: "AGGloriac", Sans-serif;
+  color: #1D1D1D;
 }
 
 .teem__avalar {
@@ -835,7 +838,7 @@ body._lock {
 
 .teem-content__title {
   text-align: center;
-  font-family: "BaronNeue", Sans-serif;
+  font-family: "ConstanceBaronNeue", Sans-serif;
   font-weight: 300;
   color: #000;
   padding: 0px 0px 20px 0px;
@@ -881,7 +884,7 @@ body._lock {
 }
 
 .teem__column-title {
-  font-family: "BaronNeue", Sans-serif;
+  font-family: "ConstanceBaronNeue", Sans-serif;
   font-weight: 300;
   color: #000;
   padding: 0px 0px 70px 0px;
@@ -983,14 +986,15 @@ body._lock {
   max-width: 100%;
 }
 
-.portfolio__slogan-header {
+.portfolio__slogan {
   position: absolute;
   bottom: 20px;
   right: 50px;
 }
 
-.portfolio__slogan-header h2 {
-  color: #707070;
+.portfolio__slogan h2 {
+  font-family: "AGGloriac", Sans-serif;
+  color: #1D1D1D;
 }
 
 .portfolio__avalar {
@@ -1181,11 +1185,16 @@ body._lock {
   background: url("../img/arrows/left_white.png") left/auto 100% no-repeat;
 }
 
-.cooperation__header_specialization {
+.cooperation__slogan {
   position: absolute;
   z-index: 5;
   left: 20px;
   bottom: 5px;
+}
+
+.cooperation__slogan h2 {
+  font-family: "AGGloriac", Sans-serif;
+  color: #1D1D1D;
 }
 
 .cooperation__avalar {
@@ -1337,7 +1346,7 @@ body._lock {
 .cooperation__item-six {
   height: 100%;
   width: 100%;
-  padding: 200px 0px 200px 0px;
+  padding: 150px 0px 160px 0px;
   background: url("../img/cooperation/fon_six_bl.png") bottom/100% auto no-repeat, url("../img/cooperation/fon_six.png") top/100% auto no-repeat;
 }
 
@@ -1776,7 +1785,8 @@ body._lock {
 }
 
 .about__slogan h2 {
-  color: #707070;
+  font-family: "AGGloriac", Sans-serif;
+  color: #1D1D1D;
 }
 
 .about__avalar {
@@ -2773,6 +2783,10 @@ body._lock {
 }
 
 @media (min-width: 767px) {
+  .title {
+    font-size: calc(20px + 45 * (100vw / 1920));
+  }
+
   .header__languages-menu {
     font-size: calc(10px + 10 * (100vw / 1920));
   }
@@ -2798,7 +2812,7 @@ body._lock {
   }
 
   .contact-page__slogan h2 {
-    font-size: calc(29px + 88 * (100vw / 1920));
+    font-size: calc(29px + 37 * (100vw / 1920));
   }
 
   .teem__row {
@@ -2810,7 +2824,7 @@ body._lock {
   }
 
   .teem__slogan h2 {
-    font-size: calc(29px + 38 * (100vw / 1920));
+    font-size: calc(29px + 37 * (100vw / 1920));
   }
 
   .teem-content__title {
@@ -2845,8 +2859,8 @@ body._lock {
         flex-wrap: nowrap;
   }
 
-  .portfolio__slogan-header h2 {
-    font-size: calc(29px + 38 * (100vw / 1920));
+  .portfolio__slogan h2 {
+    font-size: calc(29px + 37 * (100vw / 1920));
   }
 
   .portfolio__item-title h2 {
@@ -2869,8 +2883,8 @@ body._lock {
     font-size: calc(16px + 14 * (100vw / 1920));
   }
 
-  .cooperation__header_specialization h2 {
-    font-size: calc(20px + 70 * (100vw / 1920));
+  .cooperation__slogan h2 {
+    font-size: calc(29px + 37 * (100vw / 1920));
   }
 
   .cooperation-item__send-title {
@@ -2890,7 +2904,7 @@ body._lock {
   }
 
   .text {
-    font-size: calc(14px + 16 * (100vw / 1920));
+    font-size: calc(14px + 12 * (100vw / 1920));
   }
 
   .placeholder {
@@ -2914,7 +2928,7 @@ body._lock {
   }
 
   .about__slogan h2 {
-    font-size: calc(29px + 38 * (100vw / 1920));
+    font-size: calc(29px + 37 * (100vw / 1920));
   }
 
   .about-item__row {
@@ -3136,10 +3150,6 @@ body._lock {
   .index__nav {
     padding: 0px 47px 70px 50px;
   }
-
-  .title {
-    font-size: 56px;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -3235,10 +3245,6 @@ body._lock {
 
   .index {
     padding: 51px 24px 9px 54px;
-  }
-
-  .title {
-    font-size: 45px;
   }
 
   .contact-page__title {
@@ -3590,6 +3596,10 @@ body._lock {
 }
 
 @media (max-width: 767px) {
+  .title {
+    font-size: calc(20px + 76.5 * ((100vw - 375px) / 1920));
+  }
+
   .header__body {
     padding: 40px 40px 35px 40px;
   }
@@ -3650,10 +3660,6 @@ body._lock {
     text-align: right;
   }
 
-  .title {
-    font-size: 56px;
-  }
-
   .contact-page__row-header-column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -3688,7 +3694,7 @@ body._lock {
   }
 
   .contact-page__slogan h2 {
-    font-size: calc(29px + 149.6 * ((100vw - 375px) / 1920));
+    font-size: calc(29px + 62.9 * ((100vw - 375px) / 1920));
   }
 
   .contact-page__slogan {
@@ -3736,7 +3742,7 @@ body._lock {
   }
 
   .teem__slogan h2 {
-    font-size: calc(29px + 64.6 * ((100vw - 375px) / 1920));
+    font-size: calc(29px + 62.9 * ((100vw - 375px) / 1920));
   }
 
   .teem__slogan {
@@ -3822,11 +3828,11 @@ body._lock {
     line-height: 70px;
   }
 
-  .portfolio__slogan-header h2 {
-    font-size: calc(29px + 64.6 * ((100vw - 375px) / 1920));
+  .portfolio__slogan h2 {
+    font-size: calc(29px + 62.9 * ((100vw - 375px) / 1920));
   }
 
-  .portfolio__slogan-header {
+  .portfolio__slogan {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -3933,8 +3939,8 @@ body._lock {
     padding: 0px 0px 0px 100px;
   }
 
-  .cooperation__header_specialization h2 {
-    font-size: calc(20px + 119 * ((100vw - 375px) / 1920));
+  .cooperation__slogan h2 {
+    font-size: calc(29px + 62.9 * ((100vw - 375px) / 1920));
   }
 
   .cooperation__avalar {
@@ -4102,7 +4108,7 @@ body._lock {
   }
 
   .text {
-    font-size: calc(14px + 27.2 * ((100vw - 375px) / 1920));
+    font-size: calc(14px + 20.4 * ((100vw - 375px) / 1920));
   }
 
   .text {
@@ -4173,7 +4179,7 @@ body._lock {
   }
 
   .about__slogan h2 {
-    font-size: calc(29px + 64.6 * ((100vw - 375px) / 1920));
+    font-size: calc(29px + 62.9 * ((100vw - 375px) / 1920));
   }
 
   .about__slogan {
@@ -4672,10 +4678,6 @@ body._lock {
     padding: 0px 47px 100px 50px;
   }
 
-  .title {
-    font-size: 38px;
-  }
-
   .menu li :before {
     padding-right: 3px;
     content: "[";
@@ -4774,7 +4776,7 @@ body._lock {
     padding: 0px 0px 100px 0px;
   }
 
-  .cooperation__header_specialization {
+  .cooperation__slogan {
     bottom: 100px;
     right: 0px;
   }
@@ -5144,9 +5146,5 @@ body._lock {
 
   .index__nav {
     padding: 0px 27px 100px 50px;
-  }
-
-  .title {
-    font-size: 31px;
   }
 }
