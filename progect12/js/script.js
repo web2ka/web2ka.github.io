@@ -1,39 +1,14 @@
-/*	
-const slider = document.querySelector('.swiper-container'); 
 
-let mySwiper = new Swiper(slider, {
+let hiddenElement = document.getElementById("top");
+let btn = document.querySelector('.btn');
 
-	slidesPerView: 1,
-	spaceBetween: 10,
+function buttonClick() {
+	hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+}
 
-	navigation: {
-    	nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {	
-        769: {
-            slidesPerView: 2,
-        }
-    }
-})
-
-  var galleryThumbs = new Swiper('.gallery-swip', {
-      slidesPerView: 1,
-      loop: true,
-
-	  autoplay: {
-    	delay: 2500,
-   	 disableOnInteraction: false,
-  },
-
-   pagination: {
-        el: '.swiper-pagination',
-   },
-
- }); */
- 
-//menu
+if (btn != null) {
+	btn.addEventListener('click', buttonClick);
+}
 
 let unlock = true;
 //=================
