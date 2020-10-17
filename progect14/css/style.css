@@ -278,6 +278,34 @@ body {
   line-height: 60px;
   font-weight: 300;
   letter-spacing: 1px;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: #ffcc00;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -35%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar__link:hover::after {
+  width: 100%;
 }
 
 .fullscreen {
