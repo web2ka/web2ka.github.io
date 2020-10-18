@@ -479,6 +479,10 @@ body._lock {
   .navbar__adress {
     display: none;
   }
+
+  .navbar__link {
+    line-height: 50px;
+  }
 }
 
 @media (max-width: 767px) {
