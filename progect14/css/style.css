@@ -850,7 +850,6 @@ body._lock {
 }
 
 .footer__button a {
-  font-family: 'Oswald', sans-serif;
   display: inline-block;
   color: #000;
   background-color: #ffcc00;
@@ -918,6 +917,10 @@ body._lock {
 
   .title-price {
     font-size: calc(24px + 12 * (100vw / 1920));
+  }
+
+  .title-number {
+    font-size: calc(48px + 0 * (100vw / 1920));
   }
 
   .title-numer {
@@ -1159,6 +1162,10 @@ body._lock {
     display: none;
   }
 
+  .title-offer {
+    line-height: 50px;
+  }
+
   .facts {
     padding: 50px 0px 50px 0px;
   }
@@ -1221,6 +1228,10 @@ body._lock {
 
   .title-price {
     font-size: calc(24px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .title-number {
+    font-size: calc(48px + 0 * ((100vw - 375px) / 1920));
   }
 
   .title-numer {
@@ -1306,7 +1317,15 @@ body._lock {
     margin: 0px 25px 15px 25px;
   }
 
+  .title-offer {
+    line-height: 35px;
+  }
+
   .facts {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .offer {
     padding: 40px 0px 40px 0px;
   }
 
@@ -1317,7 +1336,7 @@ body._lock {
 
   .footer__button a {
     padding: 0px 20px 0px 20px;
-    line-height: 18px;
+    line-height: 25px;
   }
 }
 
