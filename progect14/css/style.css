@@ -595,15 +595,15 @@ body._lock {
 
 .price__column-data {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 80%;
-          flex: 0 1 80%;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
   border-right: 2px solid #F5F5F5;
 }
 
 .price__column-cost {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 .price__data-title {
@@ -611,7 +611,7 @@ body._lock {
 }
 
 .price__data-cost {
-  padding-top: 50px;
+  padding-top: 40px;
   text-align: center;
 }
 
