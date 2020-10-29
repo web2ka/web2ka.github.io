@@ -209,9 +209,9 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -232,6 +232,10 @@ body._lock {
   font-weight: 600;
 }
 
+.navbar__phone-container {
+  padding-left: 350px;
+}
+
 .navbar__adress {
   line-height: 28px;
   font-weight: 600;
@@ -250,9 +254,9 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -314,6 +318,10 @@ body._lock {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: calc(50% - 1px);
+}
+
+.navbar__menu {
+  padding-left: 100px;
 }
 
 .navbar__menu._active {
@@ -512,6 +520,18 @@ body._lock {
   color: #000;
 }
 
+.description-price {
+  line-height: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.description-price_data {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000;
+}
+
 .description-form {
   padding: 0px 0px 50px 0px;
   line-height: 29px;
@@ -569,7 +589,6 @@ body._lock {
 }
 
 .price__title {
-  padding: 0px 50px 0px 30px;
   background-color: #ff9900;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,11 +626,15 @@ body._lock {
 }
 
 .price__data-title {
-  padding: 10px 0px 10px 30px;
+  padding: 0px 0px 0px 50px;
+  background: url(../img/price/icon.png) left no-repeat;
+}
+
+.price__data-title_bg {
+  background: none;
 }
 
 .price__data-cost {
-  padding-top: 40px;
   text-align: center;
 }
 
@@ -620,23 +643,11 @@ body._lock {
 }
 
 .advantage__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px 0px 50px 0px;
-}
-
-.advantage__row-top {
-  padding: 0px 0px 50px 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 auto;
 }
 
 .advantage__item {
+  margin: 0px 25px 0px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,6 +947,14 @@ body._lock {
     font-size: calc(18px + 6 * (100vw / 1920));
   }
 
+  .description-price {
+    font-size: calc(18px + 10 * (100vw / 1920));
+  }
+
+  .description-price_data {
+    font-size: calc(18px + 6 * (100vw / 1920));
+  }
+
   .description-form {
     font-size: calc(14px + 10 * (100vw / 1920));
   }
@@ -969,6 +988,40 @@ body._lock {
   }
 }
 
+@media (min-width: 768px) {
+  .advantage__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 0px 50px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar__top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .navbar__phone-container {
+    padding-left: 0px;
+  }
+
+  .navbar__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .navbar__menu {
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 1220px) {
   .services__row-top {
     padding: 0px 0px 40px 0px;
@@ -980,6 +1033,10 @@ body._lock {
 
   .title {
     padding: 0px 0px 40px 0px;
+  }
+
+  .advantage__item {
+    margin: 0px 20px 0px 20px;
   }
 }
 
@@ -994,6 +1051,10 @@ body._lock {
 
   .services__deskription {
     padding: 10px 0px 10px 0px;
+  }
+
+  .advantage__item {
+    padding: 15px 15px 15px 15px;
   }
 }
 
@@ -1027,6 +1088,19 @@ body._lock {
   .description-services {
     line-height: 24px;
   }
+
+  .advantage__row {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .advantage__item {
+    margin: 0px 10px 0px 10px;
+  }
+
+  .advantage__data {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 1100px) and (max-width: 767px) {
@@ -1042,6 +1116,10 @@ body._lock {
             flex: 0 1 24%;
     padding: 10px 10px 0px 10px;
     border-bottom: 15px solid #FFCB00;
+  }
+
+  .advantage__item {
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -1167,8 +1245,35 @@ body._lock {
     line-height: 50px;
   }
 
+  .description-price_data {
+    line-height: 30px;
+  }
+
   .facts {
     padding: 50px 0px 50px 0px;
+  }
+
+  .price__column {
+    padding: 20px;
+  }
+
+  .price__data-title {
+    background: url(../img/price/icon.png) left/30px 20px no-repeat;
+  }
+
+  .price__data-title_bg {
+    background: none;
+  }
+
+  .advantage__row {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .advantage__item {
+    margin: 25px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
   }
 
   .contacts__button a {
@@ -1247,6 +1352,14 @@ body._lock {
     font-size: calc(18px + 10.2 * ((100vw - 375px) / 1920));
   }
 
+  .description-price {
+    font-size: calc(18px + 17 * ((100vw - 375px) / 1920));
+  }
+
+  .description-price_data {
+    font-size: calc(18px + 10.2 * ((100vw - 375px) / 1920));
+  }
+
   .description-form {
     font-size: calc(14px + 17 * ((100vw - 375px) / 1920));
   }
@@ -1322,12 +1435,36 @@ body._lock {
     line-height: 35px;
   }
 
+  .description-price_data {
+    line-height: 27px;
+  }
+
   .facts {
     padding: 40px 0px 40px 0px;
   }
 
   .offer {
     padding: 40px 0px 40px 0px;
+  }
+
+  .price__column {
+    padding: 10px;
+  }
+
+  .price__data-title {
+    padding: 0px 0px 0px 40px;
+    background: url(../img/price/icon.png) left/27px 17px no-repeat;
+  }
+
+  .price__data-title_bg {
+    background: none;
+  }
+
+  .advantage__item {
+    margin: 25px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
   }
 
   .contacts__button a {
@@ -1338,6 +1475,15 @@ body._lock {
   .footer__button a {
     padding: 3px 20px 3px 20px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .advantage__item {
+    margin: 25px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
   }
 }
 
