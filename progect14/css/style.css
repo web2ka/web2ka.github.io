@@ -166,6 +166,7 @@ body._lock {
 }
 
 .header__title {
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   line-height: 110px;
   font-weight: 700;
@@ -174,6 +175,7 @@ body._lock {
 }
 
 .header__description {
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   line-height: 36px;
   font-weight: 400;
@@ -182,6 +184,7 @@ body._lock {
 }
 
 .header__button {
+  font-family: 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-transform: uppercase;
@@ -233,7 +236,7 @@ body._lock {
 }
 
 .navbar__phone-container {
-  padding-left: 350px;
+  padding-left: 270px;
 }
 
 .navbar__adress {
@@ -321,7 +324,7 @@ body._lock {
 }
 
 .navbar__menu {
-  padding-left: 100px;
+  padding-left: 30px;
 }
 
 .navbar__menu._active {
@@ -626,6 +629,7 @@ body._lock {
 }
 
 .price__data-title {
+  font-family: 'Montserrat', sans-serif;
   padding: 0px 0px 0px 50px;
   background: url(../img/price/icon.png) left no-repeat;
 }
@@ -635,6 +639,7 @@ body._lock {
 }
 
 .price__data-cost {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -643,7 +648,17 @@ body._lock {
 }
 
 .advantage__row {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advantage__item {
@@ -657,6 +672,18 @@ body._lock {
   padding: 20px 20px 20px 20px;
   border-radius: 15px;
   background-color: #F9F9F9;
+}
+
+.advantage__item-position1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.advantage__item-position2 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .advantage__item-bottom {
@@ -692,10 +719,29 @@ body._lock {
   padding: 0px 0px 100px 0px;
 }
 
+.work__row-rewers {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .work__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 35%;
           flex: 0 1 35%;
+}
+
+.work__item-position3 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.work__item-position4 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .work__data {
@@ -1007,9 +1053,10 @@ body._lock {
 
 @media (min-width: 768px) {
   .advantage__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 0px 0px 50px 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1047,26 +1094,6 @@ body._lock {
 }
 
 @media (max-width: 1440px) {
-  .navbar__top {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .navbar__phone-container {
-    padding-left: 0px;
-  }
-
-  .navbar__body {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .navbar__menu {
-    padding-left: 0px;
-  }
-
   .work {
     background: url("../img/work/fon.png") 50% 70%/540px 540px no-repeat;
   }
@@ -1146,6 +1173,10 @@ body._lock {
 }
 
 @media (max-width: 1100px) {
+  .navbar__phone-container {
+    padding-left: 200px;
+  }
+
   .navbar__list li {
     margin: 0px 0px 0px 10px;
   }
@@ -1230,7 +1261,23 @@ body._lock {
   }
 
   .navbar__top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .navbar__top {
     height: 30px;
+  }
+
+  .navbar__phone-container {
+    padding-left: 0px;
+  }
+
+  .navbar__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .navbar__body {
@@ -1340,8 +1387,24 @@ body._lock {
     line-height: 50px;
   }
 
+  .navbar__top {
+    padding: 0 15px;
+  }
+
+  .navbar__phone {
+    padding: 0px 0px 0px 7px;
+  }
+
   .navbar__adress {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .navbar__adress-hour {
     display: none;
+  }
+
+  .navbar__body {
+    padding: 0 15px;
   }
 
   .navbar__link {
@@ -1573,6 +1636,10 @@ body._lock {
   .header__button a {
     padding: 0px 20px 0px 20px;
     line-height: 45px;
+  }
+
+  .navbar__phone-two {
+    display: none;
   }
 
   .services {
