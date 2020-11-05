@@ -383,14 +383,14 @@ body._lock {
 
 .fullscreen {
   min-height: 100vh;
-  background: url("../img/header/fon.png") 0 0/cover no-repeat;
+  background: url("../img/header/fon.webp") 0 0/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .services {
-  background: url("../img/services/fon.png") 0 0/cover no-repeat;
+  background: url("../img/services/fon.webp") 0 0/cover no-repeat;
   padding: 70px 0px 70px 0px;
 }
 
@@ -570,16 +570,16 @@ body._lock {
 }
 
 .offer {
-  background: url("../img/offer/fon1.png") 0 0/cover no-repeat;
+  background: url("../img/offer/fon1.webp") 0 0/cover no-repeat;
   padding: 50px 0px 50px 0px;
 }
 
 .offer-two {
-  background: url("../img/offer/fon2.png") 0 0/cover no-repeat;
+  background: url("../img/offer/fon2.webp") 0 0/cover no-repeat;
 }
 
 .offer-three {
-  background: url("../img/offer/fon3.png") 0 0/cover no-repeat;
+  background: url("../img/offer/fon3.webp") 0 0/cover no-repeat;
 }
 
 .price {
@@ -755,7 +755,7 @@ body._lock {
 }
 
 .form {
-  background: url("../img/form/fon.png") 0 0/cover no-repeat;
+  background: url("../img/form/fon.webp") 0 0/cover no-repeat;
   padding: 50px 0px 0px 0px;
 }
 
