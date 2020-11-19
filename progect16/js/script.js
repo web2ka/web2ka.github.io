@@ -1,13 +1,25 @@
-const slider = document.querySelector('.swiper-container');
+let unlock = true;
+let burger = document.querySelector(".navbar__burger");	
 
-var mySwiper = new Swiper(slider, {
-  effect: 'fade',
-  slidesPerView: 1,
-  spaceBetween: 10,
-
-        pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
-})
+if (burger != null) {	
+	let deley = 500;
+	let menu = document.querySelector(".navbar__menu");
+	let body = document.querySelector("body");
+	burger.addEventListener("click", function (e) {
+		if (unlock) {
+			//body_lock(delay);
+			burger.classList.toggle("_active");
+			menu.classList.toggle("_active");
+			body.classList.toggle("_lock")
+		}
+	});
+	let list = document.querySelector(".navbar__list");
+	list.addEventListener("click", function (e) {
+		if (unlock) {
+			//body_lock(delay);
+			burger.classList.toggle("_active");
+			menu.classList.toggle("_active");
+			body.classList.toggle("_lock");
+		}
+	});
+};
