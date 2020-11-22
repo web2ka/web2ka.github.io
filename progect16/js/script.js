@@ -1,4 +1,3 @@
-/*
 
 let unlock = true;
 let burger = document.querySelector(".navbar__burger");	
@@ -24,4 +23,4 @@ if (burger != null) {
 			body.classList.toggle("_lock");
 		}
 	});
-}; */
+};

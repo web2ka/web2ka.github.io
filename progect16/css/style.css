@@ -383,7 +383,7 @@ body._lock {
 }
 
 .button-services {
-  margin-top: 70px;
+  margin-top: 60px;
   text-align: center;
   padding-bottom: 0px;
 }
@@ -549,11 +549,42 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
-  background: url("../img/about/fon_stat.png") center center/cover no-repeat;
-  -webkit-box-shadow: 3.98495px 3.98495px 3.98495px 3.98495px rgba(0, 0, 0, 0.25);
-          box-shadow: 3.98495px 3.98495px 3.98495px 3.98495px rgba(0, 0, 0, 0.25);
   padding: 0px 15px 15px 15px;
   border-radius: 5px;
+}
+
+.tools {
+  background-color: #3D3C3C;
+  padding: 60px 0px 0px 0px;
+}
+
+.tools__body {
+  background-color: #252525;
+  padding: 60px 50px;
+}
+
+.tools__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tools__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 18%;
+          flex: 0 1 18%;
+  padding: 0px 15px 15px 15px;
+  border-radius: 5px;
+  border: 1px solid #EFA05D;
+}
+
+.tools__item img {
+  max-width: 100%;
 }
 
 @media (min-width: 767px) {
@@ -687,6 +718,23 @@ body._lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 30%;
             flex: 0 1 30%;
+    margin: 15px 10px;
+  }
+
+  .tools__body {
+    padding: 60px 40px;
+  }
+
+  .tools__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .tools__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
     margin: 15px 10px;
   }
 }
@@ -830,6 +878,20 @@ body._lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
+  }
+
+  .tools {
+    padding: 55px 0px 55px 0px;
+  }
+
+  .tools__body {
+    padding: 40px 20px;
+  }
+
+  .tools__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
   }
 }
 
@@ -975,6 +1037,21 @@ body._lock {
             flex: 0 1 90%;
     padding: 0px 10px 10px 10px;
   }
+
+  .tools {
+    padding: 45px 0px 45px 0px;
+  }
+
+  .tools__body {
+    padding: 30px 15px;
+  }
+
+  .tools__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 90%;
+            flex: 0 1 90%;
+    padding: 0px 10px 10px 10px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1055,6 +1132,14 @@ body._lock {
   }
 
   .services__body {
+    padding: 30px 15px;
+  }
+
+  .tools {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .tools__body {
     padding: 30px 15px;
   }
 }
