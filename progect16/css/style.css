@@ -142,6 +142,14 @@ body._lock {
           flex: 1 1 auto;
 }
 
+.header-two {
+  background: url("../img/header/fon2.png") center center/cover no-repeat;
+}
+
+.header-three {
+  background: url("../img/header/fon3.png") center center/cover no-repeat;
+}
+
 .header__body {
   min-height: 100vh;
   display: -webkit-box;
@@ -1177,6 +1185,14 @@ body._lock {
     background: url("../img/header/fon_768.png") center center/cover no-repeat;
   }
 
+  .header-two {
+    background: url("../img/header/fon2.png") center center/cover no-repeat;
+  }
+
+  .header-three {
+    background: url("../img/header/fon3.png") center center/cover no-repeat;
+  }
+
   .header__content {
     margin-left: 80px;
     -webkit-box-pack: end;
@@ -1258,7 +1274,7 @@ body._lock {
   }
 
   .about__img {
-    margin: 0px 120px 40px 20px;
+    margin: 0px 60px 40px 60px;
     padding: 20px 0px 0px 0px;
   }
 
@@ -1340,7 +1356,7 @@ body._lock {
   }
 
   .comments__img {
-    margin: 0px 120px 40px 20px;
+    margin: 0px 60px 40px 60px;
     padding: 20px 0px 0px 0px;
   }
 
@@ -1492,7 +1508,7 @@ body._lock {
   }
 
   .about__img {
-    margin: 0px 100px 30px 15px;
+    margin: 0px 40px 30px 40px;
     padding: 20px 0px 0px 0px;
   }
 
@@ -1584,7 +1600,7 @@ body._lock {
   }
 
   .comments__img {
-    margin: 0px 100px 30px 15px;
+    margin: 0px 40px 30px 40px;
     padding: 20px 0px 0px 0px;
   }
 
@@ -1662,7 +1678,7 @@ body._lock {
   }
 
   .about__img {
-    margin: 0px 80px 25px 15px;
+    margin: 0px 30px 25px 30px;
     padding: 20px 0px 0px 0px;
   }
 
@@ -1732,7 +1748,7 @@ body._lock {
   }
 
   .comments__img {
-    margin: 0px 80px 25px 15px;
+    margin: 0px 30px 25px 30px;
     padding: 20px 0px 0px 0px;
   }
 
