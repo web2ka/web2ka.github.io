@@ -24,3 +24,40 @@ if (burger != null) {
 		}
 	});
 };
+
+
+// swiper
+
+new Swiper('.foto-slider', {
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+
+ 	slidesPerView: 'auto',
+	centeredSlides: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+     // slidesPerView: 2,
+});	
+
+new Swiper('.comments-slider', {
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+
+ 	slidesPerView: 'auto',
+	centeredSlides: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+     // slidesPerView: 2,
+});	
