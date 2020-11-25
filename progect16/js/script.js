@@ -60,4 +60,23 @@ new Swiper('.comments-slider', {
         type: 'fraction',
       },
      // slidesPerView: 2,
-});	
+});
+
+
+new Swiper('.swiper-container', {
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+
+ 	slidesPerView: 'auto',
+	centeredSlides: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+     // slidesPerView: 2,
+});
+

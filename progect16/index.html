@@ -184,7 +184,7 @@
 	</div>
 </div>
 
-<div class="tools   _container">
+<div class="tools _container" id="tools">
 	<div class="tools__body">
 		<div class="tools__title title title-services">
 			<h2>оборудование</h2>
@@ -200,7 +200,7 @@
 				</div>
 
 				<div class="services__button button button-services">
-					<a href="#">детали</a>
+					<a href="#popup">детали</a>
 				</div>
 			</div>
 
@@ -213,7 +213,7 @@
 				</div>
 
 				<div class="services__button button button-services">
-					<a href="#">детали</a>
+					<a href="#popup__two">детали</a>
 				</div>
 			</div>
 
@@ -226,7 +226,7 @@
 				</div>
 
 				<div class="services__button button button-services">
-					<a href="#">детали</a>
+					<a href="#popup__three">детали</a>
 				</div>
 			</div>
 
@@ -239,7 +239,7 @@
 				</div>
 
 				<div class="services__button button button-services">
-					<a href="#">детали</a>
+					<a href="#popup__vour">детали</a>
 				</div>
 			</div>
 		</div>
@@ -362,28 +362,64 @@
 		<div class="partners__title title title-services">
 			<h2>мои клиенты</h2>
 		</div>
-		<div class="partners__row">
-			<div class="partners__item">
-				<div class="partners-slider__image">
-					<img src="img/partners/ANCOR.png" alt="ancor">
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">			
+					<div class="partners__row">
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/ANCOR.png" alt="ancor">
+							</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/ARRICANO.png" alt="arricono">
+							</div>
+						</div>	
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/Avon.png" alt="avon">
+							</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/British school.png" alt="British school">
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="partners__item">
-				<div class="partners-slider__image">
-					<img src="img/partners/ARRICANO.png" alt="arricono">
-				</div>
-			</div>	
-			<div class="partners__item">
-				<div class="partners-slider__image">
-					<img src="img/partners/Avon.png" alt="avon">
-				</div>
-			</div>
-			<div class="partners__item">
-				<div class="partners-slider__image">
-					<img src="img/partners/British school.png" alt="British school">
+
+				<div class="swiper-slide">			
+					<div class="partners__row">
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/ANCOR.png" alt="ancor">
+							</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/ARRICANO.png" alt="arricono">
+							</div>
+						</div>	
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/Avon.png" alt="avon">
+							</div>
+						</div>
+						<div class="partners__item">
+							<div class="partners-slider__image">
+								<img src="img/partners/British school.png" alt="British school">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<div class="swiper-pagination"></div>
 		</div>
 	</div>
 </div>
@@ -438,11 +474,10 @@
 
 			<div class="swiper-pagination"></div>
 		</div>
-	</div>
+	</div>	
 </div>
 
-
-<div class="contact  _container">
+<div class="contact  _container" id="contact">
 	<div class="contact__body">
 		<div class="contact__title title title-services">
 			<h2>контакты</h2>
@@ -474,7 +509,128 @@
 					<h3>instagram</h3>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
 
+
+<div class="popup" id="popup">
+	<a href="#" class="popup__area"></a>
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close" href="#tools">X</a>
+				<div class="popup__title">1 комплект</div>
+
+				<div class="popup__row">
+					<div class="popup__img">
+						<img src="img/tools/1c.jpg">
+					</div>
+					<div class="popup__text">
+						<p>2 шт. Активный топ JBL PRX 615M (1,3 kW)</p>
+						<p>Аналоговый пульт Yamaha MG102C</p>
+						<p>4 шт. Статический прибор Led-par NEW LIGHT 54*3 RGBW</p>
+						<p>2 шт. Движущаяся голова типа BEAM 60W</p>
+						<p>dj ширма</p>
+						<p>Работа техника</p>
+					</div>
+				</div>
+			<div class="services__button button button-popup">
+				<a class="popup__link" href="#contact">заказать</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup__two">
+	<a href="#" class="popup__area"></a>
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close" href="#tools">X</a>
+				<div class="popup__title">2 комплект</div>
+
+				<div class="popup__row">
+					<div class="popup__img">
+						<img src="img/tools/2c.jpg">
+					</div>
+					<div class="popup__text">
+						<p>2 шт. Активный топ JBL PRX 615M (1,3 kW)</p>
+						<p>2 шт. Активная акустическая система/сабвуфер MAGN S18a (2kW)</p>
+						<p>Аналоговый пульт Yamaha MG102C</p>
+						<p>Радиосистема с ручным микрофоном Shure pg/sm58</p>
+						<p>4 шт. Статический прибор Led-par NEW LIGHT 54*3 RGBW</p>
+						<p>2 шт. Движущаяся голова типа BEAM 60W</p>
+						<p>dj ширма</p>
+						<p>Работа техника</p>
+					</div>
+				</div>
+			<div class="services__button button button-popup">
+				<a class="popup__link" href="#contact">заказать</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup__three">
+	<a href="#" class="popup__area"></a>
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close" href="#tools">X</a>
+				<div class="popup__title">3 комплект</div>
+
+				<div class="popup__row">
+					<div class="popup__img">
+						<img src="img/tools/3c.jpg">
+					</div>
+					<div class="popup__text">
+						<p>2 шт. Активный топ JBL PRX 615M (1,3 kW)</p>
+						<p>2 шт. Активная акустическая система/сабвуфер MAGN S18a (1kW)</p>
+						<p>Аналоговый пульт Yamaha MG102C</p>
+						<p>2 шт. Радиосистема с ручным микрофоном Shure pg/sm58</p>
+						<p>8 шт. Статический прибор Led-par HALO 18*18 RGBWA+Uv</p>
+						<p>2 шт. Движущаяся голова типа WASH FREECOLOR  36*10 RGBW</p>
+						<p>2 шт. Gravity LS 431 B прямая стойка до 2.4м, основание - металлическая пластина</p>
+						<p>Генератор дыма DJ-POWER, 1500W</p>
+						<p>led стол для DJ</p>
+						<p>Работа техника</p>
+					</div>
+				</div>
+			<div class="services__button button button-popup">
+				<a class="popup__link" href="#contact">заказать</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup__vour">
+	<a href="#" class="popup__area"></a>
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close" href="#tools">X</a>
+				<div class="popup__title">4 комплект</div>
+
+				<div class="popup__row">
+					<div class="popup__img">
+						<img src="img/tools/4c.jpg">
+					</div>
+					<div class="popup__text">	
+						<p>4 шт. Активный модуль/топ линейного массива Mag Fly6  (4kW)</p>
+						<p>2 шт. Активный сабвуфер линейного массива Mag Fly Sub18 (2kW)</p>
+						<p>Цифровой пульт BEHRINGER XR-18, 16 inputs, 6 outputs</p>
+						<p>2 шт. Радиосистема с ручным микрофоном Shure pg/sm58</p>
+						<p>16 шт. Статический прибор Led-par HALO 18*18 RGBWA+Uv</p>
+						<p>2 шт. Движущаяся голова типа BEAM FREECOLOR  7R (230W)</p>
+						<p>2 шт. Движущаяся голова типа WASH FREECOLOR  36*10 RGBW</p>
+						<p>4 шт. Gravity LS 431 B прямая стойка до 2.4м, основание - металлическая пластина</p>
+						<p>Генератор дыма DJ-POWER, 1500W</p>
+						<p>led стол для DJ</p>
+						<p>Беспроводной приемник/передатчик DMX 512, 2.4GHz</p>
+						<p>Работа техника</p>
+						<p>Работа светорежиссера</p>
+					</div>
+				</div>
+			<div class="services__button button button-popup">
+				<a class="popup__link" href="#contact">заказать</a>
+			</div>
 		</div>
 	</div>
 </div>
