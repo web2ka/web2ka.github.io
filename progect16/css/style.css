@@ -761,6 +761,30 @@ body._lock {
   width: 90%;
 }
 
+.foto-slider .swiper-slide:nth-child(7n) {
+  width: 80%;
+}
+
+.foto-slider .swiper-slide:nth-child(8n) {
+  width: 72%;
+}
+
+.foto-slider .swiper-slide:nth-child(9n) {
+  width: 90%;
+}
+
+.foto-slider .swiper-slide:nth-child(10n) {
+  width: 96%;
+}
+
+.foto-slider .swiper-slide:nth-child(11n) {
+  width: 59%;
+}
+
+.foto-slider .swiper-slide:nth-child(12n) {
+  width: 95%;
+}
+
 .contact {
   background-color: #3D3C3C;
   padding: 60px 0px 0px 0px;
