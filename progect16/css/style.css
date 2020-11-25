@@ -369,6 +369,12 @@ body._lock {
   padding-bottom: 0px;
 }
 
+.button-contact {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
 .about {
   background-color: #3D3C3C;
   padding: 60px 0px 60px 0px;
@@ -759,6 +765,19 @@ body._lock {
           align-items: center;
 }
 
+.contact__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form-title {
   padding-bottom: 12px;
   display: block;
@@ -769,12 +788,14 @@ body._lock {
 }
 
 .form__input {
+  background-color: rgba(255, 255, 255, 0.5);
   display: block;
   width: 250px;
   height: 50px;
   font-size: 20px;
   line-height: 24px;
   margin: 10px 0px 10px 0px;
+  border: 2px solid  #EFA05D;
   border-radius: 5px;
   padding: 0px 0px 0px 10px;
 }
@@ -1236,10 +1257,6 @@ body._lock {
     height: 120px;
   }
 
-  .foto {
-    padding: 0px 0px 55px 0px;
-  }
-
   .foto__body {
     padding: 40px 20px;
   }
@@ -1478,10 +1495,6 @@ body._lock {
     height: 80px;
   }
 
-  .foto {
-    padding: 0px 0px 45px 0px;
-  }
-
   .foto__body {
     padding: 30px 15px;
   }
@@ -1619,10 +1632,6 @@ body._lock {
 
   .partners__body {
     padding: 30px 15px;
-  }
-
-  .foto {
-    padding: 0px 0px 40px 0px;
   }
 
   .foto__body {
