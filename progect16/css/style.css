@@ -964,7 +964,7 @@ body._lock {
 
 @media (max-width: 768px) {
   .header {
-    background: url("../img/header/fon_mobile2.png") center center/cover no-repeat;
+    background: url("../img/header/fon_768.png") center center/cover no-repeat;
   }
 
   .header__content {
