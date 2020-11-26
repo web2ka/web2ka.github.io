@@ -62,7 +62,7 @@ new Swiper('.foto-slider', {
         el: '.swiper-pagination',
         type: 'fraction',
       },
-     // slidesPerView: 2,
+     //slidesPerView: 1,
 });	
 
 new Swiper('.comments-slider', {

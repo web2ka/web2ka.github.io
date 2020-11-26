@@ -136,18 +136,18 @@ body._lock {
 }
 
 .header {
-  background: url("../img/header/fon.webp") center center/cover no-repeat;
+  background: url("../img/header/fon1.webp") center center/cover no-repeat;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
 
 .header-two {
-  background: url("../img/header/fon2.png") center center/cover no-repeat;
+  background: url("../img/header/fon2.webp") center center/cover no-repeat;
 }
 
 .header-three {
-  background: url("../img/header/fon3.png") center center/cover no-repeat;
+  background: url("../img/header/fon3.webp") center center/cover no-repeat;
 }
 
 .header__body {
@@ -210,7 +210,7 @@ body._lock {
 }
 
 .header__phone {
-  padding-bottom: 12px;
+  padding: 5px 10px 12px 10px;
   display: block;
   font-weight: 500;
   font-size: 24px;
@@ -230,7 +230,6 @@ body._lock {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar__list {
@@ -651,6 +650,7 @@ body._lock {
 }
 
 .comments__text p {
+  text-indent: 40px;
   text-align: justify;
 }
 
@@ -822,6 +822,8 @@ body._lock {
 }
 
 .form-title {
+  text-transform: uppercase;
+  text-align: center;
   padding-bottom: 12px;
   display: block;
   font-weight: 500;
@@ -833,7 +835,7 @@ body._lock {
 .form__input {
   background-color: rgba(255, 255, 255, 0.5);
   display: block;
-  width: 300px;
+  width: 340px;
   height: 50px;
   font-size: 20px;
   line-height: 24px;
@@ -1202,19 +1204,23 @@ body._lock {
   .form-title {
     line-height: 30px;
   }
+
+  .form__input {
+    width: 285px;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
-    background: url("../img/header/fon_768.png") center center/cover no-repeat;
+    background: url("../img/header/fon1_768.webp") center center/cover no-repeat;
   }
 
   .header-two {
-    background: url("../img/header/fon2.png") center center/cover no-repeat;
+    background: url("../img/header/fon2_768.webp") center center/cover no-repeat;
   }
 
   .header-three {
-    background: url("../img/header/fon3.png") center center/cover no-repeat;
+    background: url("../img/header/fon3_768.webp") center center/cover no-repeat;
   }
 
   .header__content {
@@ -1225,8 +1231,19 @@ body._lock {
     padding: 40px;
   }
 
+  .header__title h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 3px 5px;
+  }
+
   .header__title {
     padding-bottom: 25px;
+  }
+
+  .header__description h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
   }
 
   .header__description {
@@ -1236,6 +1253,7 @@ body._lock {
 
   .header__phone {
     line-height: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .header__social {
@@ -1243,6 +1261,7 @@ body._lock {
   }
 
   .navbar__body {
+    background-color: rgba(0, 0, 0, 0.5);
     height: 55px;
     padding: 0px 20px 0px 20px;
     position: fixed;
@@ -1425,6 +1444,10 @@ body._lock {
 
   .form-title {
     line-height: 25px;
+  }
+
+  .form__input {
+    width: 260px;
   }
 }
 
