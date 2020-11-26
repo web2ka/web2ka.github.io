@@ -1212,15 +1212,15 @@ body._lock {
 
 @media (max-width: 768px) {
   .header {
-    background: url("../img/header/fon1_768.webp") center center/cover no-repeat;
+    background: url("../img/header/fon1sh.png") center center/cover no-repeat;
   }
 
   .header-two {
-    background: url("../img/header/fon2_768.webp") center center/cover no-repeat;
+    background: url("../img/header/fon2sh.png") center center/cover no-repeat;
   }
 
   .header-three {
-    background: url("../img/header/fon3_768.webp") center center/cover no-repeat;
+    background: url("../img/header/fon3sh.png") center center/cover no-repeat;
   }
 
   .header__content {
@@ -1231,19 +1231,8 @@ body._lock {
     padding: 40px;
   }
 
-  .header__title h1 {
-    background-color: rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    padding: 3px 5px;
-  }
-
   .header__title {
     padding-bottom: 25px;
-  }
-
-  .header__description h2 {
-    background-color: rgba(0, 0, 0, 0.6);
-    display: inline-block;
   }
 
   .header__description {
@@ -1253,7 +1242,6 @@ body._lock {
 
   .header__phone {
     line-height: 25px;
-    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .header__social {
