@@ -55,7 +55,7 @@ new Swiper('.foto-slider', {
 		prevEl: '.swiper-button-prev'
 	},
 
- 	slidesPerView: 'auto',
+ 	autoHeight: true,
 	centeredSlides: true,
       spaceBetween: 10,
       pagination: {
