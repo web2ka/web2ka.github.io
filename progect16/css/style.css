@@ -489,6 +489,7 @@ body._lock {
 }
 
 .about__text p {
+  text-indent: 40px;
   text-align: justify;
 }
 
@@ -753,11 +754,11 @@ body._lock {
           box-shadow: 3.98495px 3.98495px 3.98495px 3.98495px rgba(0, 0, 0, 0.25);
   padding: 15px 15px 15px 15px;
   border-radius: 5px;
-  height: 180px;
+  height: 240px;
 }
 
 .partners-slider__image {
-  height: 160px;
+  height: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,11 +859,23 @@ body._lock {
 */
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
   background: url("../img/contact/fon.png") center center/cover no-repeat;
   margin: 60px 0px 0px 0px;
 }
 
 .contact__body {
+  width: 1400px;
   padding: 60px 50px;
 }
 
@@ -1124,6 +1137,12 @@ body._lock {
   }
 }
 
+@media (max-width: 1440px) {
+  .contact__body {
+    width: 1024px;
+  }
+}
+
 @media (max-width: 1380px) {
   .tools__row {
     -webkit-box-pack: center;
@@ -1133,9 +1152,9 @@ body._lock {
 
   .tools__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
-    margin: 15px 10px;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+    margin: 15px 40px;
   }
 }
 
@@ -1283,11 +1302,11 @@ body._lock {
 
   .partners__item {
     margin: 15px 10px;
-    height: 150px;
+    height: 200px;
   }
 
   .partners-slider__image {
-    height: 140px;
+    height: 180px;
   }
 
   .foto__body {
@@ -1300,6 +1319,7 @@ body._lock {
 
   .contact__body {
     padding: 60px 40px;
+    width: 768px;
   }
 
   .contact__description {
@@ -1516,11 +1536,11 @@ body._lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 40%;
             flex: 0 1 40%;
-    height: 140px;
+    height: 220px;
   }
 
   .partners-slider__image {
-    height: 120px;
+    height: 180px;
   }
 
   .foto__body {
@@ -1537,6 +1557,7 @@ body._lock {
 
   .contact__body {
     padding: 40px 20px;
+    width: 100%;
   }
 
   .contact__description {
@@ -1769,12 +1790,12 @@ body._lock {
   }
 
   .partners__item {
-    height: 100px;
+    height: 180px;
     padding: 10px 10px 10px 10px;
   }
 
   .partners-slider__image {
-    height: 80px;
+    height: 150px;
   }
 
   .foto__body {
