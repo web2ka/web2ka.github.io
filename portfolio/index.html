@@ -1,259 +1,645 @@
 <!DOCTYPE html>
-<html lang="ru">	
-		<head>
-		<title>dj</title>
-		<meta charset="UTF-8">
-		<meta name="format-detection" content="telephone=no">	
-		<link rel="stylesheet" href="css/style.css">
-		<!--<link rel="stylesheet" href="css/swiper.min.css"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>	 
-	<body>	
-		<div class="wrapper">
-			<!-- Шапка сайту -->
-<div class="fullscreen">
-	<header class="header _container">
-		<div class="navbar__body">
-			<div class="navbar__burger">
-				<span></span>		
-				<span></span>
-				<span></span>
-			</div>
-			<nav class="navbar__menu">
-				<ul class="navbar__list">
-					<li>
-						<a class="navbar__link _current" href="#">главная</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#about">о себе</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#services">услуги</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#equipments">оборудование</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#reviews">отзывы</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#gallery">галерея</a>
-					</li>
-					<li>
-						<a class="navbar__link" href="#contacts">контакти</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Portfolio</title>
 
-		<div class="header__body">
-			<div class="header__content">
-				<div class="header__title">
-					<h1>DJKos</h1>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body >
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="user">
+					<div class="user__avatar">
+					<!--	<img src="https://placehold.it/57/333" alt=""> -->
+					</div>
+					<div class="user__content">
+						<div class="user__name">Web<span>2</span>ka</div>
+						<div class="user__prof">WEB розробка</div>
+					</div>
 				</div>
-				<div class="header__description">
-					<p>Event DJ и<br> звукорежиссер на<br> ваше мероприятие</p>
-				</div>
-				<div class="header__button button">
-					<a href="#">Заказать</a>
-				</div>
-				<div class="header__phone-container">
-					<a class="header__phone" href="tel:0673250830">+38 (067) 325-08-30</a>
-					<a class="header__phone navbar__phone-two" href="tel:0633896016">+38 (063) 389-60-16</a>
-				</div>
-			</div>
-			<div class="header__social">
-				<h3>facebook</h3>
-				<h3>instagram</h3>
+				<nav class="nav">
+					<a class="nav__link" href="#about_mi">Про мене</a>
+					<a class="nav__link" href="#services">Послуги</a>
+					<a class="nav__link" href="#work">Роботи</a>
+				<!--	<a class="nav__link">Прайс</a> -->
+					<a class="nav__link nav__link--btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
+				</nav>
 			</div>
 		</div>
 	</header>
-</div>		
-			<main class="main">
-				<div class="about  _container">
-	<div class="about__body">
-		<div class="about__row">
-			<div class="about__item about__img about__item">
-				<img src="img/about/img.webp" alt="foto">
+
+	<section class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<div class="intro__content">
+					<h2 class="intro__subtitle">Привіт ! Я</h2>
+					<h1 class="intro__title">Роман Камінський</h1>
+					<div class="intro__text">WEB розробник</div>
+
+					<div class="social">
+						<a class="social__link" href="https://www.linkedin.com/in/roman-kaminsky/" target="blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+
+					<!--	<a class="social__link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+							<a class="social__link" href="#">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</a> -->
+
+						<a class="social__link" href="https://telegram.me/roman_kaminskij" target="blank">
+							<i class="fa fa-telegram" aria-hidden="true"></i>
+						</a>
+					</div>
+
+					<a class="btn" href="#" data-modal="#modal_hire_me">Знайти мене</a>
+					<!--<button class="btn" type="button" href="#">Переглянути резюме</button> -->
+
+				</div>	
+			<!--	<img class="intro__photo" src="img/keys.jpg"> -->	
 			</div>
-			<div class="about__item about__item-center">
-				<div class="about__title title">
-					<h2>O СЕБЕ</h2>
+		</div>
+	</section>
+	<!-- works -->
+	<div class="works">
+		<div class="container">
+			<div class="works__nav" id="work">
+				<a class="works__nav-link" href="#" data-filter="all">Всі роботи</a>
+				<a class="works__nav-link" href="#" data-filter="landing">Лендінги</a>
+				<a class="works__nav-link" href="#" data-filter="portal">Багатосторіночні сайти</a>
+				<a class="works__nav-link" href="#" data-filter="wordpres">Сайти під WordPress</a> 
+			<!--	<a class="works__nav-link" href="#" data-filter="megasin">Інтернет магазини</a> -->
+			</div>
+
+			<div class="portfolio" >
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_5">
+						<img class="work__image" src="img/l5.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: landing</div>
+							<div class="work__title">
+								Продаючий лендінг
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="about__text text">
-					<p>Работаю профессиональным диджеем с 2013 года. Люблю музыку и людей.</p>
-					<p>Знаю  точно, на месте усидеть не сможете, будете танцевать со мной, даже самый требовательный гость.</p>
-					<p>Есть современные треки в красивой обработке, и бесконечная библиотека любых песен которые пожелаете.  Каждый гость услышит именно ту, его, песню!</p>
-					<p>Не успеете оглянуться как гости все будут на одной волне в атмосфере веселья и непринужденного общения.</p>
-					<p>Есть вопрос - кто же все таки будет ответственен за атмосферу на вашем Празднике  ? Ответ прост, давайте встречаться.</p>
+
+				<div class="portfolio__col" data-cat="portal">
+					<div class="work" data-modal="#modal_project_4">
+						<img class="work__image" src="img/l4.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: portal</div>
+							<div class="work__title">
+								Адаптивний сайт
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>				
+
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_3">
+						<img class="work__image" src="img/l3.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: landing</div>
+							<div class="work__title">
+								Лендінг зі слайдером
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_2">
+						<img class="work__image" src="img/l2.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: portal</div>
+							<div class="work__title">
+								Лендінг для фірми
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+
+				<div class="portfolio__col" data-cat="landing">
+					<div class="work" data-modal="#modal_project_1">
+						<img class="work__image" src="img/l1.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: landing</div>
+							<div class="work__title">
+								Лендінг візитка
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="portfolio__col" data-cat="wordpres">
+					<div class="work" data-modal="#modal_project_6">
+						<img class="work__image" src="img/l6.png">
+						<div class="work__content">
+							<div class="work__cat">категорія: Сайти під WordPress</div>
+							<div class="work__title">
+								Лендінг під WP
+								<time class="work__date" datetime="2020-06-06 18:00">2020</time>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+	<!--   <div class="text-center">
+				<a class="btn btn--sm" href="#">Завантажити більше робіт</a>
+			</div> -->
+		</div>
+	</div>
+
+	<section class="about">
+		<div class="container">
+			<div class="about__inner" id="about_mi">
+			<!--	<div class="about__photo">
+					<img class="img" src="img/designer_photo.png">
+				</div> -->
+				<div class="about__content">
+					<div class="about__title" >Про мене</div>
+					<div class="about__bigtitle">Чому варто обрати мене</div>
+					<div class="about__text">
+						<p>Привіт ! Мене звати Роман Камінський, я одружений та виховую двох чудових дітей. Займаюсь програмуванням більше року, а тепер вирішив спробувати свої сили в верстці сайтів. Володію всіма необхідними знаннями для профісійної верстки сайту</p>
+						<p>Якісна верстка сайту вже сьогодні. Тільки передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+						<p>Готовий почати роботу над вашим проектом одразу. 100% завершення проекту. Завжди вчасна здача проекту. Працюю без передплати.</p>
+						<p>Співпрацюючи зі мною ви завжди на крок по переду конкурентів
+					</p>
+					</div>
+					<a class="btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
+				<!--	<button class="btn" type="button" href="#">Переглянути резюме</button>
+				</div> -->
+			</div>
+		</div>
+	</section>
+<!-- відгуки
+	<div class="reviews">
+		<div class="container">
+			
+			<div class="reviews__item">
+				<div class="reviews__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum minus consequuntur consequatur totam optio fugiat placeat, adipisci alias dignissimos assumenda perspiciatis molestias, eveniet minima ad eaque error reiciendis sunt!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum minus consequuntur consequatur totam optio fugiat placeat, adipisci alias dignissimos assumenda perspiciatis molestias, eveniet minima ad eaque error reiciendis sunt!</p>
+				</div>
+				<div class="reviews__autor">
+					<img class="reviews__photo" src="https://placehold.it/103/333">
+					<div class="reviews__name">Edward M. Brooks</div>
+					<div class="reviews__compani">IBM</div>
+					<div class="reviews__rating">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star" src="img/star.svg" width="13" height="13">
+						<img class="reviews__star reviews__star--unactive" src="img/star.svg" width="13" height="13">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+-->
 
-<div class="statistick  _container">
-	<div class="statistick__body">
-		<div class="statistick__row">
-			<div class="statistick__item">
-				<div class="statistick__title title title-stat">
-					<h2>7</h2>
+	<section class="news">
+		<div class="container">
+			<div class="news__header" id="services">
+				<h3 class="news__title">Послуги</h3>
+				<div class="news__text">Що я вмію робити, та скільки це коштує</div>
+			</div>
+
+			<div class="articles">
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Верстка лендінгу</h4></a>
+							<div class="articles__cat">Лендінги</div>
+							<div class="articles__text">
+								<p>Кросбраузерна верстка лендінгу за вашим дизайном. Адаптивна верстка під мобільні пристрої. Повністю валідний, тестований код. Верстка pixel-perfect. </p>
+							</div>
+						</div>
+					<!--	<a class="btn btn--sm" href="#">Дізнатись ціну</a> -->
+					</div>
 				</div>
-				<div class="statistick__text text">
-					<p>лет в ивент<br> индустрии</p>
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Сайт під Wordpres</h4></a>
+							<div class="articles__cat">CMS</div>
+							<div class="articles__text">
+								<p>Верстка сайту по шаблону. Натяжка на систему адміністрування Wordpres. Подальша підтримка проекту по контракту.</p>
+							</div>
+						</div>
+						<a class="btn btn--sm" href="#" data-modal="#modal_hire_me" >Дізнатись ціну</a>
+					</div>
+				</div>
+				<div class="articles__col">
+					<div class="articles__item">
+					<!--<div class="articles__header">
+							<time class="articles__date">10<br>une</time>
+							<a href="#">
+								<img class="articles__photo" src="https://placehold.it/370x257">
+							</a>
+						</div> -->
+						<div class="articles__content">
+							<h4 class="articles__title"><a href="#">Сайт під ключ</h4></a>
+							<div class="articles__cat">Портали</div>
+							<div class="articles__text">
+								<p>Розробка дизайну, верстка шаблону, натягування шаблону на CMS Wordpres. Подальша підтримка проекту по контракту.</p>
+							</div>
+						</div>
+					<!--	<a class="btn btn--sm" href="#">Дізнатись ціну</a> -->
+					</div>
 				</div>
 			</div>
-			<div class="statistick__item">
-				<div class="statistick__title title  title-stat">
-					<h2>600</h2>
+
+		<!--<div class="news__footer">
+				<a class="news__link" href="#">Подивитись всі послуги</a>
+			</div> -->
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__credits">
+					<div class="footer__copyright">
+						&copy; 2020 web2ka
+					</div>
+					<div class="footer__social">
+						<a class="footer__link" href="https://www.linkedin.com/in/roman-kaminsky/" target="blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+
+					<!--	<a class="footer__link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+							<a class="footer__link" href="#">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</a>  -->
+
+						<a class="footer__link" href="https://telegram.me/roman_kaminskij" target="blank">
+							<i class="fa fa-telegram" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
-				<div class="statistick__text text">
-					<p>проведенных<br> мероприятий</p>
+
+				<div class="footer__nav">
+						<a class="footer__nav-link" href="#">Про мене</a>
+						<a class="footer__nav-link" href="#">Послуги</a>
+						<a class="footer__nav-link" href="#">Роботи</a>
+					<!--	<a class="footer__nav-link" href="#">Прайс</a> -->
+						<a class="footer__nav-link footer__nav-link--btn" href="#"  data-modal="#modal_hire_me">Знайти мене</a>
 				</div>
-			</div>	
-			<div class="statistick__item">
-				<div class="statistick__title title  title-stat">
-					<h2>170</h2>
+			</div>
+		</div>
+	</footer>
+
+<!--  modals -->
+<div class="modal" id="modal_project_1">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l1.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг візитка</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
 				</div>
-				<div class="statistick__text text">
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
 					<p></p>
-					<p>корпоративов</p>
+					<p>Даний сайт візитку створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
 				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect1/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
 			</div>
-			<div class="statistick__item">
-				<div class="statistick__title title  title-stat">
-					<h2>330</h2>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_2">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l2.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг для фірми</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
 				</div>
-				<div class="statistick__text text">
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
 					<p></p>
-					<p>свадеб</p>
-				</div>
-			</div>
-			<div class="statistick__item">
-				<div class="statistick__title title  title-stat">
-					<h2>50</h2>
-				</div>
-				<div class="statistick__text text">
-					<p>дней<br> рождений и <br>юбилеев</p>
-				</div>
-			</div>
-	</div>
-</div>
-</div>
-
-<div class="services   _container">
-	<div class="services__body">
-		<div class="services__title title title-services">
-			<h2>Услуги</h2>
-		</div>
-		<div class="services__row">
-			<div class="services__item">
-				<div class="services__title title  title-services_two">
-					<h2>Dj на<br> корпоратив</h2>
-				</div>
-				<div class="services__video">
-					<video src="img/video/corporate.mov" controls="controls" width="100%"></video>
-				</div>
-			</div>
-
-
-			<div class="services__item">
-				<div class="services__title title  title-services_two">
-					<h2>Dj на<br> свадьбу</h2>
-				</div>
-				<div class="services__video">
-					<video src="img/video/wedding.mov" controls="controls" width="100%"></video>
-				</div>
-			</div>
-
-			<div class="services__item">
-				<div class="services__title title  title-services_two">
-					<h2>Dj на день<br> рождения</h2>
-				</div>
-				<div class="services__video">
-					<video src="img/video/birthday.mov" controls="controls" width="100%"></video>
-				</div>
-			</div>
-
-		</div>
-		<div class="services__button button button-services">
-			<a href="#">узнать цену</a>
-		</div>
-	</div>
-</div>
-
-<div class="tools   _container">
-	<div class="tools__body">
-		<div class="tools__title title title-services">
-			<h2>оборудование</h2>
-		</div>
-
-		<div class="tools__row">
-			<div class="tools__item">
-				<div class="tools__title title  title-services_two">
-					<h2>1 комплект</h2>
-				</div>
-				<div class="tools__img">
-					<img src="img/tools/1c.jpg">
+					<p>Даний сайт для фірми створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
 				</div>
 
-				<div class="services__button button button-services">
-					<a href="#">узнать больше</a>
-				</div>
-			</div>
-
-			<div class="tools__item">
-				<div class="tools__title title  title-services_two">
-					<h2>2 комплект</h2>
-				</div>
-				<div class="tools__img">
-					<img src="img/tools/2c.jpg">
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect2/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
 				</div>
 
-				<div class="services__button button button-services">
-					<a href="#">узнать больше</a>
-				</div>
-			</div>
 
-			<div class="tools__item">
-				<div class="tools__title title  title-services_two">
-					<h2>3 комплект</h2>
-				</div>
-				<div class="tools__img">
-					<img src="img/tools/3c.jpg">
-				</div>
-
-				<div class="services__button button button-services">
-					<a href="#">узнать больше</a>
-				</div>
-			</div>
-
-			<div class="tools__item">
-				<div class="tools__title title  title-services_two">
-					<h2>4 комплект</h2>
-				</div>
-				<div class="tools__img">
-					<img src="img/tools/4c.jpg">
-				</div>
-
-				<div class="services__button button button-services">
-					<a href="#">узнать больше</a>
-				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<div class="modal" id="modal_project_3">
+	<div class="modal__dialog">
 
-			</main>
-			<!-- підвал сайту -->
-<footer class="footer">
-	<div class="footer__body">
-		Lorem ipsum dolor sit amet consectetur adipisicing.
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l3.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг зі слайдером</h3>
+					<div class="modal-work__info">
+						landing<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт для фірми створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect3/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
 	</div>
-</footer>
-		</div>	
-		<!--<script src="js/swiper.min.js"></script> -->
-<script src="js/script.js"></script>
-	</body>
+</div>
+
+<div class="modal" id="modal_project_4">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l4.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг зі слайдером</h3>
+					<div class="modal-work__info">
+						portal<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, jQuery, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect4/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_5">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l5.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Продаючий лендінг</h3>
+					<div class="modal-work__info">
+						Лендінг<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Leo Zaverny</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Дизайн та верстка виконана на замовлення. Метою проекту є продаж портативного очищувача повітря</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, WordPress, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect5/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="modal_project_6">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<img class="modal-work__photo" src="img/l6.png" alt="">
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Лендінг під WordPress</h3>
+					<div class="modal-work__info">
+						WordPress<span class="modal-work__info-divider">|</span>2020
+					</div>
+				</div>
+
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Навчальний проект</div>
+				</div>
+				<div class="modal-work__text">
+					<p></p>
+					<p>Даний сайт створено з навчальною метою.</p>
+					<p>В процесі розробки використано передові технології HTML5, CSS3, WordPress, кросплатформенний код, верстка pixel-perfect.</p>
+				</div>
+
+			<!--<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev" type="button">
+						<img src="img/back.svg" height="12" alt=""> previous</button> -->
+					<a href="https://web2ka.github.io/progect6/" class="modal-work__btn modal-work__btn--next" target="blank">Переглянути проект</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal" id="modal_hire_me">
+	<div class="modal__dialog modal__dialog--sm">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/clouse.svg">
+		</button>
+
+			<div class="contact">
+				<div class="contact__left">
+					<h3 class="modal__title mb-0">Знайти мене</h3>
+					<div class="modal__subtitle">Зателефонуйте мені або напишіть повідомлення на пошту чи в соц мережi</div>
+					<ul class="contact__info">
+						<li class="contact__info-item">
+							<img class="contact__info-icon" src="img/phone.svg" height="12">
+							(093) 36 23 424
+						</li>
+						<li class="contact__info-item">
+							<img class="contact__info-icon" src="img/mail.svg" height="12">
+							web2ka@gmail.com
+						</li>
+					</ul>
+
+					<div class="contact__social">
+						<a class="contact__link" href="https://www.linkedin.com/in/roman-kaminsky/" target="blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+
+					<!--	<a class="contact__link" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+
+							<a class="contact__link" href="#">
+							<i class="fa fa-skype" aria-hidden="true"></i>
+						</a> -->
+
+						<a class="contact__link" href="https://telegram.me/roman_kaminskij" target="blank">
+							<i class="fa fa-telegram" aria-hidden="true"></i>
+						</a>
+					</div>
+
+
+			<!--		<form class="form" action="/" method="post">
+						<div class="form__group">
+							<label class="form__label" for="input-email">Adress e-mail</label>
+							<input class="form__input" type="text" id="input-email" name="" placeholder="Adress e-mail">
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="input-text">Request</label>
+							<textarea class="form__textarea" type="text" id="input-text" name="input-text" placeholder="Text"></textarea> 
+						</div>
+
+						<div class="text-right">
+
+							<botton class="btn" type="submit">SEND</botton>
+
+						</div>
+
+					</form> -->
+				</div>
+			</div>		
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>

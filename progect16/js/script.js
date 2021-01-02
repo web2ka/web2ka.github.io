@@ -1,3 +1,4 @@
+/*
 
 let unlock = true;
 let burger = document.querySelector(".navbar__burger");	
@@ -23,6 +24,7 @@ if (burger != null) {
 			body.classList.toggle("_lock");
 		}
 	});
+<<<<<<< HEAD
 };
 
 
@@ -100,3 +102,6 @@ new Swiper('.swiper-container', {
      // slidesPerView: 2,
 });
 
+=======
+}; */
+>>>>>>> parent of 2d0ceb0... add tools dj
