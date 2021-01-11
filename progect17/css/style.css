@@ -119,10 +119,17 @@ body._lock {
   margin: 0 auto;
 }
 
-.header__top {
-  height: 30px;
+.header__top-wrapper {
   width: 100%;
   background-color: #E4F1FD;
+}
+
+.header__middle-wrapper {
+  border-bottom: 1px solid #5DACDA;
+}
+
+.header__top {
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,20 +162,9 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.top__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -176,6 +172,18 @@ body._lock {
 
 .socials__item {
   padding-bottom: 20px;
+}
+
+.socials__facebook {
+  margin-right: 15px;
+}
+
+.socials__mail {
+  margin-right: 15px;
+}
+
+.socials__vkontakte {
+  margin-right: 15px;
 }
 
 .socials__hech a {
@@ -189,20 +197,24 @@ body._lock {
   line-height: 22px;
   margin-bottom: 25px;
   padding-left: 35px;
-  background: url("../img/header/phoneicon.png") left no-repeat;
+  background: url("../img/header/phone_icon.svg") left no-repeat;
 }
 
 .contacts__phone a {
   color: #363636;
 }
 
-.contacts__button {
-  font-weight: 600;
+.button {
   font-size: 18px;
   line-height: 25px;
 }
 
-.contacts__button a {
+.button-plane {
+  padding: 7px 212px 7px 0px;
+  background: url("../img/main/plane.svg") right no-repeat;
+}
+
+.button a {
   display: inline-block;
   padding: 13px 30px;
   color: #F8F8F8;
@@ -211,13 +223,115 @@ body._lock {
   background-color: #EC6277;
 }
 
-.contacts__button a:hover {
+.button a:hover {
   background-color: #ec627700;
   color: #EC6277;
+}
+
+.main {
+  min-height: 960px;
+  background: url("../img/main/fon.png") center center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__wrapper {
+  width: 100%;
+  height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__title {
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #EC6277;
+}
+
+.main__subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #EC6277;
+}
+
+.main__description {
+  font-size: 18px;
+  line-height: 25px;
+  color: #5DACDA;
+}
+
+.footer {
+  min-height: 680px;
+  background: url("../img/footer/fon.svg") center center/cover no-repeat;
+  padding-top: 50px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__title {
+  padding-bottom: 30px;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 600;
+  color: #504F56;
+}
+
+.footer__menu {
+  font-size: 16px;
+  line-height: 22px;
+  height: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu a {
+  color: #504F56;
 }
 
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+@media (max-width: 1440px) {
+  .main {
+    min-height: 703px;
+  }
+
+  .footer {
+    min-height: 510px;
+  }
 }
