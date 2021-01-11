@@ -119,10 +119,17 @@ body._lock {
   margin: 0 auto;
 }
 
-.header__top {
-  height: 30px;
+.header__top-wrapper {
   width: 100%;
   background-color: #E4F1FD;
+}
+
+.header__middle-wrapper {
+  border-bottom: 1px solid #5DACDA;
+}
+
+.header__top {
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,20 +169,20 @@ body._lock {
           align-items: center;
 }
 
-.top__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .socials__item {
   padding-bottom: 20px;
+}
+
+.socials__facebook {
+  margin-right: 15px;
+}
+
+.socials__mail {
+  margin-right: 15px;
+}
+
+.socials__vkontakte {
+  margin-right: 15px;
 }
 
 .socials__hech a {
@@ -189,20 +196,20 @@ body._lock {
   line-height: 22px;
   margin-bottom: 25px;
   padding-left: 35px;
-  background: url("../img/header/phoneicon.png") left no-repeat;
+  background: url("../img/header/phone_icon.svg") left no-repeat;
 }
 
 .contacts__phone a {
   color: #363636;
 }
 
-.contacts__button {
+.button {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
 
-.contacts__button a {
+.button a {
   display: inline-block;
   padding: 13px 30px;
   color: #F8F8F8;
@@ -211,9 +218,17 @@ body._lock {
   background-color: #EC6277;
 }
 
-.contacts__button a:hover {
+.button a:hover {
   background-color: #ec627700;
   color: #EC6277;
+}
+
+.main__title {
+  min-height: 703px;
+  background: url("../img/main/fon.png") 0 0/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page {
