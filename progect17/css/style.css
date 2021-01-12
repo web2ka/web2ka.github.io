@@ -128,6 +128,10 @@ body._lock {
   border-bottom: 1px solid #5DACDA;
 }
 
+.header__bottom-wrapper {
+  border-bottom: 1px solid #5DACDA;
+}
+
 .header__top {
   height: 30px;
   display: -webkit-box;
@@ -241,6 +245,9 @@ body._lock {
 .button a:hover {
   background-color: #ec627700;
   color: #EC6277;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-plane {
@@ -258,6 +265,100 @@ body._lock {
   border-radius: 60px 10px;
   border: 2px solid  #EC6277;
   background-color: #EC6277;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__burger {
+  display: none;
+}
+
+.navbar__burger span {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  background-color: #297FCA;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+}
+
+.navbar__burger span:first-child {
+  top: 0px;
+}
+
+.navbar__burger span:last-child {
+  top: auto;
+  bottom: 0px;
+}
+
+.navbar__burger._active span {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.navbar__burger._active span:first-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: calc(50% - 1px);
+}
+
+.navbar__burger._active span:last-child {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: calc(50% - 1px);
+}
+
+.navbar__menu {
+  width: 100%;
+}
+
+.navbar__menu._active {
+  top: 0;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar__link {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #363636;
+}
+
+.navbar__link:hover {
+  color: #297FCA;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main {
@@ -412,5 +513,58 @@ body._lock {
 
   .footer {
     min-height: 510px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .navbar__body {
+    height: 50px;
+  }
+
+  .navbar__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 130px;
+            flex: 0 0 130px;
+  }
+
+  .navbar__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 51;
+  }
+
+  .navbar__menu {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    padding: 80px 0px 0px 0px;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .navbar__list li {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar__list {
+    display: block;
+  }
+
+  .navbar__link {
+    color: #000;
   }
 }
