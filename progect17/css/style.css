@@ -460,6 +460,72 @@ body._lock {
   color: #5DACDA;
 }
 
+.second-title {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: rgba(93, 172, 218, 0.15);
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.second-title__content {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-title__fon-sky {
+  position: absolute;
+  left: 0px;
+  top: 38px;
+}
+
+.second-title__fon-skytwo {
+  position: absolute;
+  right: 0px;
+  top: 52px;
+}
+
+.second-title__fon-balon_red {
+  position: absolute;
+  left: 200px;
+  top: 30px;
+}
+
+.second-title__fon-balon_blue {
+  position: absolute;
+  right: 200px;
+  top: 30px;
+}
+
+.second__title {
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #595FA7;
+}
+
+.second__subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #595FA7;
+}
+
 .reviews {
   margin-bottom: 115px;
   display: -webkit-box;
@@ -627,7 +693,7 @@ textarea.form__input {
 .form__button:hover {
   color: #F8F8F8;
   border-radius: 60px 10px;
-  border: 2px solid #7CC1EE;
+  border: 3px solid #7CC1EE;
   background-color: #7CC1EE;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
