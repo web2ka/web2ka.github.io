@@ -226,6 +226,8 @@ body._lock {
 }
 
 .contacts__phone-solid_head {
+  padding-left: 20px;
+  background: url("../img/icon/footer/phone_icon.svg") left/15px 15px no-repeat;
   display: none;
 }
 
