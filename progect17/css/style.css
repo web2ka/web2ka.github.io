@@ -126,6 +126,7 @@ body._lock {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 10;
 }
 
 .head__wrapper {
@@ -253,8 +254,8 @@ body._lock {
 
 .title-error {
   font-weight: 700;
-  font-size: 306px;
-  line-height: 417px;
+  font-size: 280px;
+  line-height: 330px;
   color: #5DACDA;
   text-align: center;
 }
@@ -267,6 +268,23 @@ body._lock {
 .text_up {
   text-transform: uppercase;
   font-weight: 600;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.text_up:hover {
+  color: #5DACDA;
+}
+
+.text_hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.text_hover:hover {
+  color: #5DACDA;
 }
 
 .text-footer {
@@ -313,12 +331,12 @@ body._lock {
   background: url("../img/main/plane.svg") right no-repeat;
 }
 
-.button-revers a {
+.button-revers {
   background-color: #ec627700;
   color: #EC6277;
 }
 
-.button-revers a:hover {
+.button-revers:hover {
   color: #F8F8F8;
   border-radius: 60px 10px;
   border: 3px solid  #EC6277;
@@ -448,6 +466,61 @@ body._lock {
   width: 100%;
 }
 
+.reviews {
+  margin-bottom: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__content {
+  position: relative;
+  padding: 30px;
+  width: 955px;
+  height: 241px;
+  background: rgba(93, 172, 218, 0.15);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.reviews__description {
+  text-align: center;
+}
+
+.reviews__fon-balloon {
+  position: absolute;
+  top: 120px;
+  left: -40px;
+  z-index: 1;
+}
+
+.reviews__fon-balloon img {
+  max-width: 100%;
+}
+
+.reviews__fon-kite {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  z-index: 1;
+}
+
+.reviews__fon-kite img {
+  max-width: 100%;
+}
+
 .footer {
   min-height: 680px;
   background: url("../img/fon/fon.svg") center center/cover no-repeat;
@@ -481,7 +554,7 @@ body._lock {
 
 .error {
   position: relative;
-  padding: 70px 0px 90px 0px;
+  padding: 50px 0px 70px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,13 +573,13 @@ body._lock {
 
 .error__fon-cloud {
   position: absolute;
-  top: 290px;
+  top: 190px;
   left: 0px;
 }
 
 .error__fon-cloudflag {
   position: absolute;
-  top: 160px;
+  top: 60px;
   right: 38px;
 }
 
@@ -552,6 +625,14 @@ body._lock {
     font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
   }
 
+  .title {
+    font-size: calc(24px + 20.4 * ((100vw - 375px) / 1920));
+  }
+
+  .title-error {
+    font-size: calc(180px + 170 * ((100vw - 375px) / 1920));
+  }
+
   .button {
     font-size: calc(16px + 3.4 * ((100vw - 375px) / 1920));
   }
@@ -562,10 +643,48 @@ body._lock {
 }
 
 @media (max-width: 1200px) {
+  .title {
+    line-height: 40px;
+  }
+
+  .title-error {
+    line-height: 280px;
+  }
+
   .button {
     line-height: 20px;
     width: 200px;
     padding: 10px 0;
+  }
+
+  .error {
+    padding: 40px 0px 60px 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .reviews {
+    margin-bottom: 80px;
+  }
+
+  .reviews__content {
+    width: 750px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .reviews__fon-balloon {
+    width: 90px;
+    height: 135px;
+    top: 90px;
+    left: -20px;
+  }
+
+  .reviews__fon-kite {
+    width: 90px;
+    height: 230px;
+    top: 40px;
+    right: -30px;
   }
 }
 
@@ -629,11 +748,12 @@ body._lock {
     transition: all 0.5s ease 0s;
     padding: 50px 0px 0px 0px;
     position: fixed;
-    top: -100%;
+    top: -300%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 50;
   }
 
   .navbar__list li {
@@ -654,6 +774,27 @@ body._lock {
 
   .navbar__link {
     color: #000;
+  }
+}
+
+@media (max-width: 830px) {
+  .reviews__content {
+    width: 600px;
+    height: 180px;
+  }
+
+  .reviews__fon-balloon {
+    width: 81px;
+    height: 120px;
+    top: 70px;
+    right: -15px;
+  }
+
+  .reviews__fon-kite {
+    width: 81px;
+    height: 207px;
+    top: 20px;
+    right: -30px;
   }
 }
 
@@ -680,6 +821,14 @@ body._lock {
     display: none;
   }
 
+  .title {
+    line-height: 34px;
+  }
+
+  .title-error {
+    line-height: 240px;
+  }
+
   .footer__column_title {
     display: none;
   }
@@ -687,6 +836,40 @@ body._lock {
   .footer__wrapper {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .error {
+    padding: 30px 0px 50px 0px;
+  }
+
+  .error__fon-cloudflag {
+    top: 40px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .reviews {
+    margin-bottom: 50px;
+  }
+
+  .reviews__content {
+    width: 450px;
+    height: 180px;
+  }
+
+  .reviews__fon-balloon {
+    width: 70px;
+    height: 106px;
+    top: 105px;
+    left: -15px;
+  }
+
+  .reviews__fon-kite {
+    width: 70px;
+    height: 185px;
+    top: 20px;
+    right: -30px;
   }
 }
 
@@ -776,6 +959,17 @@ body._lock {
   }
 }
 
+@media (max-width: 530px) {
+  .reviews__content {
+    width: 350px;
+    height: 170px;
+  }
+
+  .reviews__fon-kite {
+    display: none;
+  }
+}
+
 @media (max-width: 479.98px) {
   .head__address {
     padding: 0px;
@@ -787,17 +981,64 @@ body._lock {
     padding: 0px 10px;
   }
 
+  .title {
+    line-height: 28px;
+  }
+
+  .title-error {
+    line-height: 200px;
+  }
+
   .button {
     line-height: 16px;
     width: 175px;
     padding: 8px 0;
     border: 2px solid  #EC6277;
   }
+
+  .reviews__fon-balloon {
+    width: 63px;
+    height: 95px;
+    top: 120px;
+    left: -5px;
+  }
+
+  .error {
+    padding: 10px 0px 200px 0px;
+  }
+
+  .error__fon-cloudflag {
+    top: 20px;
+    right: -100px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .reviews__content {
+    width: 300px;
+    height: 160px;
+    padding: 20px 5px 20px 5px;
+  }
+
+  .reviews__fon-balloon {
+    width: 57px;
+    height: 85px;
+    top: 120px;
+    left: -5px;
+  }
 }
 
 @media (max-width: 1439px) and (min-width: 767px) {
   body {
     font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
+  .title {
+    font-size: calc(24px + 12 * (100vw / 1920));
+  }
+
+  .title-error {
+    font-size: calc(180px + 100 * (100vw / 1920));
   }
 
   .button {
