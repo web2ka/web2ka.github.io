@@ -708,6 +708,10 @@ textarea.form__input {
   left: 0px;
 }
 
+.error__fon-cloud img {
+  max-width: 100%;
+}
+
 .error__fon-cloudflag {
   position: absolute;
   top: 60px;
@@ -761,7 +765,7 @@ textarea.form__input {
   }
 
   .title-error {
-    font-size: calc(180px + 170 * ((100vw - 375px) / 1920));
+    font-size: calc(130px + 255 * ((100vw - 375px) / 1920));
   }
 
   .button {
@@ -800,6 +804,16 @@ textarea.form__input {
 
   .error {
     padding: 40px 0px 60px 0px;
+  }
+
+  .error__fon-cloud {
+    width: 212px;
+    height: 175px;
+  }
+
+  .error__fon-cloudflag {
+    width: 189px;
+    height: 150px;
   }
 }
 
@@ -973,7 +987,7 @@ textarea.form__input {
   }
 
   .title-error {
-    line-height: 240px;
+    line-height: 200px;
   }
 
   .form-question {
@@ -1024,9 +1038,22 @@ textarea.form__input {
     padding: 30px 0px 50px 0px;
   }
 
+  .error__title {
+    padding-bottom: 20px;
+  }
+
+  .error__title {
+    padding-bottom: 15px;
+  }
+
+  .error__fon-cloud {
+    top: 150px;
+    width: 171px;
+    height: 142px;
+  }
+
   .error__fon-cloudflag {
-    top: 40px;
-    right: -30px;
+    display: none;
   }
 }
 
@@ -1193,7 +1220,7 @@ textarea.form__input {
   }
 
   .title-error {
-    line-height: 200px;
+    line-height: 160px;
   }
 
   .button {
@@ -1231,12 +1258,14 @@ textarea.form__input {
   }
 
   .error {
-    padding: 10px 0px 200px 0px;
+    padding: 10px 0px 20px 0px;
   }
 
-  .error__fon-cloudflag {
-    top: 20px;
-    right: -100px;
+  .error__fon-cloud {
+    top: 90px;
+    left: -20px;
+    width: 137px;
+    height: 116px;
   }
 }
 
@@ -1265,7 +1294,7 @@ textarea.form__input {
   }
 
   .title-error {
-    font-size: calc(180px + 100 * (100vw / 1920));
+    font-size: calc(130px + 150 * (100vw / 1920));
   }
 
   .button {
