@@ -534,8 +534,8 @@ body._lock {
 
 .form-question__fon-kite {
   position: absolute;
-  right: 5px;
-  top: -20px;
+  right: 10px;
+  top: -80px;
 }
 
 .form__body {
@@ -1007,11 +1007,6 @@ textarea.form__input {
     display: none;
   }
 
-  .form-question__fon-kite {
-    right: 5px;
-    top: 240px;
-  }
-
   .form__item {
     width: 430px;
   }
@@ -1172,6 +1167,14 @@ textarea.form__input {
 
   .form-question_title-wrapper {
     padding: 0px 40px 50px 70px;
+  }
+
+  .form-question__fon-dots {
+    display: none;
+  }
+
+  .form-question__fon-kite {
+    display: none;
   }
 
   .form__item {
