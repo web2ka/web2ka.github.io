@@ -500,12 +500,6 @@ body._lock {
   padding-left: 70px;
 }
 
-.form-question_title-wrapper_animator {
-  padding-top: 0px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .form-question__title {
   padding-bottom: 15px;
 }
@@ -652,6 +646,39 @@ textarea.form__input {
   max-width: 100%;
 }
 
+.map {
+  padding-bottom: 50px;
+}
+
+.map__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__content {
+  padding-top: 30px;
+}
+
 .footer {
   min-height: 680px;
   background: url("../img/fon/fon.svg") center center/cover no-repeat;
@@ -716,6 +743,10 @@ textarea.form__input {
   position: absolute;
   top: 60px;
   right: 38px;
+}
+
+.error__fon-cloudflag img {
+  max-width: 100%;
 }
 
 * picture {
@@ -1053,7 +1084,10 @@ textarea.form__input {
   }
 
   .error__fon-cloudflag {
-    display: none;
+    width: 151px;
+    height: 120px;
+    top: 40px;
+    right: 0px;
   }
 }
 
@@ -1196,6 +1230,10 @@ textarea.form__input {
     padding: 0px 40px 50px 70px;
   }
 
+  .form-question_title-wrapper_animator {
+    padding: 0px 40px 50px 40px;
+  }
+
   .form-question__fon-dots {
     display: none;
   }
@@ -1207,6 +1245,13 @@ textarea.form__input {
   .form__item {
     width: 100%;
     padding: 0px 15px;
+  }
+
+  .error__fon-cloudflag {
+    width: 120px;
+    height: 96px;
+    top: 40px;
+    right: 0px;
   }
 }
 
@@ -1266,6 +1311,11 @@ textarea.form__input {
     left: -20px;
     width: 137px;
     height: 116px;
+  }
+
+  .error__fon-cloudflag {
+    top: 10px;
+    right: -20px;
   }
 }
 
