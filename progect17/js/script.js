@@ -92,3 +92,46 @@ if (animItems.length > 0) {//
 	}
 	animOnScroll();
 }
+
+/////////////////////////////////////////
+
+// import Swiper JS
+
+
+const swiper = new Swiper('.image-slider', {
+
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 3,
+
+	slidesPerGroup: 3,
+
+	spaceBetween:30,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		768: {
+			slidesPerView: 2,
+		},
+
+		992: {
+			slidesPerView: 3,
+		},
+	}
+
+})
