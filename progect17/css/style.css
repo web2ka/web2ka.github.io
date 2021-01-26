@@ -325,6 +325,10 @@ body._lock {
   font-weight: 700;
 }
 
+.text-blue {
+  color: #5DACDA;
+}
+
 .button {
   font-size: 18px;
   line-height: 25px;
@@ -376,13 +380,61 @@ body._lock {
   transition: 0.3s;
 }
 
-.button-blue a {
+.button-blue_filter {
+  width: 190px;
+  padding: 10px 0;
+  background-color: #ec627700;
+  color: rgba(93, 172, 218, 0.4);
+  border: 2px solid rgba(93, 172, 218, 0.4);
+}
+
+.button-blue_filter:visited {
+  color: #7CC1EE;
+  border: 2px solid   #7CC1EE;
+}
+
+.button-blue_filter:hover {
+  color: #F8F8F8;
+  border-radius: 60px 10px;
+  border: 2px solid #7CC1EE;
+  background-color: #7CC1EE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-blue_filter {
+  width: 190px;
+  padding: 10px 0;
+  background-color: #ec627700;
+  color: rgba(93, 172, 218, 0.4);
+  border: 2px solid rgba(93, 172, 218, 0.4);
+}
+
+.button-blue_filter:active {
+  color: #7CC1EE;
+  border: 2px solid   #7CC1EE;
+}
+
+.button-blue_filter:hover {
+  color: #F8F8F8;
+  border-radius: 60px 10px;
+  border: 2px solid #7CC1EE;
+  background-color: #7CC1EE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-blue {
+  width: 225px;
+  padding: 10px 0;
   background-color: #ec627700;
   color: #7CC1EE;
   border: 2px solid   #7CC1EE;
 }
 
-.button-blue a:hover {
+.button-blue:hover {
   color: #F8F8F8;
   border-radius: 60px 10px;
   border: 2px solid #7CC1EE;
@@ -837,6 +889,68 @@ textarea.form__input {
   max-width: 100%;
 }
 
+.animators {
+  padding: 70px 0px 50px 0px;
+}
+
+.animators__wrapper {
+  text-align: center;
+}
+
+.animators__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.animators__nav-link {
+  margin-bottom: 20px;
+}
+
+.animators__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animators__column {
+  margin: 0 -20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24.999%;
+          flex: 0 1 24.999%;
+  padding: 0px 40px 50px 40px;
+}
+
+.animators__img img {
+  max-width: 100%;
+}
+
+.animators__item-title {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+.animators__item-link {
+  display: block;
+  margin: 0 auto;
+}
+
+.animators__link {
+  padding-top: 30px;
+  background: url("../img/animator/arrows.svg") 50% top no-repeat;
+}
+
 .animator__item-fon {
   background: rgba(93, 172, 218, 0.15);
 }
@@ -1195,6 +1309,10 @@ textarea.form__input {
           justify-content: center;
 }
 
+.hide {
+  display: none;
+}
+
 * picture {
   height: 100%;
   display: -webkit-box;
@@ -1261,8 +1379,24 @@ textarea.form__input {
     font-size: calc(18px + 10.2 * ((100vw - 375px) / 1920));
   }
 
+  .text-red__little {
+    font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
+  }
+
   .button {
     font-size: calc(16px + 3.4 * ((100vw - 375px) / 1920));
+  }
+
+  .button-blue_filter {
+    font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
+  }
+
+  .button-blue_filter {
+    font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
+  }
+
+  .button-blue {
+    font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
   }
 
   .form__button {
@@ -2044,7 +2178,6 @@ textarea.form__input {
     line-height: 16px;
     width: 175px;
     padding: 8px 0;
-    border: 2px solid  #EC6277;
   }
 
   .form-question {
@@ -2135,8 +2268,24 @@ textarea.form__input {
     font-size: calc(18px + 6 * (100vw / 1920));
   }
 
+  .text-red__little {
+    font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
   .button {
     font-size: calc(16px + 2 * (100vw / 1920));
+  }
+
+  .button-blue_filter {
+    font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
+  .button-blue_filter {
+    font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
+  .button-blue {
+    font-size: calc(14px + 2 * (100vw / 1920));
   }
 
   .form__button {
