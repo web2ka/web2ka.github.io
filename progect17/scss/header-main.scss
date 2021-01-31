@@ -1,0 +1,39 @@
+.fullscreen {
+	overflow: hidden;
+	min-height: 100vh;
+	background: url('../img/fon/fon_main_bg.png') center center / cover no-repeat;
+	display: flex;
+	position: relative;
+}
+
+.header-main {
+	&__wrapper {
+		flex: 1 1 auto;
+	}
+
+	&__body {
+		min-height: 70vh;
+		display: flex;
+
+		@media (max-width: $md3+px) {
+			justify-content: center;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 600px;
+
+		@media (max-width: $md1+px) {
+			padding-left: 30px;
+			max-width: 550px;
+		}
+
+		@media (max-width: $md3+px) {
+			padding-left: 0px;
+			max-width: 100%;
+		}	
+	}
+}

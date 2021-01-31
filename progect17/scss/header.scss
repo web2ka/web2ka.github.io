@@ -1,0 +1,160 @@
+.head {
+	width: 100%;
+	background-color: #E4F1FD;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+
+
+	&__wrapper {
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: 600px) {
+			height: 43px;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+	}
+
+	&__img {
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	&__address {
+		padding: 0px 20px 0px 20px;
+		color: #363636;
+		@include adaptiv-font(16, 10);
+		@media (max-width: $md4+px) {
+
+			padding: 0px;
+		}
+	}
+
+	&__link {
+		text-decoration: underline;
+		color: #5DACDA;
+
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+	}
+}
+
+.body {
+
+	padding-top: 30px;
+
+	@media (max-width: 600px) {
+			padding-top: 43px;
+	}
+
+	&__wrapper {
+		height: 175px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	&__logo {
+		&_menu {
+			display: none;
+			@media (max-width: 1000px) {
+				display: block;
+				padding: 10px 160px 10px 0px;
+			}
+
+			@media (max-width: $md3+px) {
+				padding: 10px 100px 10px 0px;
+			}
+
+			@media (max-width: 650px) {
+				padding: 10px 50px 10px 0px;
+			}
+
+			@media (max-width: 600px) {
+				display: none;
+			}
+		}
+
+		& img {
+			max-width: 100%;
+		}
+
+		&_mobile {
+			display: none;
+			@media (max-width: 600px) {
+				display: block;
+				padding: 10px 0px 10px 0px;
+			}
+		}
+	}
+}
+
+.bottom {
+	border-top: 1px solid #5DACDA;
+	border-bottom: 1px solid #5DACDA;
+
+	&__wrapper {
+		@media (max-width: 1000px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+.socials {
+	&__wrapper {
+		&_menu {
+			display: none;
+			@media (max-width: 1000px) {
+				display: block;
+			}
+
+			@media (max-width: 600px) {
+				display: none;
+			}
+		}
+
+		&_burger {
+			display: none;
+
+			@media (max-width: 600px) {
+				display: block;
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		padding-bottom: 15px;
+
+		@media (max-width: 600px) {
+			justify-content: center;
+		}
+	}
+
+	&__facebook{
+		margin-right: 15px;
+	}
+
+	&__mail{
+		margin-right: 15px;
+	}
+
+	&__hech {
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+	}
+}

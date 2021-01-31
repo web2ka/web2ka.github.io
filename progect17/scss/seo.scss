@@ -1,0 +1,83 @@
+.seo {
+	padding-bottom: 70px;
+	position: relative;
+
+	@media (max-width: $md2+px) {
+		padding-bottom: 50px;
+	}
+
+	@media (max-width: $md4+px) {
+		padding-bottom: 30px;
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		&-dotsleft {
+			left: 10px;
+
+		@media (max-width: 1440px) {
+			left: 0;
+		}
+
+		@media (max-width: 1250+px) {
+			left: -70px;
+		}
+
+		@media (max-width: $md2+px) {
+			display: none;
+		}
+	}
+
+		&-dotsright {
+			top: 200px;
+			right: 10px;
+
+			@media (max-width: 1250+px) {
+				display: none;
+			}
+		}
+
+		&-kiteright {
+			top: -50px;
+			right: 0px;
+
+			@media (max-width:$md5+px) {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		padding: 0px 150px 50px 150px;
+		text-align: center;
+
+		@media (max-width: $md2+px) {
+			padding: 0px 70px 30px 70px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 0px 20px 20px 20px;
+		}
+	}
+
+	&__text-item {
+		padding-bottom: 20px;
+
+		@media (max-width: $md2+px) {
+			padding-bottom: 15px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding-bottom: 10px;
+		}
+	}
+
+	&__text-list {
+		padding-left: 40px;
+		background: url('../img/icon/check.svg') 20px 5px no-repeat;
+	}
+}

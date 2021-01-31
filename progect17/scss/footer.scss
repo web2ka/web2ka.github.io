@@ -1,0 +1,65 @@
+.footer {
+	min-height: 680px;
+	background: url("../img/fon/fon_footer.svg") center center/cover no-repeat;
+	padding-top: 50px;
+
+	@media (max-width: 1440px) {
+		min-height: 510px;
+	}
+
+	@media (max-width: 600px) {
+		padding-top: 15px;
+	}
+
+	&__column_title {
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+	}
+
+	&__column-content {
+		@media (max-width: 600px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&__wrapper {
+
+		@media (min-width: 600px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		padding-bottom: 30px;
+
+		@media (max-width: $md3+px) {
+			justify-content: space-around;
+		}
+	}
+
+	&__title {
+		padding-bottom: 30px;
+		font-size: 24px;
+		line-height: 33px;
+		font-weight: 600;
+		color: #504F56;
+
+		@media (max-width: 1439px) {
+			@include adaptiv-font(24, 18);
+		}
+
+		@media (max-width: 600px) {
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__menu {
+		height: 215px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

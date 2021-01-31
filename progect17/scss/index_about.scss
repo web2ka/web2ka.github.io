@@ -1,0 +1,145 @@
+.about {
+	
+	&__title {
+		padding: 0px 150px 50px 150px;
+		text-align: center;
+
+		@media (max-width: $md2+px) {
+			padding: 0px 70px 30px 70px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 0px 20px 20px 20px;
+		}
+	}
+
+	&__text {
+		padding: 20px 0px 20px 0px;
+
+		@media (max-width: $md3+px) {
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+		}
+	}
+
+	&__item {
+		padding-bottom: 20px;
+
+		@media (max-width: $md3+px) {
+			padding-bottom: 10px;
+		}
+	}
+
+	&__list {
+		padding-left: 20px;
+		background: url('../img/icon/check.svg') 0px 5px no-repeat;
+	}
+
+	&__button-container{
+		@media (max-width: $md3+px) {
+			margin: 0 auto;
+		}
+	}
+
+	&__row {
+		padding-bottom: 40px;
+		margin: 0px 10px;
+
+		@media (max-width: $md3+px) {
+			padding-bottom: 20px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding-bottom: 10px;
+			margin: 0px;
+		}
+	}
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: $md3+px){
+			margin: 10px 0px;
+			flex: 0 1 100%;
+			align-items: center;
+
+			&_order-one {
+				order: 2;
+			}
+
+			&_order-wto {
+				order: 1;
+			}
+		}
+
+		@media (max-width: $md5+px){
+			padding: 0px 5px;
+		}
+	}
+
+	& img {
+		max-width: 100%;
+	}
+}
+
+.swiper-container {
+	width: 500px;
+	height: 100%;
+
+	@media (max-width: $md1+px){
+		width: 450px;
+	}
+
+	@media (max-width: 1024px){
+		width: 400px;
+	}
+
+	@media (max-width: $md2+px){
+		width: 350px;
+	}
+
+	@media (max-width: $md4+px){
+		width: 300px;
+	}
+
+	@media (max-width: $md5+px){
+		width: 250px;
+	}
+
+	@media (max-width: $md6+px){
+		width: 220px;
+	}
+}
+
+.slider__container {
+	position: relative;
+	width: 600px;
+
+	@media (max-width: $md1+px){
+		width: 550px;
+	}
+
+	@media (max-width: 1024px){
+		width: 500px;
+	}
+
+	@media (max-width: $md2+px){
+		width: 430px;
+	}
+
+	@media (max-width: $md4+px){
+		width: 370px;
+	}
+
+	@media (max-width: $md5+px){
+		width: 320px;
+	}
+
+	@media (max-width: $md6+px){
+		width: 290px;
+	}
+}
