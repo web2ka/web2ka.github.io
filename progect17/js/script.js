@@ -97,7 +97,30 @@ if (animItems.length > 0) {//
 
 // import Swiper JS
 
-const swiper = new Swiper('.slider-img', {
+new Swiper('.about-slider', {
+
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 1,
+
+	slidesPerGroup: 1,
+
+});
+
+
+new Swiper('.topprog-slider', {
 
 	loop: true,
 
@@ -118,6 +141,8 @@ const swiper = new Swiper('.slider-img', {
 	slidesPerGroup: 1,
 
 })
+
+
 /*
 const swiper = new Swiper('.image-slider', {
 
