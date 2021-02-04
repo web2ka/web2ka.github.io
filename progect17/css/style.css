@@ -132,7 +132,7 @@ body._lock {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .head__wrapper {
@@ -409,21 +409,24 @@ body._lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
 .about__img img {
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about__img::before {
   content: '';
   position: absolute;
   min-width: 100%;
-  min-height: 100%;
-  background: url("../img/img_mask/img_mask1.svg") center center/contain no-repeat;
+  height: 100%;
+  background: url("../img/img_mask/img_mask11.svg") left top/cover no-repeat;
 }
 
 .about__bg-img img {
@@ -498,9 +501,8 @@ body._lock {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .party__column {
@@ -653,9 +655,8 @@ body._lock {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .prog__column {
@@ -817,16 +818,15 @@ body._lock {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .choose-us__column {
   margin: 0 -20px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 19.999%;
-          flex: 0 1 19.999%;
+      -ms-flex: 0 1 24.999%;
+          flex: 0 1 24.999%;
   padding: 0px 30px 40px 30px;
 }
 
@@ -966,9 +966,9 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .question__text {
@@ -1032,9 +1032,12 @@ body._lock {
 }
 
 .action {
-  position: relative;
   margin: 70px 0px 100px 0px;
   background: rgba(93, 172, 218, 0.15);
+}
+
+.action__wrapper {
+  position: relative;
 }
 
 .action__row {
@@ -1163,13 +1166,13 @@ body._lock {
 
 .action__bg-img_balon {
   position: absolute;
-  left: 10px;
+  left: -120px;
   top: 150px;
 }
 
 .action__bg-img_cloud {
   position: absolute;
-  right: 10px;
+  right: -70px;
   top: -70px;
 }
 
@@ -1502,7 +1505,7 @@ textarea.form__input {
   font-size: 48px;
   font-weight: bold;
   line-height: 65px;
-  color: #EC6277;
+  color: #595FA7;
 }
 
 .title_red {
@@ -1608,6 +1611,22 @@ textarea.form__input {
   transition: 0.3s;
 }
 
+.button_revers {
+  color: #EC6277;
+  border-radius: 60px 10px;
+  border: 3px solid  #EC6277;
+  background-color: #ec627700;
+}
+
+.button_revers:hover {
+  background-color: #EC6277;
+  color: #EC6277;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #F8F8F8;
+}
+
 .button__menu {
   display: none;
 }
@@ -1708,14 +1727,14 @@ textarea.form__input {
 }
 
 .swiper-container {
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: rgba(93, 172, 218, 0.3);
+  background-color: #7cc0ee;
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -2288,6 +2307,10 @@ textarea.form__input {
             align-items: center;
   }
 
+  .action {
+    margin: 50px 0px 80px 0px;
+  }
+
   .action__column {
     margin: 10px 0px;
     -webkit-box-flex: 0;
@@ -2535,10 +2558,14 @@ textarea.form__input {
     text-align: center;
   }
 
+  .action {
+    margin: 40px 0px 40px 0px;
+  }
+
   .action__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0;
+    padding: 15px 0px;
   }
 
   .form-question {
@@ -2935,6 +2962,10 @@ textarea.form__input {
     margin: 0px;
   }
 
+  .action {
+    margin: 30px 0px 30px 0px;
+  }
+
   .action__title-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3101,7 +3132,6 @@ textarea.form__input {
 
   .button {
     line-height: 16px;
-    width: 175px;
     padding: 8px 0;
   }
 
