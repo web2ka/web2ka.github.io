@@ -1719,6 +1719,45 @@ textarea.form__input {
   display: none;
 }
 
+.error {
+  position: relative;
+  padding: 50px 0px 70px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error__title {
+  padding-bottom: 30px;
+}
+
+.error__description {
+  text-align: center;
+}
+
+.error__fon-cloud {
+  position: absolute;
+  top: 190px;
+  left: 0px;
+}
+
+.error__fon-cloud img {
+  max-width: 100%;
+}
+
+.error__fon-cloudflag {
+  position: absolute;
+  top: 60px;
+  right: 38px;
+}
+
+.error__fon-cloudflag img {
+  max-width: 100%;
+}
+
 .slider-container {
   padding: 0 15px;
   max-width: 600px;
@@ -1767,25 +1806,11 @@ textarea.form__input {
 
 .swiper-button-next {
   right: 0;
-  background-image: url("../img/icon/s_arrow_right_blue.svg");
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.swiper-button-next:hover {
   background-image: url("../img/icon/s_arrow_right.svg");
 }
 
 .swiper-button-prev {
   left: 0;
-  background-image: url("../img/icon/s_arrow_left_blue.svg");
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.swiper-button-prev:hover {
   background-image: url("../img/icon/s_arrow_left.svg");
 }
 
@@ -2031,6 +2056,20 @@ textarea.form__input {
   .button-plane {
     padding: 12px 212px 12px 0px;
     width: 410px;
+  }
+
+  .error {
+    padding: 40px 0px 60px 0px;
+  }
+
+  .error__fon-cloud {
+    width: 212px;
+    height: 175px;
+  }
+
+  .error__fon-cloudflag {
+    width: 189px;
+    height: 150px;
   }
 
   .slider-container {
@@ -2669,6 +2708,31 @@ textarea.form__input {
             order: 1;
   }
 
+  .error {
+    padding: 30px 0px 50px 0px;
+  }
+
+  .error__title {
+    padding-bottom: 20px;
+  }
+
+  .error__title {
+    padding-bottom: 15px;
+  }
+
+  .error__fon-cloud {
+    top: 150px;
+    width: 171px;
+    height: 142px;
+  }
+
+  .error__fon-cloudflag {
+    width: 151px;
+    height: 120px;
+    top: 40px;
+    right: 0px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     width: 40px;
@@ -3037,6 +3101,13 @@ textarea.form__input {
     width: 100%;
   }
 
+  .error__fon-cloudflag {
+    width: 120px;
+    height: 96px;
+    top: 40px;
+    right: 0px;
+  }
+
   .slider-container {
     width: 370px;
   }
@@ -3133,6 +3204,22 @@ textarea.form__input {
   .button {
     line-height: 16px;
     padding: 8px 0;
+  }
+
+  .error {
+    padding: 10px 0px 20px 0px;
+  }
+
+  .error__fon-cloud {
+    top: 90px;
+    left: -20px;
+    width: 137px;
+    height: 116px;
+  }
+
+  .error__fon-cloudflag {
+    top: 10px;
+    right: -20px;
   }
 
   .slider-container {
