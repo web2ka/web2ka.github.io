@@ -9,7 +9,6 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0122 104.842H35.0474H39.0122Z" fill="#FCFDF9" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4106 104.842H39.0122H42.4106Z" fill="#E94A45" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
 <path d="M30.0755 104.842H42.4106V107.17H30.0755V104.842Z" fill="#EC6277" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.0628 45.054C1.44041 33.537 5.02766 23.7193 10.8805 16.2931C5.02766 23.7193 1.37747 33.537 1.0628 45.054ZM10.9435 16.2301C11.0064 16.1672 11.0064 16.1672 11.0693 16.1042C11.0064 16.1672 10.9435 16.2301 10.9435 16.2301Z" fill="url(#paint2_linear)" stroke="black" stroke-width="0.9998" stroke-miterlimit="22.9256"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0472 104.841H32.0264C21.4534 92.4434 6.0975 72.1786 2.00678 54.9976C1.31451 52.2285 0.999832 49.5223 0.999832 46.8791C0.999832 46.2497 0.999832 45.6204 0.999832 45.054C1.37744 33.537 4.96469 23.7193 10.8176 16.2931L10.8805 16.2301C10.9434 16.1672 10.9434 16.1672 11.0064 16.1043C18.6214 6.6012 29.7608 1.06299 42.2847 1.06299C26.1106 1.18886 13.0203 19.5027 13.0203 46.942C13.0203 65.4447 26.3623 90.4295 35.0472 104.841Z" fill="#F0D8E4" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0121 104.841H35.0473C26.3624 90.4295 13.0203 65.4446 13.0203 46.879C13.0203 19.4397 26.1106 1.12587 42.2847 1H42.3477C34.8585 1.06293 28.7539 19.4397 28.7539 46.879C28.7539 65.4446 34.9844 90.4295 39.0121 104.841Z" fill="#EC6277" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4107 104.841H39.0123C34.9845 90.4295 28.8169 65.4446 28.8169 46.879C28.8169 19.4397 34.9215 1.06293 42.4107 1H42.4736V104.841H42.4107Z" fill="#F0D8E4" stroke="#FEFEFE" stroke-width="0.9998" stroke-miterlimit="10"/>
@@ -21,10 +20,6 @@
 <stop offset="1" stop-color="#B9DCD8"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="-nan" y1="-nan" x2="-nan" y2="-nan" gradientUnits="userSpaceOnUse">
-<stop stop-color="#EFF7F6"/>
-<stop offset="1" stop-color="#B9DCD8"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x1="6.03278" y1="45.0611" x2="6.03278" y2="16.1119" gradientUnits="userSpaceOnUse">
 <stop stop-color="#EFF7F6"/>
 <stop offset="1" stop-color="#B9DCD8"/>
 </linearGradient>
