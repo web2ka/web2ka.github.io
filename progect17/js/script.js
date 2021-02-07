@@ -97,7 +97,7 @@ if (animItems.length > 0) {//
 
 // import Swiper JS
 
-new Swiper('.about-slider', {
+new Swiper('.about-index-slider', {
 
 	loop: true,
 
@@ -119,11 +119,8 @@ new Swiper('.about-slider', {
 
 });
 
-
 new Swiper('.topprog-slider', {
-
 	loop: true,
-
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
@@ -135,15 +132,11 @@ new Swiper('.topprog-slider', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-
 	slidesPerView: 1,
-
 	slidesPerGroup: 1,
-
 })
 
 
-/*
 const swiper = new Swiper('.image-slider', {
 
 	loop: true,
@@ -164,23 +157,26 @@ const swiper = new Swiper('.image-slider', {
 
 	slidesPerGroup: 3,
 
-	spaceBetween:30,
+	spaceBetween:17,
 
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
+			slidesPerGroup: 1,
 		},
 
 		768: {
 			slidesPerView: 2,
+			slidesPerGroup: 2,
 		},
 
 		992: {
 			slidesPerView: 3,
+			slidesPerGroup: 3,
 		},
 	}
 
-}) */
+})
 
 //////filter
 
