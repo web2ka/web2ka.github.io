@@ -834,6 +834,13 @@ body._lock {
   display: flex;
 }
 
+.choose-us__row-prog {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .choose-us__column {
   margin: 0 10px;
   -webkit-box-flex: 0;
@@ -1472,6 +1479,7 @@ textarea.form__input {
 }
 
 .animators__img_services img {
+  min-width: 230px;
   padding: 5px;
 }
 
@@ -1593,9 +1601,6 @@ textarea.form__input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .animator__img {
@@ -1659,6 +1664,10 @@ textarea.form__input {
 
 .add-services__text {
   padding-bottom: 15px;
+}
+
+.add-services__text-item {
+  text-align: center;
 }
 
 .add-services__img-dotsleft {
@@ -2272,6 +2281,8 @@ textarea.form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .breadcrumb__item {
@@ -2286,6 +2297,32 @@ textarea.form__input {
   padding: 5px;
   color: #363636;
   content: "/\00a0";
+}
+
+.prog_diteils {
+  padding: 20px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prog_diteils__item {
+  padding: 30px 5px 20px 50px;
+}
+
+.prog_diteils__item-one {
+  background: url("../img/foto_content/icon_prog1.svg") 5px center no-repeat;
+}
+
+.prog_diteils__item-two {
+  background: url("../img/foto_content/icon_prog2.svg") 5px center no-repeat;
+}
+
+.prog_diteils__item-three {
+  background: url("../img/foto_content/icon_prog3.svg") 5px center no-repeat;
 }
 
 .error {
@@ -2734,6 +2771,18 @@ textarea.form__input {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .choose-us__row-prog {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .choose-us__column {
@@ -3807,6 +3856,10 @@ textarea.form__input {
     line-height: 14px;
     display: block;
     margin-bottom: 5px;
+  }
+
+  .prog_diteils {
+    padding: 20px 0px 5px 0px;
   }
 }
 
