@@ -137,7 +137,7 @@ new Swiper('.topprog-slider', {
 })
 
 
-const swiper = new Swiper('.image-slider', {
+new Swiper('.image-slider', {
 
 	loop: true,
 
@@ -158,6 +158,48 @@ const swiper = new Swiper('.image-slider', {
 	slidesPerGroup: 3,
 
 	spaceBetween:17,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+		},
+
+		768: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+		},
+
+		992: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+		},
+	}
+
+})
+
+new Swiper('.video-slider', {
+
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 2,
+	slidesPerGroup: 2,
+
+	//slidesPerGroup: 3,
+
+	spaceBetween: 17,
 
 	breakpoints: {
 		320: {
