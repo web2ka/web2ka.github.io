@@ -2756,6 +2756,14 @@ textarea.form__input {
   max-width: 100%;
 }
 
+.title-error {
+  font-weight: 700;
+  font-size: 280px;
+  line-height: 330px;
+  color: #5DACDA;
+  text-align: center;
+}
+
 .slider-container {
   padding: 0 15px;
   max-width: 600px;
@@ -3008,6 +3016,10 @@ textarea.form__input {
 
   .button-blue_filter {
     font-size: calc(14px + 3.4 * ((100vw - 375px) / 1920));
+  }
+
+  .title-error {
+    font-size: calc(130px + 255 * ((100vw - 375px) / 1920));
   }
 }
 
@@ -3354,6 +3366,10 @@ textarea.form__input {
   .error__fon-cloudflag {
     width: 189px;
     height: 150px;
+  }
+
+  .title-error {
+    line-height: 280px;
   }
 
   .slider-container {
@@ -4295,6 +4311,10 @@ textarea.form__input {
     right: 0px;
   }
 
+  .title-error {
+    line-height: 200px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     width: 40px;
@@ -4900,6 +4920,10 @@ textarea.form__input {
     right: -20px;
   }
 
+  .title-error {
+    line-height: 160px;
+  }
+
   .slider-container {
     width: 320px;
   }
@@ -5035,6 +5059,10 @@ textarea.form__input {
 
   .button-blue_filter {
     font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
+  .title-error {
+    font-size: calc(130px + 150 * (100vw / 1920));
   }
 }
 
