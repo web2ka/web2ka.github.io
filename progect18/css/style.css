@@ -407,6 +407,7 @@ body._lock {
 }
 
 .fild__button {
+  z-index: 20;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -434,6 +435,16 @@ body._lock {
 @media (max-width: 1400px) {
   .navbar__text_victory {
     margin-right: 157px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .content__fon-img_one {
+    left: -110px;
+  }
+
+  .content__fon-img_two {
+    right: -100px;
   }
 }
 
@@ -482,6 +493,18 @@ body._lock {
 
   .navbar__text_avatar {
     margin-right: 10px;
+  }
+
+  .content__fon-img_one {
+    display: none;
+  }
+
+  .content__fon-img_two {
+    display: none;
+  }
+
+  .content__fon-lewel_two {
+    right: -100px;
   }
 }
 
