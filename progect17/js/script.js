@@ -13,6 +13,7 @@ testWebP(function (support) {
 	}
 });
 
+
 let unlock = true;
 let burger = document.querySelector(".navbar__burger");
 if (burger != null) {
@@ -217,7 +218,77 @@ new Swiper('.video-slider', {
 			slidesPerGroup: 3,
 		},
 	}
+})
 
+new Swiper('.reviews-slider', {
+
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 3,
+
+	spaceBetween: 30,
+
+	autoHeight: true,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		768: {
+			slidesPerView: 2,
+		},
+
+		992: {
+			slidesPerView: 3,
+		},
+	}
+})
+
+
+new Swiper('.video-reviews-slider',{
+
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 2,
+
+	spaceBetween: 30,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		768: {
+			slidesPerView: 1,
+		},
+
+		992: {
+			slidesPerView: 2,
+		},
+	}
 })
 
 //////filter
