@@ -41,3 +41,19 @@ if (burger != null) {
 };
 
 //end menu
+
+//slider
+new Swiper('.swiper-container', {
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	slidesPerView: 6,
+
+	//slidesPerGroup: 7,
+
+	spaceBetween: 5,
+
+});
