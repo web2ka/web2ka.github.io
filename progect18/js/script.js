@@ -51,9 +51,10 @@ new Swiper('.swiper-container', {
 	},
 
 	slidesPerView: 6,
-
-	//slidesPerGroup: 7,
-
 	spaceBetween: 5,
+
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
 
 });
