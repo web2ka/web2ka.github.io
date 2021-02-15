@@ -549,59 +549,31 @@ body._lock {
 }
 
 .tabs__block_one::before {
-  left: 10px;
+  left: 2%;
 }
 
 .tabs__block_two::before {
-  left: 120px;
+  left: 16%;
 }
 
 .tabs__block_three::before {
-  left: 245px;
+  left: 33%;
 }
 
 .tabs__block_four::before {
-  left: 360px;
+  left: 48%;
 }
 
 .tabs__block_five::before {
-  left: 480px;
+  left: 63%;
 }
 
 .tabs__block_six::before {
-  left: 590px;
+  left: 79%;
 }
 
 .tabs__block_seven::before {
-  left: 710px;
-}
-
-.tabs__block:nth-child(1) {
-  background-color: rgba(0, 255, 179, 0.582);
-}
-
-.tabs__block:nth-child(2) {
-  background-color: rgba(255, 208, 0, 0.452);
-}
-
-.tabs__block:nth-child(3) {
-  background-color: rgba(255, 81, 0, 0.37);
-}
-
-.tabs__block:nth-child(4) {
-  background-color: rgba(145, 255, 0, 0.596);
-}
-
-.tabs__block:nth-child(5) {
-  background-color: rgba(0, 128, 68, 0.61);
-}
-
-.tabs__block:nth-child(6) {
-  background-color: rgba(245, 222, 179, 0.74);
-}
-
-.tabs__block:nth-child(7) {
-  background-color: rgba(255, 47, 227, 0.596);
+  left: 95%;
 }
 
 .swiper-button-prev,

@@ -73,11 +73,31 @@ new Swiper('.swiper-container', {
 		prevEl: '.swiper-button-prev',
 	},
 
-	slidesPerView: 6,
+	//slidesPerView: 6,
 	spaceBetween: 5,
+
+	breakpoints: {
+		375: {
+			slidesPerView: 3,
+		},
+
+		580: {
+			slidesPerView: 4,
+		},
+
+		768: {
+			slidesPerView: 5,
+		},
+
+		992: {
+			slidesPerView: 6,
+		},
+	},
 
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
+
+
 
 });
