@@ -239,7 +239,7 @@ new Swiper('.reviews-slider', {
 
 	spaceBetween: 30,
 
-	autoHeight: true,
+	//autoHeight: true,
 
 	breakpoints: {
 		320: {
