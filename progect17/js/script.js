@@ -360,3 +360,18 @@ function initializeClock(id, endtime) {
 
 let deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
+
+
+//filter button
+let filterLink = document.querySelectorAll("._filter");
+for (let index = 0; index < filterLink.length; index++){
+	let link = filterLink[index];
+	link.addEventListener("click", function (e) {
+		for (let index = 0; index < filterLink.length; index++) {
+			let link = filterLink[index];
+			link.classList.remove("_activ")
+		}
+		link.classList.add("_activ");
+	});
+
+};
