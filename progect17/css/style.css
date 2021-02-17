@@ -723,6 +723,7 @@ body._lock {
 }
 
 .prog__link {
+  display: inline-block;
   padding-top: 30px;
   background: url("../img/icon/arrows.svg") 50% top no-repeat;
 }
