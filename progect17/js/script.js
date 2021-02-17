@@ -13,7 +13,6 @@ testWebP(function (support) {
 	}
 });
 
-
 let unlock = true;
 let burger = document.querySelector(".navbar__burger");
 if (burger != null) {
@@ -98,47 +97,8 @@ if (animItems.length > 0) {//
 
 // import Swiper JS
 
-new Swiper('.about-index-slider', {
 
-	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	slidesPerView: 1,
-
-	slidesPerGroup: 1,
-
-});
-
-new Swiper('.topprog-slider', {
-	loop: true,
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	slidesPerView: 1,
-	slidesPerGroup: 1,
-})
-
-
-new Swiper('.image-slider', {
+const swiper = new Swiper('.image-slider', {
 
 	loop: true,
 
@@ -158,88 +118,7 @@ new Swiper('.image-slider', {
 
 	slidesPerGroup: 3,
 
-	spaceBetween:17,
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-		},
-
-		768: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-		},
-
-		992: {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
-		},
-	}
-
-})
-
-new Swiper('.video-slider', {
-
-	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	slidesPerView: 2,
-	slidesPerGroup: 2,
-
-	//slidesPerGroup: 3,
-
-	spaceBetween: 17,
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-			slidesPerGroup: 1,
-		},
-
-		768: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-		},
-
-		992: {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
-		},
-	}
-})
-
-new Swiper('.reviews-slider', {
-
-	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	slidesPerView: 3,
-
-	spaceBetween: 30,
-
-	//autoHeight: true,
+	spaceBetween:30,
 
 	breakpoints: {
 		320: {
@@ -254,41 +133,7 @@ new Swiper('.reviews-slider', {
 			slidesPerView: 3,
 		},
 	}
-})
 
-
-new Swiper('.video-reviews-slider',{
-
-	loop: true,
-
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
-	slidesPerView: 2,
-
-	spaceBetween: 30,
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-		},
-
-		768: {
-			slidesPerView: 1,
-		},
-
-		992: {
-			slidesPerView: 2,
-		},
-	}
 })
 
 //////filter
@@ -317,61 +162,3 @@ $(function(){
 
 	});
 });
-
-//////////////////////////////
-function getTimeRemaining(endtime) {
-	var t = Date.parse(endtime) - Date.parse(new Date());
-	var seconds = Math.floor((t / 1000) % 60);
-	var minutes = Math.floor((t / 1000 / 60) % 60);
-	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-	var days = Math.floor(t / (1000 * 60 * 60 * 24));
-	return {
-		'total': t,
-		'days': days,
-		'hours': hours,
-		'minutes': minutes,
-		'seconds': seconds
-	};
-}
-
-function initializeClock(id, endtime) {
-	let clock = document.getElementById(id);
-	let daysSpan = clock.querySelector('.days');
-	let hoursSpan = clock.querySelector('.hours');
-	let minutesSpan = clock.querySelector('.minutes');
-	let secondsSpan = clock.querySelector('.seconds');
-
-	function updateClock() {
-		let t = getTimeRemaining(endtime);
-
-		daysSpan.innerHTML = t.days;
-		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-		if (t.total <= 0) {
-			clearInterval(timeinterval);
-		}
-	}
-
-	updateClock();
-	let timeinterval = setInterval(updateClock, 1000);
-}
-
-let deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
-initializeClock('countdown', deadline);
-
-
-//filter button
-let filterLink = document.querySelectorAll("._filter");
-for (let index = 0; index < filterLink.length; index++){
-	let link = filterLink[index];
-	link.addEventListener("click", function (e) {
-		for (let index = 0; index < filterLink.length; index++) {
-			let link = filterLink[index];
-			link.classList.remove("_activ")
-		}
-		link.classList.add("_activ");
-	});
-
-};
