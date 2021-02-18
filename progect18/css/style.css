@@ -365,8 +365,8 @@ body._lock {
   top: 274px;
   left: 20%;
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,14 +385,14 @@ body._lock {
 }
 
 .content__think-title {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   display: inline-block;
   position: relative;
   color: #00069f;
-  font-size: 19px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 7.6px;
-  padding-bottom: 21px;
+  padding-bottom: 16px;
 }
 
 .content__think-title::before {
@@ -408,8 +408,8 @@ body._lock {
 
 .content__section {
   color: #000000;
-  font-size: 35px;
-  line-height: 36px;
+  font-size: 26px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -491,7 +491,7 @@ body._lock {
 
 .column__task {
   display: inline-block;
-  padding: 4px 5px;
+  padding: 2px 3px;
   color: #383838;
   font-size: 16px;
   text-align: left;
@@ -507,11 +507,10 @@ body._lock {
   margin: 0 auto;
   position: relative;
   padding: 10px 30px;
-  height: 500px;
 }
 
 .fild__container_img {
-  max-height: 70vh;
+  max-height: 65vh;
 }
 
 .fild__container_img img {
@@ -523,9 +522,9 @@ body._lock {
   position: absolute;
   left: 50%;
   bottom: 0;
-  margin-left: -152px;
+  margin-left: -120px;
   font-size: 33px;
-  padding: 21px 93px;
+  padding: 15px 60px;
   color: #3c892d;
   display: inline-block;
   border-radius: 10px;
@@ -554,8 +553,8 @@ body._lock {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  padding-right: 13px;
-  padding-bottom: 13px;
+  padding-right: 10px;
+  padding-bottom: 11px;
 }
 
 .tabs__item img {
@@ -614,7 +613,7 @@ body._lock {
 }
 
 .tabs__body {
-  padding: 5px;
+  padding: 2px;
   border: 2px solid #00069f;
   border-radius: 10px;
 }
@@ -632,7 +631,7 @@ body._lock {
   width: 23px;
   height: 12px;
   position: absolute;
-  top: -17px;
+  top: -14px;
   left: 10px;
 }
 
@@ -706,6 +705,7 @@ body._lock {
 
 .swiper-button-container {
   min-width: 30px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -1223,7 +1223,7 @@ progress::-moz-progress-bar {
 .footer {
   padding-top: 56px;
   background-color: #86c763;
-  height: 221px;
+  height: 100px;
 }
 
 .footer__content {
@@ -1479,8 +1479,8 @@ progress::-moz-progress-bar {
   }
 
   .content__think {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     left: 20%;
     top: 225px;
   }
