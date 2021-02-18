@@ -74,7 +74,7 @@ new Swiper('.swiper-container', {
 	},
 
 	//slidesPerView: 6,
-	spaceBetween: 5,
+	spaceBetween: 10,
 
 	breakpoints: {
 		375: {
@@ -97,7 +97,5 @@ new Swiper('.swiper-container', {
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
-
-
 
 });

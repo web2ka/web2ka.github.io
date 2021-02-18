@@ -325,20 +325,22 @@ body._lock {
 }
 
 .content__fon-lewel_one {
-  left: -80px;
+  left: 2%;
   bottom: 0px;
 }
 
 .content__fon-lewel_one img {
+  max-height: 70vh;
   max-width: 100%;
 }
 
 .content__fon-lewel_two {
-  right: 30px;
+  right: 10%;
   bottom: 0px;
 }
 
 .content__fon-lewel_two img {
+  max-height: 40vh;
   max-width: 100%;
 }
 
@@ -362,11 +364,11 @@ body._lock {
 
 .content__think {
   z-index: 30;
-  top: 274px;
-  left: 20%;
+  top: 20%;
+  left: 25%;
   position: absolute;
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +493,7 @@ body._lock {
 
 .column__task {
   display: inline-block;
-  padding: 2px 3px;
+  padding: 2px 5px;
   color: #383838;
   font-size: 16px;
   text-align: left;
@@ -705,7 +707,6 @@ body._lock {
 
 .swiper-button-container {
   min-width: 30px;
-  margin-right: 10px;
   position: relative;
 }
 
@@ -1452,32 +1453,12 @@ progress::-moz-progress-bar {
 }
 
 @media (max-width: 800px) {
-  .content__fon-lewel_one {
-    width: 391px;
-    height: 674px;
-  }
-
-  .content__fon-lewel_two {
-    width: 336px;
-    height: 395px;
-  }
-
   .fild__button {
     padding: 16px 74px;
   }
 }
 
 @media (max-width: 700px) {
-  .content__fon-lewel_one {
-    width: 312px;
-    height: 539px;
-  }
-
-  .content__fon-lewel_two {
-    width: 268px;
-    height: 316px;
-  }
-
   .content__think {
     width: 200px;
     height: 200px;
