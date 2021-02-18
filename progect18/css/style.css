@@ -512,7 +512,7 @@ body._lock {
 }
 
 .fild__container_img {
-  max-height: 65vh;
+  max-height: 70vh;
 }
 
 .fild__container_img img {
@@ -556,7 +556,7 @@ body._lock {
           justify-content: flex-end;
   position: relative;
   padding-right: 10px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
 }
 
 .tabs__item img {
@@ -615,7 +615,7 @@ body._lock {
 }
 
 .tabs__body {
-  padding: 2px;
+  padding: 4px;
   border: 2px solid #00069f;
   border-radius: 10px;
 }
@@ -633,7 +633,7 @@ body._lock {
   width: 23px;
   height: 12px;
   position: absolute;
-  top: -14px;
+  top: -16px;
   left: 10px;
 }
 
