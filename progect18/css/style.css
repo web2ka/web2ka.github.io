@@ -440,6 +440,15 @@ body._lock {
   max-width: 100%;
 }
 
+.column__fild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .column__item-level {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,11 +504,17 @@ body._lock {
 }
 
 .fild__container {
+  margin: 0 auto;
   position: relative;
   padding: 10px 30px;
+  height: 500px;
 }
 
-.fild__container img {
+.fild__container_img {
+  max-height: 70vh;
+}
+
+.fild__container_img img {
   max-width: 100%;
 }
 
