@@ -415,7 +415,7 @@ body._lock {
 
 .column__title {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 22px;
   text-align: left;
 }
 
@@ -482,9 +482,9 @@ body._lock {
 
 .column__task {
   display: inline-block;
-  padding: 8px 9px;
+  padding: 4px 5px;
   color: #383838;
-  font-size: 19px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -496,7 +496,7 @@ body._lock {
 
 .fild__container {
   position: relative;
-  padding: 30px;
+  padding: 10px 30px;
 }
 
 .fild__container img {
@@ -539,8 +539,8 @@ body._lock {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  padding-right: 15px;
-  padding-bottom: 15px;
+  padding-right: 13px;
+  padding-bottom: 13px;
 }
 
 .tabs__item img {
