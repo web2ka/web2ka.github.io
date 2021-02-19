@@ -1797,6 +1797,18 @@ textarea.form__input {
   background: url("../img/new_jear/mask1500_100.svg") center center/contain no-repeat;
 }
 
+.add-services__img-two_balon {
+  position: absolute;
+  left: 30px;
+  top: 250px;
+}
+
+.add-services__img-kite {
+  position: absolute;
+  right: 100px;
+  top: 250px;
+}
+
 .add-services__title {
   padding: 0px 0px 30px 0px;
   text-align: center;
@@ -3604,6 +3616,12 @@ iframe {
   }
 }
 
+@media (max-width: 1350px) {
+  .add-services__img-dotsright-two {
+    display: none;
+  }
+}
+
 @media (max-width: 1310px) {
   .about__img-dots-slider_two {
     display: none;
@@ -3616,6 +3634,14 @@ iframe {
   }
 
   .animator__img-dotsright {
+    display: none;
+  }
+
+  .add-services__img-two_balon {
+    display: none;
+  }
+
+  .add-services__img-kite {
     display: none;
   }
 
@@ -4560,6 +4586,11 @@ iframe {
     padding: 20px;
   }
 
+  .choose-us__bg-img {
+    width: 44px;
+    height: 72px;
+  }
+
   .question__bg-img {
     top: -50px;
     width: 144px;
@@ -4673,11 +4704,6 @@ iframe {
 
   .add-services {
     padding-bottom: 30px;
-  }
-
-  .add-services__img-dotsright-two {
-    width: 49px;
-    height: 90px;
   }
 
   .about__item_bg {
@@ -5257,11 +5283,6 @@ iframe {
   .choose-us__img {
     min-width: 75px;
     padding: 20px;
-  }
-
-  .choose-us__bg-img {
-    width: 44px;
-    height: 72px;
   }
 
   .seo {
