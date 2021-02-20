@@ -829,13 +829,15 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.choose-us__row-prog {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.choose-us__row_programs {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .choose-us__column {
@@ -3796,43 +3798,6 @@ iframe {
     height: 200px;
   }
 
-  .choose-us__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .choose-us__row-prog {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  .choose-us__column {
-    padding: 5px 20px 5px 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .choose-us__text {
-    padding-top: 0px;
-    text-align: left;
-  }
-
   .choose-us__bg-img_mini-balon {
     display: none;
   }
@@ -4158,6 +4123,17 @@ iframe {
 
   .choose-us__title {
     padding: 0px 70px 30px 70px;
+  }
+
+  .choose-us__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .choose-us__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 39.9%;
+            flex: 0 1 39.9%;
   }
 
   .choose-us__bg-img {
@@ -4655,6 +4631,10 @@ iframe {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .animator__column_order-one {
@@ -5095,6 +5075,10 @@ iframe {
 }
 
 @media (max-width: 550px) {
+  .choose-us__column {
+    padding: 0px 5px 20px 5px;
+  }
+
   .add-services__column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -5484,10 +5468,6 @@ iframe {
 
   .secret__column {
     padding: 0px 5px;
-  }
-
-  .choose-us__column {
-    padding: 5px 0px;
   }
 
   .seo__img-kiteright {
