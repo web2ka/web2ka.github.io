@@ -3938,6 +3938,14 @@ iframe {
 }
 
 @media (max-width: 1100px) {
+  .about__column-index {
+    padding: 0px 5px;
+    margin: 10px 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
   .reviews {
     margin-bottom: 80px;
   }
@@ -3949,6 +3957,10 @@ iframe {
 
   .revievs-form {
     margin-bottom: 80px;
+  }
+
+  .slider__container {
+    max-width: 500px;
   }
 }
 
@@ -4918,6 +4930,7 @@ iframe {
 
   .slider__container {
     padding: 0 45px;
+    max-width: 600px;
   }
 
   .slider__container-reviews {
@@ -5063,6 +5076,7 @@ iframe {
 @media (max-width: 590px) {
   .slider__container {
     padding: 0 20px;
+    max-width: 500px;
   }
 
   .slider__container-reviews {
@@ -5407,6 +5421,7 @@ iframe {
 
   .slider__container {
     padding: 0px;
+    max-width: 400px;
   }
 
   .slider__container-reviews {
@@ -5566,6 +5581,11 @@ iframe {
 
   .title-error {
     line-height: 160px;
+  }
+
+  .slider__container {
+    padding: 0px;
+    max-width: 350px;
   }
 }
 

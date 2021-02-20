@@ -118,6 +118,10 @@ new Swiper('.about-index-slider', {
 
 	slidesPerGroup: 1,
 
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
+
 });
 
 new Swiper('.topprog-slider', {
