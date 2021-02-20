@@ -989,6 +989,7 @@ body._lock {
 }
 
 .question__img img {
+  padding: 7px;
   max-width: 100%;
 }
 
