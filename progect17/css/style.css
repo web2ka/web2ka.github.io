@@ -360,6 +360,10 @@ body._lock {
   width: 100%;
 }
 
+.fixed__wrapper {
+  margin-bottom: 37px;
+}
+
 .title-block {
   padding: 40px 0px 50px 0px;
   background: rgba(93, 172, 218, 0.15);
@@ -3048,7 +3052,7 @@ iframe {
 }
 
 .button-plane {
-  padding: 7px 212px 7px 0px;
+  padding: 11px 212px 11px 0px;
   width: 435px;
   background: url("../img/design_element/plane.svg") right no-repeat;
 }
@@ -3238,6 +3242,10 @@ iframe {
 
 .image__wrapper-content img {
   max-width: 100%;
+}
+
+._actual_page {
+  color: #7CC1EE;
 }
 
 .error {
@@ -4046,6 +4054,19 @@ iframe {
 
   .navbar__link {
     color: #000;
+  }
+
+  ._fixed-mobile {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 30px;
+    z-index: 50;
+    width: 100%;
+  }
+
+  .fixed__wrapper-mobile {
+    margin-bottom: 162px;
   }
 
   .button__menu {
@@ -5022,8 +5043,12 @@ iframe {
             justify-content: center;
   }
 
-  ._fixed {
+  ._fixed-mobile {
     top: 43px;
+  }
+
+  .fixed__wrapper-mobile {
+    margin-bottom: 98px;
   }
 
   .footer {

@@ -39,8 +39,56 @@ if (burger != null) {
 	});
 };
 
-//---------------------------------
 
+//---------------------------------фіксація меню
+let headerElement = document.querySelector(".header");
+let headElement = document.querySelector(".head__wrapper");
+let animItems = document.querySelector("._anim-items");
+
+if (animItems != 0){
+	window.addEventListener('scroll', scrollFixed);
+
+	function scrollFixed () {
+
+		let headHight = headElement.offsetHeight; //висота фіксованого педера (зізна на різнихї пристроях)
+		console.log(headHight + " - висота хедера");
+
+		let animItemsHeight = animItems.offsetHeight; //висота  меню
+		console.log(animItemsHeight + " - висота меню");
+
+		animItemsOffset = offset(animItems).top; //позиція елемента фіксації зверху
+		console.log(animItemsOffset + " - позиція елемента фіксації");
+
+		let yofset = pageYOffset;
+		console.log(yofset + " - пройдений скрол");
+		if (pageYOffset >= (animItemsOffset - headHight)) {
+			animItems.classList.add('_fixed');
+			headerElement.classList.add('fixed__wrapper');
+		}
+		
+		if (pageYOffset <= 140)
+			{
+				animItems.classList.remove('_fixed');
+				headerElement.classList.remove('fixed__wrapper');
+			}
+
+	//	if ((animItemsHeight == 37) || (animItemsHeight == 98) || (animItemsHeight == 162)) {
+	//		animItems.classList.remove('_fixed-mobile');
+	//		headerElement.classList.remove('fixed__wrapper-mobile');				
+	//	}
+	}
+
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	}
+
+	scrollFixed();
+}
+
+/*
 const animItems = document.querySelectorAll("._anim-items");//
 
 let rowTop = document.querySelector(".row-top");
@@ -89,10 +137,12 @@ if (animItems.length > 0) {//
 		const rect = el.getBoundingClientRect(),
 			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+		return { top: rect.top + scrollTop + 30, left: rect.left + scrollLeft }
 	}
 	animOnScroll();
 }
+*/
+
 
 /////////////////////////////////////////
 
@@ -377,5 +427,20 @@ for (let index = 0; index < filterLink.length; index++){
 		}
 		link.classList.add("_activ");
 	});
-
 };
+
+//active menu
+/*/
+let menuAllLink = document.querySelectorAll("._menu");
+for (let index = 0; index < menuAllLink.length; index++) {
+	let menu = menuAllLink[index];
+	menu.addEventListener("click", function(e) {
+		for (let index = 0; index < menuAllLink.length; index++){
+			let menu = menuAllLink[index];
+			menu.classList.remove("_actual_page")
+		}
+
+		munu.classList.add("_actual_page");
+	});
+};
+*/
