@@ -71,11 +71,6 @@ if (animItems != 0){
 				animItems.classList.remove('_fixed');
 				headerElement.classList.remove('fixed__wrapper');
 			}
-
-	//	if ((animItemsHeight == 37) || (animItemsHeight == 98) || (animItemsHeight == 162)) {
-	//		animItems.classList.remove('_fixed-mobile');
-	//		headerElement.classList.remove('fixed__wrapper-mobile');				
-	//	}
 	}
 
 	function offset(el) {
@@ -87,63 +82,6 @@ if (animItems != 0){
 
 	scrollFixed();
 }
-
-/*
-const animItems = document.querySelectorAll("._anim-items");//
-
-let rowTop = document.querySelector(".row-top");
-let rowTopHight = rowTop.offsetHeight;
-
-
-if (animItems.length > 0) {//
-	window.addEventListener('scroll', animOnScroll)
-	function animOnScroll() {//
-		for (let index = 0; index < animItems.length; index++) {//
-			const animItem = animItems[index];//
-			const animItemHeight = animItem.offsetHeight;//
-			const animItemOffset = offset(animItem).top;
-
-			const animStart = 1;
-
-			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-
-			console.log(animItem);
-
-			if (animItemHeight > window.innerHeight) {
-				animItemPoint = window.innerHeight - window.innerHeight / animStart;
-			}
-
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-				if (!animItem.classList.contains('fixed__container')) {
-					animItem.classList.add('_fixed');
-
-				} else {
-					if (animItem.classList.contains('fixed__container') && pageYOffset > rowTopHight) {
-						animItem.classList.add('_fixed');
-					} else {
-						animItem.classList.remove('_fixed');
-					}
-				}
-			} else {
-				if (!animItem.classList.contains('_anim-no-hide')) {
-					animItem.classList.remove('_fixed');
-				}
-				animItem.classList.remove('_fixed');
-			}
-		}
-	}
-
-	function offset(el) {
-		const rect = el.getBoundingClientRect(),
-			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return { top: rect.top + scrollTop + 30, left: rect.left + scrollLeft }
-	}
-	animOnScroll();
-}
-*/
-
-
 /////////////////////////////////////////
 
 // import Swiper JS
@@ -428,19 +366,3 @@ for (let index = 0; index < filterLink.length; index++){
 		link.classList.add("_activ");
 	});
 };
-
-//active menu
-/*/
-let menuAllLink = document.querySelectorAll("._menu");
-for (let index = 0; index < menuAllLink.length; index++) {
-	let menu = menuAllLink[index];
-	menu.addEventListener("click", function(e) {
-		for (let index = 0; index < menuAllLink.length; index++){
-			let menu = menuAllLink[index];
-			menu.classList.remove("_actual_page")
-		}
-
-		munu.classList.add("_actual_page");
-	});
-};
-*/
