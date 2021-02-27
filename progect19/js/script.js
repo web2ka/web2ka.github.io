@@ -13,6 +13,32 @@ testWebP(function (support) {
 	}
 });
 
+//menu 
+let unlock = true;
+let burger = document.querySelector(".menu__burger");
+if (burger != null) {
+	let deley = 500;
+	let menu = document.querySelector(".menu__link");
+	let body = document.querySelector("body");
+	burger.addEventListener("click", function (e) {
+		if (unlock) {
+			//body_lock(delay);
+			burger.classList.toggle("_active");
+			menu.classList.toggle("_active");
+			body.classList.toggle("_lock")
+		}
+	});
+	let list = document.querySelector(".menu__link");
+	list.addEventListener("click", function (e) {
+		if (unlock) {
+			//body_lock(delay);
+			burger.classList.toggle("_active");
+			menu.classList.toggle("_active");
+			body.classList.toggle("_lock")
+		}
+	});
+};
+
 //слайдер
 
 let pageSlider = new Swiper('.page', {
@@ -29,7 +55,7 @@ let pageSlider = new Swiper('.page', {
 	//керування клавіатурою
 	keyboard: {
 		enabled: true,
-		
+
 		onlyInViewport: true,
 
 		pageUpDown: true,
@@ -69,7 +95,7 @@ let pageSlider = new Swiper('.page', {
 	//включаємо функцію виділення активного меню
 
 	on: {
-		init: function() {
+		init: function () {
 			menuSlider()
 		},
 
@@ -81,14 +107,14 @@ let pageSlider = new Swiper('.page', {
 });
 
 //виділення меню
-let menuLinks = document.querySelectorAll('.menu__link');
+let menuLinks = document.querySelectorAll('.menu__item');
 
 function menuSlider() {
 	if (menuLinks.length > 0) {
 		menuLinks[pageSlider.realIndex].classList.add('_active');
 		for (let index = 0; index < menuLinks.length; index++) {
 			const menuLink = menuLinks[index];
-			menuLink.addEventListener("click", function(e) {
+			menuLink.addEventListener("click", function (e) {
 				menuSliderRemove();
 				pageSlider.slideTo(index, 800);
 				menuLink.classList.add('_active');
@@ -99,7 +125,7 @@ function menuSlider() {
 }
 
 function menuSliderRemove() {
-	let menuLinkActive = document.querySelector('.menu__link._active');
+	let menuLinkActive = document.querySelector('.menu__item._active');
 	if (menuLinkActive) {
 		menuLinkActive.classList.remove('_active');
 	}
