@@ -704,9 +704,8 @@ body._lock {
   }
 
   .screen__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .screen__container_top {
@@ -719,7 +718,7 @@ body._lock {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: 0px;
-    padding-top: calc(40px + 20 * ((100vw - 320px) / 1600));
+    padding-top: calc(30px + 30 * ((100vw - 320px) / 1600));
     padding-right: calc(10px + 30 * ((100vw - 320px) / 1600));
     padding-bottom: 25px;
     padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
@@ -735,7 +734,7 @@ body._lock {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: 0px;
-    padding-top: calc(40px + 20 * ((100vw - 320px) / 1600));
+    padding-top: calc(30px + 30 * ((100vw - 320px) / 1600));
     padding-right: calc(10px + 30 * ((100vw - 320px) / 1600));
     padding-bottom: 25px;
     padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
@@ -754,7 +753,7 @@ body._lock {
 
   .screen__container_middle_three {
     min-height: 40vh;
-    padding-top: calc(40px + 20 * ((100vw - 320px) / 1600));
+    padding-top: calc(30px + 30 * ((100vw - 320px) / 1600));
     padding-right: calc(10px + 30 * ((100vw - 320px) / 1600));
     padding-bottom: 25px;
     padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
@@ -776,7 +775,7 @@ body._lock {
   .screen__title {
     background: none;
     padding-right: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .screen__title_black {
