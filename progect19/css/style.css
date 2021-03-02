@@ -385,6 +385,14 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.screen__row-threeblock {
+  min-height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .screen__column {
@@ -435,6 +443,24 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.screen__column-threeblock {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-right: calc(5px + 95 * ((100vw - 320px) / 1600));
 }
 
 .screen__item {
@@ -600,15 +626,28 @@ body._lock {
   z-index: 5;
 }
 
-.screen__title-twoblock {
+.screen__title-block {
   font-weight: bold;
-  font-size: calc(36px + 64 * ((100vw - 320px) / 1600));
-  line-height: calc(36px + 56 * ((100vw - 320px) / 1600));
+  font-size: 100px;
+  line-height: 92px;
   letter-spacing: 2px;
   color: #EDE9DE;
   text-transform: uppercase;
   padding-left: 180px;
   padding-bottom: 30px;
+}
+
+.screen__list-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .screen__list-item {
@@ -644,6 +683,74 @@ body._lock {
   background-color: #FD5F31;
 }
 
+.screen__list-item_threeblock {
+  font-weight: 600;
+  font-size: calc(10px + 2 * ((100vw - 320px) / 1600));
+  line-height: calc(12px + 8 * ((100vw - 320px) / 1600));
+  text-align: justify;
+  text-transform: uppercase;
+  color: #EDE9DE;
+  padding-left: calc(20px + 80 * ((100vw - 320px) / 1600));
+}
+
+.screen__list-item_threeblock spann {
+  color: #FD5F31;
+}
+
+.screen__list-item_threeblock-icon1 {
+  background: url("../img/icon3_1.svg") left no-repeat;
+}
+
+.screen__list-item_threeblock-icon2 {
+  background: url("../img/icon3_2.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon3 {
+  background: url("../img/icon3_3.svg") left no-repeat;
+}
+
+.screen__list-item_threeblock-icon4 {
+  background: url("../img/icon3_4.svg") left no-repeat;
+}
+
+.screen__list-item_threeblock-icon5 {
+  background: url("../img/icon3_5.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon6 {
+  background: url("../img/icon3_6.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon7 {
+  background: url("../img/icon3_7.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon8 {
+  background: url("../img/icon3_8.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon9 {
+  background: url("../img/icon3_9.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.screen__list-item_threeblock-icon10 {
+  background: url("../img/icon3_10.svg") left no-repeat;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .screen__text-twoblock {
   height: 270px;
   padding: 45px 150px 45px 180px;
@@ -670,6 +777,28 @@ body._lock {
   letter-spacing: 2px;
   color: #EDE9DE;
   padding: 5px;
+}
+
+.screen__list-threeblock {
+  position: relative;
+  height: 350px;
+  padding: 30px 150px 30px 40px;
+  background: #201E1D;
+  -webkit-box-shadow: -5px 3px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 3px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 200px 200px 0px;
+  margin-bottom: 30px;
+  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .screen__button {
@@ -699,6 +828,10 @@ body._lock {
   background: url("../img/dots_button.svg") right no-repeat;
 }
 
+.screen__button-threeblock {
+  margin-right: 40%;
+}
+
 .screen__fon-twoblock {
   display: none;
   width: 100px;
@@ -706,6 +839,16 @@ body._lock {
 }
 
 .screen__fon-twoblock img {
+  max-width: 100%;
+}
+
+.screen__fon-threeblock {
+  position: absolute;
+  bottom: -60px;
+  right: 0px;
+}
+
+.screen__fon-threeblock img {
   max-width: 100%;
 }
 
@@ -754,7 +897,9 @@ body._lock {
     background: url("../img/dots_one_little.svg") 35% 0 no-repeat, url("../img/dots_two_big.svg") no-repeat 100% 90%;
   }
 
-  .screen__title-twoblock {
+  .screen__title-block {
+    font-size: calc(36px + 64 * ((100vw - 320px) / 1600));
+    line-height: calc(36px + 56 * ((100vw - 320px) / 1600));
     padding-left: calc(10px + 170 * ((100vw - 320px) / 1600));
     padding-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   }
@@ -765,6 +910,15 @@ body._lock {
     padding-bottom: calc(5px + 40 * ((100vw - 320px) / 1600));
     padding-left: calc(10px + 170 * ((100vw - 320px) / 1600));
     margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+  }
+
+  .screen__list-threeblock {
+    padding-top: calc(5px + 25 * ((100vw - 320px) / 1600));
+    padding-right: calc(70px + 80 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(5px + 25 * ((100vw - 320px) / 1600));
+    padding-left: calc(10px + 30 * ((100vw - 320px) / 1600));
+    margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+    margin-right: calc(0px + 80 * ((100vw - 320px) / 1600));
   }
 
   .screen__button {
@@ -933,6 +1087,12 @@ body._lock {
 }
 
 @media (max-width: 767.98px) {
+  .screen__column-threeblock {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+  }
+
   .screen__list-item {
     padding: 5px 0px;
   }
@@ -959,6 +1119,14 @@ body._lock {
 
   .screen__column-twoblock_two {
     display: none;
+  }
+
+  .screen__list-threeblock {
+    margin-right: 0px;
+  }
+
+  .screen__button-threeblock {
+    margin-right: 0px;
   }
 
   .screen__fon-twoblock {
