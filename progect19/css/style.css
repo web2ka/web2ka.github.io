@@ -645,7 +645,7 @@ body._lock {
 }
 
 .screen__text-twoblock {
-  height: 260px;
+  height: 270px;
   padding: 45px 150px 45px 180px;
   background: #201E1D;
   -webkit-box-shadow: -5px 3px 12px rgba(0, 0, 0, 0.25);
@@ -666,7 +666,7 @@ body._lock {
 
 .screen__text-twoblock_item {
   font-size: calc(10px + 2 * ((100vw - 320px) / 1600));
-  line-height: calc(12px + 8 * ((100vw - 320px) / 1600));
+  line-height: calc(14px + 6 * ((100vw - 320px) / 1600));
   letter-spacing: 2px;
   color: #EDE9DE;
   padding: 5px;
@@ -756,15 +756,15 @@ body._lock {
 
   .screen__title-twoblock {
     padding-left: calc(10px + 170 * ((100vw - 320px) / 1600));
-    padding-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   }
 
   .screen__text-twoblock {
-    height: 230px;
     padding-top: calc(5px + 40 * ((100vw - 320px) / 1600));
     padding-right: calc(70px + 80 * ((100vw - 320px) / 1600));
     padding-bottom: calc(5px + 40 * ((100vw - 320px) / 1600));
     padding-left: calc(10px + 170 * ((100vw - 320px) / 1600));
+    margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
   }
 
   .screen__button {
