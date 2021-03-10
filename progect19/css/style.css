@@ -366,6 +366,14 @@ body._lock {
   position: relative;
 }
 
+.screen_orange {
+  background-color: #FD5F31;
+}
+
+.screen_black {
+  background-color: #201E1D;
+}
+
 .screen__content {
   margin-top: 7vh;
   min-height: 93vh;
@@ -379,6 +387,7 @@ body._lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .screen__row {
@@ -400,6 +409,19 @@ body._lock {
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
   min-height: 93vh;
+}
+
+.screen__column-about_one {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.screen__column-about_two {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  background-color: #201E1D;
 }
 
 .screen__column_one {
@@ -1017,7 +1039,7 @@ body._lock {
 .screen__button:after {
   position: absolute;
   content: '';
-  width: 78px;
+  width: 80px;
   height: 20px;
   right: 15%;
   background: url("../img/dots_button.svg") right no-repeat;
@@ -1032,6 +1054,34 @@ body._lock {
   padding-left: calc(10px + 20 * ((100vw - 320px) / 1600));
   margin-right: calc(0px + 40 * ((100vw - 320px) / 1600));
   border-radius: 0px;
+}
+
+.screen__fon_design {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+
+.screen__fon-dots {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.screen__fon-dots:before {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  content: '';
+  width: 14px;
+  height: 100%;
+  background-color: #EDE9DE;
 }
 
 .screen__fon-twoblock {
@@ -1070,7 +1120,7 @@ body._lock {
   position: absolute;
   top: 3%;
   left: -15px;
-  width: 73px;
+  width: 46px;
 }
 
 .screen__fon-fourblock_one img {
@@ -1100,7 +1150,7 @@ body._lock {
 
 .screen__fon-fourblock_six {
   position: absolute;
-  bottom: -20px;
+  bottom: -18px;
   right: 5%;
   width: 46px;
 }
@@ -1187,10 +1237,12 @@ body._lock {
 
   .screen__button {
     padding-left: calc(10px + 170 * ((100vw - 320px) / 1600));
+    padding-top: calc(9px + 6 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(9px + 6 * ((100vw - 320px) / 1600));
   }
 
   .screen__fon-fourblock_one {
-    width: calc(35px + 38 * ((100vw - 320px) / 1600));
+    width: calc(26px + 20 * ((100vw - 320px) / 1600));
   }
 
   .screen__fon-fourblock_three {
@@ -1414,6 +1466,8 @@ body._lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 
   .screen__item-fourblock_one {
@@ -1422,6 +1476,7 @@ body._lock {
 
   .screen__item-fourblock_two {
     height: 100%;
+    margin-bottom: 10px;
   }
 
   .screen__item-fourblock_three {
@@ -1430,14 +1485,19 @@ body._lock {
 
   .screen__item-fourblock_four {
     height: 100%;
+    margin-right: 5px;
+    margin-bottom: 10px;
   }
 
   .screen__item-fourblock_five {
     height: 100%;
+    margin-left: 5px;
+    margin-bottom: 10px;
   }
 
   .screen__item-fourblock_six {
     height: 100%;
+    margin-top: 10px;
   }
 
   .screen__list-item {
@@ -1470,6 +1530,10 @@ body._lock {
     padding: 5px 0px;
   }
 
+  .screen__text-fourblock_item_none {
+    display: none;
+  }
+
   .screen__list-threeblock {
     height: 100%;
   }
@@ -1478,18 +1542,31 @@ body._lock {
     max-height: 100%;
   }
 
+  .screen__fon_design {
+    display: none;
+  }
+
   .screen__fon-fourblock {
     display: none;
   }
 
   .screen__fon-fourblock_one {
-    top: -5px;
-    right: -5px;
+    top: -15px;
+    left: 95%;
   }
 
   .screen__fon-fourblock_three {
     top: -5px;
     right: -5px;
+  }
+
+  .screen__fon-fourblock_five {
+    bottom: 3px;
+  }
+
+  .screen__fon-fourblock_six {
+    bottom: -15px;
+    right: 2%;
   }
 }
 
@@ -1561,5 +1638,7 @@ body._lock {
 
   .screen__cards-fourblock {
     padding-left: 0px;
+    margin-right: calc(10px + 10 * ((100vw - 320px) / 1600));
+    margin-left: calc(10px + 10 * ((100vw - 320px) / 1600));
   }
 }
