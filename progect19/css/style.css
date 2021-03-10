@@ -991,6 +991,12 @@ body._lock {
           justify-content: center;
 }
 
+.screen__text-twoblock_education {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+}
+
 .screen__text-twoblock_item {
   font-size: calc(10px + 2 * ((100vw - 320px) / 1600));
   line-height: calc(14px + 6 * ((100vw - 320px) / 1600));
@@ -1622,6 +1628,10 @@ body._lock {
   .screen__list-item_threeblock-icon4 {
     margin-top: 9px;
     margin-bottom: 9px;
+  }
+
+  .screen__text-twoblock_education {
+    height: 350px;
   }
 
   .screen__text-twoblock_item {
