@@ -527,8 +527,6 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: right;
-  letter-spacing: 0.005em;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.005em;
@@ -627,6 +625,21 @@ body._lock {
           align-items: flex-start;
 }
 
+._row__footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+._row__contacts {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 ._column {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 24.999%;
@@ -673,6 +686,24 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 31%;
           flex: 0 1 31%;
+  min-height: 100%;
+}
+
+._column__footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  min-height: 100%;
+}
+
+._column__footer_mobile-two {
+  display: none;
+}
+
+._column__contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   min-height: 100%;
 }
 
@@ -1191,8 +1222,299 @@ body._lock {
   background: url("../img/icon/icon_scoba.svg") left top/contain no-repeat;
 }
 
+._no-webp .contacts {
+  background: url("../img/fon_contacts.png") left bottom/auto no-repeat; }
+
 .contacts {
+  height: 1054px;
   padding-top: 125px;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contacts__item_start {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.contacts__button {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__button-container {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__button-container_middle {
+  margin: 0px 10px;
+}
+
+.contacts__button_telegram {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_telegram_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contacts__button_viber {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_viber_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contacts__button_vatsap {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_watsap_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  -webkit-box-shadow: 0px -2px 4px rgba(168, 168, 168, 0.25);
+          box-shadow: 0px -2px 4px rgba(168, 168, 168, 0.25);
+}
+
+.footer_logo {
+  padding-left: 12px;
+}
+
+.footer__title {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+.footer__item {
+  min-height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__item_one {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item_phone-footer {
+  padding-left: 35px;
+  background: url("../img/icon/icon_phone-red.svg") left no-repeat;
+}
+
+.footer__item_mail-footer {
+  padding-left: 35px;
+  background: url("../img/icon/icon_mail-red.svg") left no-repeat;
+}
+
+.footer__menu-item {
+  padding-bottom: 8px;
+}
+
+.footer__menu-item:last-child {
+  padding-bottom: 0px;
+}
+
+.footer__buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__buttom-container {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__buttom-container_middle {
+  margin: 0px 10px;
+}
+
+.footer__buttom_telegram {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_telegram_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__buttom_viber {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_viber_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__buttom_vatsap {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_watsap_red.svg") center center/contain no-repeat;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form {
+  width: 445px;
+}
+
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__item_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__item_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__input {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 445px;
+  height: 48px;
+  border: 1px solid rgba(19, 18, 52, 0.2);
+  border-radius: 10px;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 0px;
+  color: #808080;
+}
+
+.form__input-date {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-family: "Lato";
+  padding: 0px;
+  height: 48px;
+  width: 275px;
+  border: 1px solid rgba(19, 18, 52, 0.2);
+  border-radius: 10px;
+  font-size: 18px;
+  color: #808080;
+  padding: 14px;
+}
+
+.form__select {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 445px;
+  height: 48px;
+  border: 1px solid rgba(19, 18, 52, 0.2);
+  border-radius: 10px;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 0px;
+  color: #808080;
+}
+
+.form__select_loaders {
+  width: 100px;
+  padding-left: 40px;
+}
+
+.form__button {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 48px;
+  background: #FF2C2C;
+  border-radius: 10px;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.form__button:hover {
+  background: #EB0606;
 }
 
 @media (max-width: 1440px) {
@@ -1388,6 +1710,11 @@ body._lock {
 
   .contacts {
     padding-top: calc(80px + 45 * ((100vw - 320px) / 1600));
+  }
+
+  .footer {
+    padding-top: calc(30px + 15 * ((100vw - 320px) / 1600));
+    padding-bottom: calc(30px + 15 * ((100vw - 320px) / 1600));
   }
 }
 
@@ -1585,6 +1912,7 @@ body._lock {
     -o-transition: 0.4s;
     transition: 0.4s;
     border-bottom: 2px solid rgba(168, 168, 168, 0);
+    background-color: #43435F;
   }
 
   .header__head._active {
@@ -1736,6 +2064,28 @@ body._lock {
     width: 100%;
     display: block;
   }
+
+  .footer__item {
+    min-height: 220px;
+  }
+
+  .footer__item {
+    min-height: 220px;
+  }
+
+  .footer__menu-item {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  ._column__footer_mobile {
+    display: none;
+  }
+
+  .footer__title {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1746,6 +2096,26 @@ body._lock {
   }
 
   ._row__order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  ._row__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  ._row__contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1771,6 +2141,10 @@ body._lock {
             align-items: center;
   }
 
+  ._column__footer_mobile-two {
+    display: block;
+  }
+
   .order__block {
     padding-top: 28px;
     padding-bottom: 28px;
@@ -1785,6 +2159,39 @@ body._lock {
 
   .order__item {
     text-align: center;
+  }
+
+  .contacts__button_mobile {
+    display: none;
+  }
+
+  .footer_logo {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .footer__item {
+    min-height: 100%;
+    padding-bottom: 20px;
+  }
+
+  .footer__item_contact {
+    min-height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #E7E7EB;
+  }
+
+  .footer__item-end {
+    padding-bottom: 0px;
+  }
+
+  .footer__menu-item {
+    text-align: center;
+  }
+
+  .footer__buttom_mobile {
+    display: none;
   }
 }
 
@@ -1851,3 +2258,5 @@ body._lock {
 ._webp .reviews__item_title_two { background: url(../img/reviews2.webp) left top/72px 72px no-repeat; }
 
 ._webp .reviews__item_title_three { background: url(../img/reviews3.webp) left top/72px 72px no-repeat; }
+
+._webp .contacts { background: url(../img/fon_contacts.webp) left bottom/auto no-repeat; }
