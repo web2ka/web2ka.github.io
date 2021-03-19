@@ -128,6 +128,7 @@ new Swiper('.reviews-slider', {
 
 	slidesPerView: 4,
 	watchOverflow: true,
+	spaceBetween: 30,
 
 	breakpoints: {
 		320: {

@@ -160,7 +160,7 @@ body._lock {
 }
 
 ._no-webp .header__main {
-  background: url("../img/fon_main.jpg") center center/cover no-repeat; }
+  background: url("../img/fon_main_hd.jpg") center center/cover no-repeat; }
 
 .header__main {
   min-height: 100vh;
@@ -739,6 +739,20 @@ body._lock {
   padding-top: 125px;
 }
 
+.services__wrapper {
+  position: relative;
+}
+
+.services__design-element {
+  position: absolute;
+  top: -30px;
+  left: -80px;
+}
+
+.services__design-element img {
+  max-width: 100%;
+}
+
 .services__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -767,11 +781,36 @@ body._lock {
   padding-top: 125px;
 }
 
+.about__design-element {
+  position: absolute;
+  top: -130px;
+  left: -80px;
+}
+
+.about__design-element img {
+  max-width: 100%;
+}
+
+.about__design-element_two {
+  position: absolute;
+  top: -150px;
+  right: 100px;
+}
+
+.about__design-element_two img {
+  max-width: 100%;
+}
+
 ._no-webp .about__content {
   background: url("../img/fon_about.png") center center/cover no-repeat; }
 
 .about__content {
+  position: relative;
   height: 100%;
+}
+
+.about__content-wrapper {
+  position: relative;
 }
 
 .about__item_one {
@@ -796,7 +835,7 @@ body._lock {
 }
 
 .results__column {
-  padding: 10px;
+  padding: 22px;
 }
 
 .results__column-title {
@@ -1223,6 +1262,32 @@ body._lock {
   padding-top: 125px;
 }
 
+.reviews__wrapper {
+  position: relative;
+}
+
+.reviews__design-element {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: -80px;
+}
+
+.reviews__design-element img {
+  max-width: 100%;
+}
+
+.reviews__design-element_two {
+  position: absolute;
+  z-index: 1;
+  bottom: 150px;
+  right: -20px;
+}
+
+.reviews__design-element_two img {
+  max-width: 100%;
+}
+
 .reviews__content {
   padding-bottom: 70px;
 }
@@ -1242,7 +1307,11 @@ body._lock {
 }
 
 .reviews__item {
+  background-color: #fff;
+  -webkit-box-shadow: -1px 0px 20px rgba(114, 114, 114, 0.05), 4px 4px 10px rgba(114, 114, 114, 0.13);
+          box-shadow: -1px 0px 20px rgba(114, 114, 114, 0.05), 4px 4px 10px rgba(114, 114, 114, 0.13);
   position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1286,6 +1355,20 @@ body._lock {
 .contacts {
   height: 1054px;
   padding-top: 125px;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__design-element {
+  position: absolute;
+  top: 0px;
+  left: 5%;
+}
+
+.contacts__design-element img {
+  max-width: 100%;
 }
 
 .contacts__item {
@@ -1366,8 +1449,8 @@ body._lock {
           box-shadow: 0px -2px 4px rgba(168, 168, 168, 0.25);
 }
 
-.footer_logo {
-  padding-left: 12px;
+.footer__logo {
+  padding-left: 15px;
 }
 
 .footer__title {
@@ -1522,6 +1605,12 @@ body._lock {
   margin-right: 15px;
 }
 
+.form__item_textarea_popup {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
 .form__input {
   margin-top: 8px;
   margin-bottom: 10px;
@@ -1537,6 +1626,10 @@ body._lock {
 }
 
 .form__input_order {
+  width: 100%;
+}
+
+.form__input_popup {
   width: 100%;
 }
 
@@ -1682,7 +1775,7 @@ body._lock {
 }
 
 .reviews-slider {
-  padding: 0px 0 50px 0;
+  padding: 15px 20px 50px 20px;
 }
 
 .reviews-slider .swiper-button-prev::after,
@@ -1759,6 +1852,9 @@ body._lock {
 }
 
 @media (max-width: 1440px) {
+  ._no-webp .header__main {
+    background: url("../img/fon_main.jpg") center center/cover no-repeat; }
+
   .header__title {
     font-size: calc(28px + 16 * ((100vw - 320px) / 1600));
     line-height: calc(34px + 20 * ((100vw - 320px) / 1600));
@@ -1957,6 +2053,10 @@ body._lock {
     padding-top: calc(80px + 45 * ((100vw - 320px) / 1600));
   }
 
+  .contacts__design-element {
+    left: 0px;
+  }
+
   .footer {
     padding-top: calc(30px + 15 * ((100vw - 320px) / 1600));
     padding-bottom: calc(30px + 15 * ((100vw - 320px) / 1600));
@@ -1980,6 +2080,15 @@ body._lock {
         -ms-flex: 1 1 24.999%;
             flex: 1 1 24.999%;
     max-width: 100%;
+  }
+
+  .reviews__design-element_two {
+    right: 0px;
+    bottom: 200px;
+  }
+
+  .contacts__design-element {
+    display: none;
   }
 }
 
@@ -2176,6 +2285,9 @@ body._lock {
 }
 
 @media (max-width: 900px) {
+  ._no-webp .contacts {
+    background: url("../img/fon_contacts_tablet.png") left bottom/auto no-repeat; }
+
   .form__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2194,6 +2306,11 @@ body._lock {
     width: 450px;
     margin: 0 auto;
   }
+
+  .form__item_textarea_popup {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 880px) {
@@ -2207,6 +2324,9 @@ body._lock {
     padding-left: calc(15px + 25 * ((100vw - 320px) / 1600));
     padding-right: calc(15px + 25 * ((100vw - 320px) / 1600));
   }
+
+  ._no-webp .header__main {
+    background: url("../img/fon_main_tablet.png") center center/cover no-repeat; }
 
   .header__head_order {
     background-color: #fff;
@@ -2341,6 +2461,13 @@ body._lock {
             flex: 0 1 100%;
   }
 
+  .about__design-element_two {
+    display: none;
+  }
+
+  ._no-webp .about__content {
+    background: url("../img/fon_about_tablet.png") center center/cover no-repeat; }
+
   .about__item-text {
     max-width: 480px;
   }
@@ -2364,6 +2491,9 @@ body._lock {
     margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
     height: 100%;
   }
+
+  ._no-webp .loaders__content {
+    background: url("../img/fon_loaders_tablet.png") center center/cover no-repeat; }
 
   .loaders__item-block {
     padding-bottom: calc(20px + 10 * ((100vw - 320px) / 1600));
@@ -2409,6 +2539,9 @@ body._lock {
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
   }
+
+  ._no-webp .contacts {
+    background: url("../img/nofon.png") left bottom/auto no-repeat; }
 
   .contacts__button_mobile {
     display: none;
@@ -2472,6 +2605,12 @@ body._lock {
     display: block;
   }
 
+  ._no-webp .about__content {
+    background: url("../img/fon_about.png") center center/cover no-repeat; }
+
+  ._no-webp .loaders__content {
+    background: url("../img/fon_loaders.png") center center/cover no-repeat; }
+
   .order__block {
     padding-top: 28px;
     padding-bottom: 28px;
@@ -2488,7 +2627,12 @@ body._lock {
     text-align: center;
   }
 
-  .footer_logo {
+  .reviews__design-element_two {
+    right: 0px;
+    bottom: 230px;
+  }
+
+  .footer__logo {
     text-align: center;
     padding-left: 0px;
   }
@@ -2525,6 +2669,10 @@ body._lock {
 
   .form__item_textarea {
     width: 350px;
+  }
+
+  .form__item_textarea_popup {
+    width: 100%;
   }
 }
 
@@ -2573,6 +2721,10 @@ body._lock {
             flex: 1 1 100%;
   }
 
+  .reviews__design-element_two {
+    display: none;
+  }
+
   .contacts__item {
     width: 100%;
   }
@@ -2604,6 +2756,9 @@ body._lock {
 }
 
 @media (max-width: 425.98px) {
+  ._no-webp .header__main {
+    background: url("../img/fon_main_mobile.png") center center/cover no-repeat; }
+
   .loaders__item_two {
     width: 100%;
   }
@@ -2617,9 +2772,13 @@ body._lock {
   .form__item_textarea {
     width: 280px;
   }
+
+  .form__item_textarea_popup {
+    width: 100%;
+  }
 }
 
-._webp .header__main { background: url(../img/fon_main.webp) center center/cover no-repeat; }
+._webp .header__main { background: url(../img/fon_main_hd.webp) center center/cover no-repeat; }
 
 ._webp .about__content { background: url(../img/fon_about.webp) center center/cover no-repeat; }
 
@@ -2638,3 +2797,48 @@ body._lock {
 ._webp .reviews__item_title_three { background: url(../img/reviews3.webp) left top/72px 72px no-repeat; }
 
 ._webp .contacts { background: url(../img/fon_contacts.webp) left bottom/auto no-repeat; }
+
+@media (max-width: 1440px) {
+
+  ._webp .header__main { background: url(../img/fon_main.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 900px) {
+
+  ._webp .contacts { background: url(../img/fon_contacts_tablet.webp) left bottom/auto no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .header__main { background: url(../img/fon_main_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .about__content { background: url(../img/fon_about_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .loaders__content { background: url(../img/fon_loaders_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 690px) {
+
+  ._webp .contacts { background: url(../img/nofon.webp) left bottom/auto no-repeat; }
+}
+
+@media (max-width: 600px) {
+
+  ._webp .about__content { background: url(../img/fon_about.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 600px) {
+
+  ._webp .loaders__content { background: url(../img/fon_loaders.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 425.98px) {
+
+  ._webp .header__main { background: url(../img/fon_main_mobile.webp) center center/cover no-repeat; }
+}
