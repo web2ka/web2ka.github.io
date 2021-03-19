@@ -35,7 +35,7 @@ if (burger != null) {
 			phone_icon.classList.toggle("_active");
 			burger.classList.toggle("_active");
 			menu.classList.toggle("_active");
-			body.classList.toggle("_lock")
+			//body.classList.toggle("_lock")
 		}
 	});
 	let list = document.querySelector(".menu__link");
@@ -49,101 +49,96 @@ if (burger != null) {
 			phone_icon.classList.toggle("_active");
 			burger.classList.toggle("_active");
 			menu.classList.toggle("_active");
-			body.classList.toggle("_lock")
+			//body.classList.toggle("_lock")
 		}
 	});
 };
 
-//слайдер
+//slider
 
-let pageSlider = new Swiper('.page', {
-	//свої класи
-	wrapperClass: "page__wrapper",
-	slideClass: "page__screen",
-
-	//вертикальний слайдер
-	direction: 'vertical',
-
-	//кількість слайдів для показу
-	slidesPerView: 'auto',
-
-	//керування клавіатурою
-	keyboard: {
-		enabled: true,
-
-		onlyInViewport: true,
-
-		pageUpDown: true,
+new Swiper('.services-slider', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
 	},
-
-	mousewheel: {
-		sensitivity: 1,
-	},
-
-	watchOverflow: true,
-
-	speed: 800,
-
-	observer: true,
-
-	observerParents: true,
-
-	observerSliderChildren: true,
 
 	pagination: {
-		el: '.page__pagination',
-		type: 'bullets',
+		el: '.swiper-pagination',
 		clickable: true,
-		bulletClass: "page__bullet",
-		bulletActiveClass: "page__bullet_active",
 	},
 
-	scrollbar: {
-		el: '.page__scroll',
-		dragClass: "page__drag-scroll",
+	slidesPerView: 3,
+	watchOverflow: true,
 
-		draggable: true
-	},
-
-	init: false,
-
-	//включаємо функцію виділення активного меню
-
-	on: {
-		init: function () {
-			menuSlider()
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
 		},
-
-		slideChange: function () {
-			menuSliderRemove();
-			menuLinks[pageSlider.realIndex].classList.add('_active');
+		480: {
+			slidesPerView: 2,
 		},
+		992: {
+			slidesPerView: 3,
+		}
 	},
 });
 
-//виділення меню
-let menuLinks = document.querySelectorAll('.menu__item');
+new Swiper('.car-park-slider', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
 
-function menuSlider() {
-	if (menuLinks.length > 0) {
-		menuLinks[pageSlider.realIndex].classList.add('_active');
-		for (let index = 0; index < menuLinks.length; index++) {
-			const menuLink = menuLinks[index];
-			menuLink.addEventListener("click", function (e) {
-				menuSliderRemove();
-				pageSlider.slideTo(index, 800);
-				menuLink.classList.add('_active');
-				e.preventDefault()
-			});
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	slidesPerView: 4,
+	watchOverflow: true,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		480: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+
+		1100: {
+			slidesPerView: 4,
 		}
-	}
-}
+	},
+});
 
-function menuSliderRemove() {
-	let menuLinkActive = document.querySelector('.menu__item._active');
-	if (menuLinkActive) {
-		menuLinkActive.classList.remove('_active');
-	}
-}
 
-pageSlider.init();
+new Swiper('.reviews-slider', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	slidesPerView: 4,
+	watchOverflow: true,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		480: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+
+	},
+});
