@@ -1872,10 +1872,20 @@ body._lock {
   padding-right: 120px;
 }
 
+.popup__content_one {
+  width: 290px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .popup__close {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.popup__text_one {
+  text-align: center;
 }
 
 @media (max-width: 1440px) {
