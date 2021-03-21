@@ -57,9 +57,10 @@ if (burger != null) {
 //slider
 
 new Swiper('.services-slider', {
+
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
+		nextEl: '.swiper-next',
+		prevEl: '.swiper-prev'
 	},
 
 	pagination: {
@@ -69,6 +70,7 @@ new Swiper('.services-slider', {
 
 	slidesPerView: 3,
 	watchOverflow: true,
+	slideToClickedSlide: true,
 
 	breakpoints: {
 		320: {
@@ -84,6 +86,7 @@ new Swiper('.services-slider', {
 });
 
 new Swiper('.car-park-slider', {
+
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
