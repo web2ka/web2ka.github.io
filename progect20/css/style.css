@@ -169,6 +169,36 @@ body._lock {
   display: flex;
 }
 
+._no-webp .header__loaders {
+  background: url("../img/fon_loaders_hd.png") center center/cover no-repeat; }
+
+.header__loaders {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._no-webp .header__office {
+  background: url("../img/fon_office_hd.png") center center/cover no-repeat; }
+
+.header__office {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._no-webp .header__apartment {
+  background: url("../img/fon_apartment_hd.png") center center/cover no-repeat; }
+
+.header__apartment {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -316,6 +346,7 @@ body._lock {
 }
 
 .menu__link {
+  position: relative;
   width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,6 +363,27 @@ body._lock {
   top: 60px;
 }
 
+.menu__drop-down {
+  height: 175px;
+  width: 190px;
+  padding: 23px 16px 23px 16px;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  left: 27%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.menu__item {
+  padding-bottom: 22px;
+}
+
+.menu__item:last-child {
+  padding-bottom: 0px;
+}
+
 .menu__item_line {
   border-bottom: 2px solid rgba(168, 168, 168, 0.25);
 }
@@ -342,6 +394,11 @@ body._lock {
 
 .menu__item_mobile {
   display: none;
+}
+
+.menu__item_dextop {
+  padding-right: 17px;
+  background: url("../img/icon/icon_down_menu.svg") right center/9px 5px no-repeat;
 }
 
 .menu__phone {
@@ -395,6 +452,14 @@ body._lock {
 
 .menu__text:hover::after {
   width: 50%;
+}
+
+.menu__text_noline:hover::after {
+  width: 0%;
+}
+
+.menu__text_noline:hover .menu__drop-down {
+  display: block;
 }
 
 .menu__buttom {
@@ -480,6 +545,10 @@ body._lock {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: calc(50% - 1px);
+}
+
+.menu__item_dextop:hover .menu__drop-down {
+  display: block;
 }
 
 .header__order {
@@ -621,6 +690,15 @@ body._lock {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+._row__stage {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 ._row-start {
@@ -788,6 +866,10 @@ body._lock {
   padding: 10px;
 }
 
+.services__item_loader {
+  height: 100%;
+}
+
 .services__item_img img {
   max-width: 100%;
 }
@@ -903,24 +985,72 @@ body._lock {
   background: url("../img/icon/icon_advantages_1.svg") 0 5px/65px 52px no-repeat;
 }
 
+.advantages__column-item_one-office {
+  background: url("../img/icon/icon_advantages_of_1.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_one-apartment {
+  background: url("../img/icon/icon_advantages_ap_1.svg") 0 5px/65px 52px no-repeat;
+}
+
 .advantages__column-item_two {
   background: url("../img/icon/icon_advantages_2.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_two-office {
+  background: url("../img/icon/icon_advantages_of_2.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_two-apartment {
+  background: url("../img/icon/icon_advantages_ap_2.svg") 0 5px/65px 52px no-repeat;
 }
 
 .advantages__column-item_three {
   background: url("../img/icon/icon_advantages_3.svg") 0 5px/65px 52px no-repeat;
 }
 
+.advantages__column-item_three-office {
+  background: url("../img/icon/icon_advantages_of_3.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_three-apartment {
+  background: url("../img/icon/icon_advantages_ap_3.svg") 0 5px/65px 52px no-repeat;
+}
+
 .advantages__column-item_four {
   background: url("../img/icon/icon_advantages_4.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_four-office {
+  background: url("../img/icon/icon_advantages_of_4.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_four-apartment {
+  background: url("../img/icon/icon_advantages_ap_4.svg") 0 5px/65px 52px no-repeat;
 }
 
 .advantages__column-item_five {
   background: url("../img/icon/icon_advantages_5.svg") 0 5px/65px 52px no-repeat;
 }
 
+.advantages__column-item_five-office {
+  background: url("../img/icon/icon_advantages_of_5.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_five-apartment {
+  background: url("../img/icon/icon_advantages_ap_5.svg") 0 5px/65px 52px no-repeat;
+}
+
 .advantages__column-item_six {
   background: url("../img/icon/icon_advantages_6.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_six-office {
+  background: url("../img/icon/icon_advantages_of_6.svg") 0 5px/65px 52px no-repeat;
+}
+
+.advantages__column-item_six-apartment {
+  background: url("../img/icon/icon_advantages_ap_6.svg") 0 5px/65px 52px no-repeat;
 }
 
 .advantages__column-title {
@@ -1163,6 +1293,12 @@ body._lock {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+
+._no-webp .loaders__content-apartment {
+  background: url("../img/fon_apartment.png") center center/cover no-repeat; }
+
+._no-webp .loaders__content-office {
+  background: url("../img/fon_office.png") center center/cover no-repeat; }
 
 .loaders-wrapper {
   display: -webkit-box;
@@ -1753,6 +1889,97 @@ body._lock {
   padding-top: 65px;
 }
 
+.price {
+  position: relative;
+  padding-top: 125px;
+}
+
+.price__item_one {
+  margin-bottom: 16px;
+}
+
+.price__design-element {
+  position: absolute;
+  top: 420px;
+  left: 73%;
+}
+
+.price__design-element_two {
+  position: absolute;
+  left: 80%;
+  top: 300px;
+}
+
+.price__list-item {
+  position: relative;
+  max-width: 420px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.price__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.price__list-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #FF2C2C;
+  border-radius: 50%;
+}
+
+._no-webp .stage {
+  background: url("../img/fon_stage.jpg") center center/cover no-repeat; }
+
+.stage {
+  margin-top: 60px;
+  padding-top: 80px;
+  height: 450px;
+}
+
+.stage__column {
+  padding: 15px;
+}
+
+.stage__column-text {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding-top: 80px;
+}
+
+.stage__column-text_one {
+  background: url("../img/icon/icon_stage_1.svg") center top/60px 60px no-repeat;
+}
+
+.stage__column-text_two {
+  background: url("../img/icon/icon_stage_2.svg") center top/60px 60px no-repeat;
+}
+
+.stage__column-text_three {
+  background: url("../img/icon/icon_stage_3.svg") center top/60px 60px no-repeat;
+}
+
+.stage__column-text_four {
+  background: url("../img/icon/icon_stage_4.svg") center top/60px 60px no-repeat;
+}
+
+.stage__column-text_five {
+  background: url("../img/icon/icon_stage_5.svg") center top/60px 60px no-repeat;
+}
+
+.stage__column-text_six {
+  background: url("../img/icon/icon_stage_6.svg") center top/60px 60px no-repeat;
+}
+
 .services-slider {
   padding: 0px 0px 50px 0px;
 }
@@ -1891,6 +2118,15 @@ body._lock {
 @media (max-width: 1440px) {
   ._no-webp .header__main {
     background: url("../img/fon_main.jpg") center center/cover no-repeat; }
+
+  ._no-webp .header__loaders {
+    background: url("../img/fon_loaders_main.png") center center/cover no-repeat; }
+
+  ._no-webp .header__office {
+    background: url("../img/fon_office_main.png") center center/cover no-repeat; }
+
+  ._no-webp .header__apartment {
+    background: url("../img/fon_apartment_main.png") center center/cover no-repeat; }
 
   .header__title {
     font-size: calc(28px + 16 * ((100vw - 320px) / 1600));
@@ -2103,6 +2339,28 @@ body._lock {
     padding-top: calc(40px + 25 * ((100vw - 320px) / 1600));
   }
 
+  .price {
+    padding-top: calc(80px + 45 * ((100vw - 320px) / 1600));
+  }
+
+  .price__item_one {
+    margin-bottom: calc(8px + 8 * ((100vw - 320px) / 1600));
+  }
+
+  .price__list-item {
+    margin-bottom: calc(8px + 8 * ((100vw - 320px) / 1600));
+  }
+
+  .stage {
+    margin-top: calc(30px + 30 * ((100vw - 320px) / 1600));
+    padding-top: calc(50px + 30 * ((100vw - 320px) / 1600));
+  }
+
+  .stage__column-text {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+    line-height: calc(20px + 4 * ((100vw - 320px) / 1600));
+  }
+
   .popup__content {
     padding-top: calc(30px + 10 * ((100vw - 320px) / 1600));
     padding-bottom: calc(30px + 10 * ((100vw - 320px) / 1600));
@@ -2129,6 +2387,15 @@ body._lock {
   }
 
   .contacts__design-element {
+    display: none;
+  }
+
+  .price__design-element {
+    left: 80%;
+    top: 380px;
+  }
+
+  .price__design-element_two {
     display: none;
   }
 }
@@ -2301,6 +2568,11 @@ body._lock {
     display: block;
   }
 
+  ._row__stage {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   ._row__car-park {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2322,6 +2594,19 @@ body._lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .stage {
+    padding-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
+    height: 100%;
+  }
+
+  .stage__column {
+    margin-bottom: calc(10px + 20 * ((100vw - 320px) / 1600));
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 
@@ -2369,6 +2654,15 @@ body._lock {
   ._no-webp .header__main {
     background: url("../img/fon_main_tablet.png") center center/cover no-repeat; }
 
+  ._no-webp .header__loaders {
+    background: url("../img/fon_loaders_tablet_main.png") center center/cover no-repeat; }
+
+  ._no-webp .header__office {
+    background: url("../img/fon_office_tablet.png") center center/cover no-repeat; }
+
+  ._no-webp .header__apartment {
+    background: url("../img/fon_apartment_tablet.png") center center/cover no-repeat; }
+
   .header__head_order {
     background-color: #fff;
   }
@@ -2402,6 +2696,10 @@ body._lock {
     height: 100%;
     background-color: #fff;
     z-index: 50;
+  }
+
+  .menu__drop-down {
+    display: none;
   }
 
   .menu__item {
@@ -2536,6 +2834,12 @@ body._lock {
   ._no-webp .loaders__content {
     background: url("../img/fon_loaders_tablet.png") center center/cover no-repeat; }
 
+  ._no-webp .loaders__content-apartment {
+    background: url("../img/fon_apartment.png") center center/cover no-repeat; }
+
+  ._no-webp .loaders__content-office {
+    background: url("../img/fon_office.png") center center/cover no-repeat; }
+
   .loaders__item-block {
     padding-bottom: calc(20px + 10 * ((100vw - 320px) / 1600));
   }
@@ -2561,6 +2865,10 @@ body._lock {
 
   .footer__menu-item {
     padding-bottom: 5px;
+  }
+
+  .price__design-element {
+    display: none;
   }
 }
 
@@ -2651,6 +2959,14 @@ body._lock {
 
   ._no-webp .loaders__content {
     background: url("../img/fon_loaders.png") center center/cover no-repeat; }
+
+  .loaders__content-apartment {
+    background: none;
+  }
+
+  .loaders__content-office {
+    background: none;
+  }
 
   .order__block {
     padding-top: 28px;
@@ -2800,6 +3116,15 @@ body._lock {
   ._no-webp .header__main {
     background: url("../img/fon_main_mobile.png") center center/cover no-repeat; }
 
+  ._no-webp .header__loaders {
+    background: url("../img/fon_loaders_mobile.png") center center/cover no-repeat; }
+
+  ._no-webp .header__office {
+    background: url("../img/fon_office_mobile.png") center center/cover no-repeat; }
+
+  ._no-webp .header__apartment {
+    background: url("../img/fon_apartment_mobile.png") center center/cover no-repeat; }
+
   .loaders__item_two {
     width: 100%;
   }
@@ -2821,6 +3146,12 @@ body._lock {
 
 ._webp .header__main { background: url(../img/fon_main_hd.webp) center center/cover no-repeat; }
 
+._webp .header__loaders { background: url(../img/fon_loaders_hd.webp) center center/cover no-repeat; }
+
+._webp .header__office { background: url(../img/fon_office_hd.webp) center center/cover no-repeat; }
+
+._webp .header__apartment { background: url(../img/fon_apartment_hd.webp) center center/cover no-repeat; }
+
 ._webp .about__content { background: url(../img/fon_about.webp) center center/cover no-repeat; }
 
 ._webp .results { background: url(../img/fon_result.webp) center center/cover no-repeat; }
@@ -2831,6 +3162,10 @@ body._lock {
 
 ._webp .loaders__content { background: url(../img/fon_loaders.webp) center center/cover no-repeat; }
 
+._webp .loaders__content-apartment { background: url(../img/fon_apartment.webp) center center/cover no-repeat; }
+
+._webp .loaders__content-office { background: url(../img/fon_office.webp) center center/cover no-repeat; }
+
 ._webp .reviews__item_title_one { background: url(../img/reviews1.webp) left top/72px 72px no-repeat; }
 
 ._webp .reviews__item_title_two { background: url(../img/reviews2.webp) left top/72px 72px no-repeat; }
@@ -2839,9 +3174,26 @@ body._lock {
 
 ._webp .contacts { background: url(../img/fon_contacts.webp) left bottom/auto no-repeat; }
 
+._webp .stage { background: url(../img/fon_stage.webp) center center/cover no-repeat; }
+
 @media (max-width: 1440px) {
 
   ._webp .header__main { background: url(../img/fon_main.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 1440px) {
+
+  ._webp .header__loaders { background: url(../img/fon_loaders_main.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 1440px) {
+
+  ._webp .header__office { background: url(../img/fon_office_main.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 1440px) {
+
+  ._webp .header__apartment { background: url(../img/fon_apartment_main.webp) center center/cover no-repeat; }
 }
 
 @media (max-width: 900px) {
@@ -2856,12 +3208,37 @@ body._lock {
 
 @media (max-width: 767.98px) {
 
+  ._webp .header__loaders { background: url(../img/fon_loaders_tablet_main.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .header__office { background: url(../img/fon_office_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .header__apartment { background: url(../img/fon_apartment_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
   ._webp .about__content { background: url(../img/fon_about_tablet.webp) center center/cover no-repeat; }
 }
 
 @media (max-width: 767.98px) {
 
   ._webp .loaders__content { background: url(../img/fon_loaders_tablet.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .loaders__content-apartment { background: url(../img/fon_apartment.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 767.98px) {
+
+  ._webp .loaders__content-office { background: url(../img/fon_office.webp) center center/cover no-repeat; }
 }
 
 @media (max-width: 690px) {
@@ -2882,4 +3259,19 @@ body._lock {
 @media (max-width: 425.98px) {
 
   ._webp .header__main { background: url(../img/fon_main_mobile.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 425.98px) {
+
+  ._webp .header__loaders { background: url(../img/fon_loaders_mobile.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 425.98px) {
+
+  ._webp .header__office { background: url(../img/fon_office_mobile.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 425.98px) {
+
+  ._webp .header__apartment { background: url(../img/fon_apartment_mobile.webp) center center/cover no-repeat; }
 }
