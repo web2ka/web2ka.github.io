@@ -43,13 +43,13 @@ if (burger != null) {
 		if (unlock) {
 			//body_lock(delay);
 			head.classList.toggle("_active");
-			logo.classList.toggle("_active");
+		//	logo.classList.toggle("_active");
 			menu_phone.classList.toggle("_active");
 			phone_contact.classList.toggle("_active");
 			phone_icon.classList.toggle("_active");
 			burger.classList.toggle("_active");
-			menu.classList.toggle("_active");
-			//body.classList.toggle("_lock")
+		//	menu.classList.toggle("_active");
+		//body.classList.toggle("_lock")
 		}
 	});
 };
